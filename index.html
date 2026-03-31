@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique : LASS & Séparation Audio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>La Séparation de Sources Audio par IA et le Paradigme LASS</h1>
+        <p>Un inventaire exhaustif et une veille technologique regroupant plus de 500 ressources.</p>
+    </header>
+
+    <div class="tabs">
+        <button class="tab-button active" onclick="openTab('definitions')">Définitions Générales</button>
+        <button class="tab-button" onclick="openTab('lass')">Catégorie 1: LASS</button>
+        <button class="tab-button" onclick="openTab('avss')">Catégorie 2: Séparation Audio-Visuelle</button>
+        <button class="tab-button" onclick="openTab('unimodal')">Catégorie 3: Séparation Unimodale</button>
+    </div>
+
+    <main class="content-area">
+        <section id="definitions" class="tab-content active">
+            <h2>Définitions et Fondements du LASS</h2>
+            <div class="concept-card">
+                <h3>Le Paradigme LASS (Language-Queried Audio Source Separation)</h3>
+                <p><strong>Définition :</strong> Le LASS est une approche novatrice en analyse de scène auditive computationnelle (CASA) visant à séparer un son cible d'un mélange audio complexe en fournissant simplement une requête en langage naturel (ex: <em>"un homme raconte une blague suivi de personnes qui rient"</em>).</p>
+                <p><strong>Évolution et Avantages :</strong> Contrairement aux méthodes traditionnelles qui nécessitent un dictionnaire fixe de catégories sonores (label-queried) ou un exemple audio, le LASS utilise des modèles de traitement du langage naturel (souvent via un apprentissage contrastif de type CLAP) pour s'adapter dynamiquement à n'importe quelle requête en domaine ouvert (open-domain). Cette méthode démontre d'impressionnantes capacités de généralisation "zero-shot", permettant d'isoler des sons sur lesquels le modèle n'a jamais été explicitement entraîné.</p>
+                <p><em>Sources vérifiées :,.</em></p>
+            </div>
+            <div class="concept-card">
+                <h3>Séparation Audio-Visuelle (AVSS)</h3>
+                <p>L'AVSS exploite la cohérence spatio-temporelle entre les modalités visuelles (les mouvements, l'apparence des objets) et acoustiques pour guider l'extraction sonore, évitant ainsi les ambiguïtés liées au signal purement audio.</p>
+            </div>
+        </section>
+
+        <section id="lass" class="tab-content" style="display:none;">
+            <h2>Séparation Guidée par le Langage (LASS)</h2>
+            <p>Algorithmes utilisant des requêtes textuelles (ex: AudioSep, LASS-Net, FlowSep).</p>
+            <ul id="lass-list" class="source-list"></ul>
+        </section>
+
+        <section id="avss" class="tab-content" style="display:none;">
+            <h2>Séparation Audio-Visuelle (AVSS)</h2>
+            <p>Algorithmes exploitant la modalité vidéo (ex: VAST, iQuery, AudioScopeV2).</p>
+            <ul id="avss-list" class="source-list"></ul>
+        </section>
+
+        <section id="unimodal" class="tab-content" style="display:none;">
+            <h2>Séparation Unimodale Classique</h2>
+            <p>Modèles opérant exclusivement sur l'acoustique pure (Musique, Parole).</p>
+            <ul id="unimodal-list" class="source-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

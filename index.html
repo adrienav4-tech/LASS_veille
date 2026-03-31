@@ -3,56 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veille Technologique : LASS & Séparation Audio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>LASS - Radar Technologique</title>
+    <style>
+        :root { --bg: #0f172a; --card: #1e293b; --text: #f8fafc; --accent: #38bdf8; --muted: #94a3b8; }
+        body { font-family: system-ui, -apple-system, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 2rem; line-height: 1.5; }
+        header { text-align: center; margin-bottom: 3rem; }
+        h1 { color: var(--accent); font-size: 2.5rem; margin-bottom: 0.5rem; }
+        p.subtitle { color: var(--muted); font-size: 1.1rem; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
+        .card { background: var(--card); border-radius: 12px; padding: 1.5rem; border: 1px solid #334155; display: flex; flex-direction: column; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; font-size: 0.875rem; }
+        .date { background: #0c4a6e; color: #7dd3fc; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 600; }
+        
+        .title { font-size: 1.25rem; font-weight: 700; color: white; margin: 0 0 1rem 0; }
+        .authors { color: var(--accent); font-size: 0.9rem; margin-bottom: 1rem; }
+        .summary { color: var(--muted); font-size: 0.95rem; flex-grow: 1; margin-bottom: 1.5rem; }
+        
+        .btn { display: inline-block; background: var(--accent); color: #0369a1; text-decoration: none; padding: 0.5rem 1rem; border-radius: 6px; font-weight: bold; text-align: center; transition: opacity 0.2s; }
+        .btn:hover { opacity: 0.8; }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>La Séparation de Sources Audio par IA et le Paradigme LASS</h1>
-        <p>Un inventaire exhaustif et une veille technologique regroupant plus de 500 ressources.</p>
+        <h1>Radar LASS</h1>
+        <p class="subtitle">Veille automatisée sur la séparation de sources audio (Language-Augmented)</p>
     </header>
 
-    <div class="tabs">
-        <button class="tab-button active" onclick="openTab('definitions')">Définitions Générales</button>
-        <button class="tab-button" onclick="openTab('lass')">Catégorie 1: LASS</button>
-        <button class="tab-button" onclick="openTab('avss')">Catégorie 2: Séparation Audio-Visuelle</button>
-        <button class="tab-button" onclick="openTab('unimodal')">Catégorie 3: Séparation Unimodale</button>
-    </div>
+    <div class="grid" id="papers-grid">
+        </div>
 
-    <main class="content-area">
-        <section id="definitions" class="tab-content active">
-            <h2>Définitions et Fondements du LASS</h2>
-            <div class="concept-card">
-                <h3>Le Paradigme LASS (Language-Queried Audio Source Separation)</h3>
-                <p><strong>Définition :</strong> Le LASS est une approche novatrice en analyse de scène auditive computationnelle (CASA) visant à séparer un son cible d'un mélange audio complexe en fournissant simplement une requête en langage naturel (ex: <em>"un homme raconte une blague suivi de personnes qui rient"</em>).</p>
-                <p><strong>Évolution et Avantages :</strong> Contrairement aux méthodes traditionnelles qui nécessitent un dictionnaire fixe de catégories sonores (label-queried) ou un exemple audio, le LASS utilise des modèles de traitement du langage naturel (souvent via un apprentissage contrastif de type CLAP) pour s'adapter dynamiquement à n'importe quelle requête en domaine ouvert (open-domain). Cette méthode démontre d'impressionnantes capacités de généralisation "zero-shot", permettant d'isoler des sons sur lesquels le modèle n'a jamais été explicitement entraîné.</p>
-                <p><em>Sources vérifiées :,.</em></p>
-            </div>
-            <div class="concept-card">
-                <h3>Séparation Audio-Visuelle (AVSS)</h3>
-                <p>L'AVSS exploite la cohérence spatio-temporelle entre les modalités visuelles (les mouvements, l'apparence des objets) et acoustiques pour guider l'extraction sonore, évitant ainsi les ambiguïtés liées au signal purement audio.</p>
-            </div>
-        </section>
+    <script>
+        async function fetchPapers() {
+            try {
+                // Le navigateur charge le JSON généré par l'action GitHub
+                const response = await fetch('data/lass_papers.json');
+                const papers = await response.json();
+                const grid = document.getElementById('papers-grid');
+                
+                papers.forEach(paper => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `
+                        <div class="card-header">
+                            <span class="date">📅 ${paper.date}</span>
+                        </div>
+                        <h2 class="title">${paper.title}</h2>
+                        <div class="authors">👥 ${paper.authors.slice(0, 3).join(', ')} ${paper.authors.length > 3 ? 'et al.' : ''}</div>
+                        <div class="summary">${paper.summary}</div>
+                        <a href="${paper.url}" target="_blank" class="btn">Lire le papier sur arXiv ↗</a>
+                    `;
+                    grid.appendChild(card);
+                });
+            } catch (error) {
+                console.error("Erreur de chargement des données", error);
+                document.getElementById('papers-grid').innerHTML = '<p>Impossible de charger les données de veille.</p>';
+            }
+        }
 
-        <section id="lass" class="tab-content" style="display:none;">
-            <h2>Séparation Guidée par le Langage (LASS)</h2>
-            <p>Algorithmes utilisant des requêtes textuelles (ex: AudioSep, LASS-Net, FlowSep).</p>
-            <ul id="lass-list" class="source-list"></ul>
-        </section>
+        fetchPapers();
+    </script>
 
-        <section id="avss" class="tab-content" style="display:none;">
-            <h2>Séparation Audio-Visuelle (AVSS)</h2>
-            <p>Algorithmes exploitant la modalité vidéo (ex: VAST, iQuery, AudioScopeV2).</p>
-            <ul id="avss-list" class="source-list"></ul>
-        </section>
-
-        <section id="unimodal" class="tab-content" style="display:none;">
-            <h2>Séparation Unimodale Classique</h2>
-            <p>Modèles opérant exclusivement sur l'acoustique pure (Musique, Parole).</p>
-            <ul id="unimodal-list" class="source-list"></ul>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
 </body>
 </html>

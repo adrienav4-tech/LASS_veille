@@ -3,69 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LASS - Radar Technologique</title>
+    <title>LASS - Veille & Explications</title>
     <style>
-        :root { --bg: #0f172a; --card: #1e293b; --text: #f8fafc; --accent: #38bdf8; --muted: #94a3b8; }
-        body { font-family: system-ui, -apple-system, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 2rem; line-height: 1.5; }
-        header { text-align: center; margin-bottom: 3rem; }
-        h1 { color: var(--accent); font-size: 2.5rem; margin-bottom: 0.5rem; }
-        p.subtitle { color: var(--muted); font-size: 1.1rem; }
-        
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
-        .card { background: var(--card); border-radius: 12px; padding: 1.5rem; border: 1px solid #334155; display: flex; flex-direction: column; transition: transform 0.2s; }
-        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
-        
-        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; font-size: 0.875rem; }
-        .date { background: #0c4a6e; color: #7dd3fc; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 600; }
-        
-        .title { font-size: 1.25rem; font-weight: 700; color: white; margin: 0 0 1rem 0; }
-        .authors { color: var(--accent); font-size: 0.9rem; margin-bottom: 1rem; }
-        .summary { color: var(--muted); font-size: 0.95rem; flex-grow: 1; margin-bottom: 1.5rem; }
-        
-        .btn { display: inline-block; background: var(--accent); color: #0369a1; text-decoration: none; padding: 0.5rem 1rem; border-radius: 6px; font-weight: bold; text-align: center; transition: opacity 0.2s; }
-        .btn:hover { opacity: 0.8; }
+        /* Design Épuré et Minimaliste */
+        :root {
+            --text-main: #111827;
+            --text-muted: #6b7280;
+            --bg-main: #ffffff;
+            --bg-secondary: #f9fafb;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-secondary);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--bg-main);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; font-weight: 800; letter-spacing: -0.025em; }
+        .subtitle { color: var(--text-muted); font-size: 1.2rem; margin-top: 0.5rem; }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Système d'onglets */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .tab-btn:hover { color: var(--text-main); }
+        .tab-btn.active {
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+        }
+
+        /* Contenu des onglets */
+        .tab-content { display: none; animation: fadeIn 0.3s ease; }
+        .tab-content.active { display: block; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Style des articles (Veille) */
+        .paper-item {
+            background: var(--bg-main);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: box-shadow 0.2s;
+        }
+
+        .paper-item:hover { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+        .paper-date { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+        .paper-title { margin: 0.5rem 0; font-size: 1.25rem; font-weight: 700; }
+        .paper-authors { font-size: 0.9rem; color: var(--accent); margin-bottom: 1rem; }
+        .paper-summary { color: var(--text-muted); font-size: 0.95rem; }
+        .paper-link { display: inline-block; margin-top: 1rem; color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+        .paper-link:hover { text-decoration: underline; }
+
+        /* Style du texte classique (Explications) */
+        .prose h2 { font-size: 1.75rem; margin-top: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.25rem; margin-top: 1.5rem; }
+        .prose ul { padding-left: 1.5rem; }
+        .prose li { margin-bottom: 0.5rem; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Radar LASS</h1>
-        <p class="subtitle">Veille automatisée sur la séparation de sources audio (Language-Augmented)</p>
+        <h1>Veille LASS</h1>
+        <p class="subtitle">Language-Augmented Audio Source Separation</p>
     </header>
 
-    <div class="grid" id="papers-grid">
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('veille')">Radar (Veille)</button>
+            <button class="tab-btn" onclick="openTab('lass')">Le Concept LASS</button>
+            <button class="tab-btn" onclick="openTab('process')">Notre Processus</button>
         </div>
 
+        <div id="veille" class="tab-content active">
+            <div id="papers-list">
+                <p style="text-align: center; color: var(--text-muted);">Chargement des dernières publications...</p>
+            </div>
+        </div>
+
+        <div id="lass" class="tab-content prose">
+            <h2>Qu'est-ce que le paradigme LASS ?</h2>
+            <p>Le <strong>Language-Augmented Audio Source Separation (LASS)</strong> est une évolution majeure dans le traitement du signal audio. Historiquement, la séparation de sources (BSS - Blind Source Separation) tentait de séparer tous les sons d'un mélange sans savoir ce qu'ils étaient. Le LASS change la donne en utilisant le langage naturel comme "requête".</p>
+            
+            
+
+            <p>Au lieu de dire "sépare ces pistes", on dit à l'IA : <em>"Isole le bruit des sirènes"</em> ou <em>"Extrais uniquement la guitare acoustique"</em>.</p>
+
+            <h3>Comment ça fonctionne ?</h3>
+            <p>Le système repose sur un apprentissage contrastif (souvent via des modèles comme <strong>CLAP</strong> - Contrastive Language-Audio Pretraining). Il aligne les représentations textuelles et audio dans un espace latent commun. Un réseau neuronal (comme un U-Net ou un Transformer) utilise ensuite les caractéristiques de ce texte pour filtrer le spectrogramme audio.</p>
+
+            <h3>Papiers fondateurs à connaître :</h3>
+            <ul>
+                <li><strong>AudioSep (2023)</strong> : Un modèle de fondation pour la séparation universelle des sources audio via des requêtes textuelles libres.</li>
+                <li><strong>CLAP (2022)</strong> : Le modèle d'OpenAI/LAION qui a permis de lier mathématiquement le texte et l'audio à grande échelle.</li>
+                <li><strong>AudioLDM (2023)</strong> : Bien qu'orienté génération, son architecture de compréhension du texte pour modéliser l'audio a fortement influencé les modèles de séparation.</li>
+            </ul>
+        </div>
+
+        <div id="process" class="tab-content prose">
+            <h2>Comment fonctionne cette veille ?</h2>
+            <p>Cette page est mise à jour automatiquement et de manière 100% autonome, sans base de données externe ni serveur payant, en s'inspirant des méthodologies de curation scientifique (comme les <em>Surveys</em> sur GitHub).</p>
+
+            
+
+            <h3>Le Pipeline Technique :</h3>
+            <ol>
+                <li><strong>Extraction (API arXiv) :</strong> Un script Python s'exécute tous les jours à 6h00 du matin. Il interroge l'API d'arXiv avec des requêtes ciblées sur des expressions spécifiques (`Language-Augmented Audio`, `AudioSep`, etc.).</li>
+                <li><strong>Filtrage et Formatage :</strong> Le script récupère les métadonnées (titre, date, auteurs, résumé) des 25 papiers les plus récents et les structure.</li>
+                <li><strong>Stockage JSON :</strong> Les données sont sauvegardées dans un fichier `lass_papers.json` directement dans le dépôt.</li>
+                <li><strong>Automatisation (GitHub Actions) :</strong> Tout ce processus est orchestré par un workflow YAML. Une fois le script terminé, le bot GitHub fait un <em>commit</em> et déploie la nouvelle version sur GitHub Pages.</li>
+                <li><strong>Affichage dynamique :</strong> Lorsque vous ouvrez cette page, le code JavaScript lit le fichier JSON mis à jour et génère les cartes d'articles que vous voyez dans le premier onglet.</li>
+            </ol>
+        </div>
+
+    </div>
+
     <script>
+        // Gestion des onglets
+        function openTab(tabName) {
+            // Cacher tous les contenus
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            // Désactiver tous les boutons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Activer l'onglet cliqué
+            document.getElementById(tabName).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        // Chargement des données JSON
         async function fetchPapers() {
             try {
-                // Le navigateur charge le JSON généré par l'action GitHub
                 const response = await fetch('data/lass_papers.json');
                 const papers = await response.json();
-                const grid = document.getElementById('papers-grid');
+                const container = document.getElementById('papers-list');
+                container.innerHTML = ''; // Vider le message de chargement
                 
                 papers.forEach(paper => {
-                    const card = document.createElement('div');
-                    card.className = 'card';
-                    card.innerHTML = `
-                        <div class="card-header">
-                            <span class="date">📅 ${paper.date}</span>
-                        </div>
-                        <h2 class="title">${paper.title}</h2>
-                        <div class="authors">👥 ${paper.authors.slice(0, 3).join(', ')} ${paper.authors.length > 3 ? 'et al.' : ''}</div>
-                        <div class="summary">${paper.summary}</div>
-                        <a href="${paper.url}" target="_blank" class="btn">Lire le papier sur arXiv ↗</a>
+                    const article = document.createElement('div');
+                    article.className = 'paper-item';
+                    
+                    // Formatage des auteurs
+                    let authorsStr = paper.authors.slice(0, 3).join(', ');
+                    if (paper.authors.length > 3) authorsStr += ' <em>et al.</em>';
+
+                    article.innerHTML = `
+                        <div class="paper-date">${paper.date}</div>
+                        <h3 class="paper-title">${paper.title}</h3>
+                        <div class="paper-authors">${authorsStr}</div>
+                        <div class="paper-summary">${paper.summary}</div>
+                        <a href="${paper.url}" target="_blank" class="paper-link">Lire sur arXiv &rarr;</a>
                     `;
-                    grid.appendChild(card);
+                    container.appendChild(article);
                 });
             } catch (error) {
-                console.error("Erreur de chargement des données", error);
-                document.getElementById('papers-grid').innerHTML = '<p>Impossible de charger les données de veille.</p>';
+                console.error("Erreur de chargement :", error);
+                document.getElementById('papers-list').innerHTML = '<p style="color: red;">Impossible de charger les données. Vérifiez que le script Python a bien généré le fichier data/lass_papers.json.</p>';
             }
         }
 
+        // Lancer la récupération des données au chargement de la page
         fetchPapers();
     </script>
-
 </body>
 </html>

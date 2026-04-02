@@ -1,6 +1,7 @@
 # LASS Veille
 | 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
 |---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
 | 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
 | 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
 | 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
@@ -25,11 +26,11 @@
 | 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
 | 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
 | 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
-| 2024-11-18 | **Study of the Performance of CEEMDAN in Underdetermined Speech Separation** | Rawad Melhem, Riad Hamadeh *et al.* | [Lire](http://arxiv.org/abs/2411.11312v1) |
 
-Ce dépôt est mis à jour automatiquement tous les jours avec les dernières publications scientifiques concernant la séparation de sources audio par l'IA et le texte.
+|---|---|---|---|
 | 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
 |---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
 | 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
 | 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
 | 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
@@ -54,11 +55,794 @@ Ce dépôt est mis à jour automatiquement tous les jours avec les dernières pu
 | 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
 | 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
 | 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
 | 2024-11-18 | **Study of the Performance of CEEMDAN in Underdetermined Speech Separation** | Rawad Melhem, Riad Hamadeh *et al.* | [Lire](http://arxiv.org/abs/2411.11312v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
 
 ## Dernières Publications
 | 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
 |---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
 | 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
 | 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
 | 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
@@ -83,11 +867,11 @@ Ce dépôt est mis à jour automatiquement tous les jours avec les dernières pu
 | 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
 | 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
 | 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
-| 2024-11-18 | **Study of the Performance of CEEMDAN in Underdetermined Speech Separation** | Rawad Melhem, Riad Hamadeh *et al.* | [Lire](http://arxiv.org/abs/2411.11312v1) |
 
-Le tableau apparaîtra ici au premier lancement du script.
+|---|---|---|---|
 | 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
 |---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
 | 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
 | 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
 | 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
@@ -112,6 +896,788 @@ Le tableau apparaîtra ici au premier lancement du script.
 | 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
 | 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
 | 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
+
 | 2024-11-18 | **Study of the Performance of CEEMDAN in Underdetermined Speech Separation** | Rawad Melhem, Riad Hamadeh *et al.* | [Lire](http://arxiv.org/abs/2411.11312v1) |
+| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |
+|---|---|---|---|
+| 2026-04-01 | **Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation** | Yun-Ning, Hung *et al.* | [Lire](http://arxiv.org/abs/2604.01120v1) |
+| 2026-03-27 | **Cinematic Audio Source Separation Using Visual Cues** | Kang Zhang, Suyeon Lee *et al.* | [Lire](http://arxiv.org/abs/2603.26113v1) |
+| 2026-02-25 | **A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation** | Chun-wei Ho, Sabato Marco Siniscalchi *et al.* | [Lire](http://arxiv.org/abs/2602.21476v1) |
+| 2026-02-09 | **Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation** | Kohei Saijo, Yoshiaki Bando | [Lire](http://arxiv.org/abs/2602.08671v1) |
+| 2025-12-23 | **QuarkAudio Technical Report** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2512.20151v1) |
+| 2025-12-19 | **SAM Audio: Segment Anything in Audio** | Bowen Shi, Andros Tjandra *et al.* | [Lire](http://arxiv.org/abs/2512.18099v1) |
+| 2025-11-10 | **Metric Analysis for Spatial Semantic Segmentation of Sound Scenes** | Mayank Mishra, Paul Magron *et al.* | [Lire](http://arxiv.org/abs/2511.07075v3) |
+| 2025-11-06 | **PromptSep: Generative Audio Separation via Multimodal Prompting** | Yutong Wen, Ke Chen *et al.* | [Lire](http://arxiv.org/abs/2511.04623v1) |
+| 2025-11-06 | **Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition** | Giovanni Barbarino, Nicolas Gillis *et al.* | [Lire](http://arxiv.org/abs/2511.04291v1) |
+| 2025-10-30 | **UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens** | Chengwei Liu, Haoyin Yan *et al.* | [Lire](http://arxiv.org/abs/2510.26372v1) |
+| 2025-09-19 | **Blind Source Separation of Radar Signals in Time Domain Using Deep Learning** | Sven Hinderer | [Lire](http://arxiv.org/abs/2509.15603v2) |
+| 2025-09-15 | **Neural Audio Codecs for Prompt-Driven Universal Sound Separation** | Adhiraj Banerjee, Vipul Arora | [Lire](http://arxiv.org/abs/2509.11717v4) |
+| 2025-09-11 | **MAPSS: Manifold-based Assessment of Perceptual Source Separation** | Amir Ivry, Samuele Cornell *et al.* | [Lire](http://arxiv.org/abs/2509.09212v3) |
+| 2025-08-10 | **Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation** | Yuanjian Chen, Yang Xiao *et al.* | [Lire](http://arxiv.org/abs/2508.07176v1) |
+| 2025-07-15 | **FasTUSS: Faster Task-Aware Unified Source Separation** | Francesco Paissan, Gordon Wichern *et al.* | [Lire](http://arxiv.org/abs/2507.11435v1) |
+| 2025-07-15 | **Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models** | Paul A. Bereuter, Benjamin Stahl *et al.* | [Lire](http://arxiv.org/abs/2507.11427v1) |
+| 2025-06-20 | **Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training** | Jianyuan Feng, Guangzheng Li *et al.* | [Lire](http://arxiv.org/abs/2506.16833v1) |
+| 2025-06-04 | **Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network** | Kanami Imamura, Tomohiko Nakamura *et al.* | [Lire](http://arxiv.org/abs/2506.03550v1) |
+| 2025-06-03 | **DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization** | Geonyoung Lee, Geonhee Han *et al.* | [Lire](http://arxiv.org/abs/2506.02858v2) |
+| 2025-06-03 | **DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds** | Takuya Hasumi, Yusuke Fujita | [Lire](http://arxiv.org/abs/2506.02499v2) |
+| 2025-05-29 | **ZeroSep: Separate Anything in Audio with Zero Training** | Chao Huang, Yuesheng Ma *et al.* | [Lire](http://arxiv.org/abs/2505.23625v1) |
+| 2025-05-27 | **Text-Queried Audio Source Separation via Hierarchical Modeling** | Xinlei Yin, Xiulian Peng *et al.* | [Lire](http://arxiv.org/abs/2505.21025v2) |
+| 2025-05-26 | **Training-Free Multi-Step Audio Source Separation** | Yongyi Zang, Jingyi Li *et al.* | [Lire](http://arxiv.org/abs/2505.19534v1) |
+| 2025-05-22 | **Source Separation by Flow Matching** | Robin Scheibler, John R. Hershey *et al.* | [Lire](http://arxiv.org/abs/2505.16119v2) |
+| 2025-02-10 | **Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset** | Huw Cheston, Jan Van Balen *et al.* | [Lire](http://arxiv.org/abs/2502.06364v1) |
 
 *Généré automatiquement par GitHub Actions.*

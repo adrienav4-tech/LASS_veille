@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-04-01",
+    "title": "Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation",
+    "authors": [
+      "Yun-Ning",
+      "Hung",
+      "Richard Vogl",
+      "Filip Korzeniowski",
+      "Igor Pereira"
+    ],
+    "summary": "While diffusion models are best known for their performance in generative tasks, they have also been successfully applied to many other tasks, including audio source separation. However, current generative approaches to music source separation often underperform on standard objective metrics. In thi...",
+    "url": "http://arxiv.org/abs/2604.01120v1"
+  },
+  {
     "date": "2026-03-27",
     "title": "Cinematic Audio Source Separation Using Visual Cues",
     "authors": [
@@ -305,16 +318,5 @@
     ],
     "summary": "Sampling, the practice of reusing recorded music or sounds from another source in a new work, is common in popular music genres like hip-hop and rap. Numerous services have emerged that allow users to identify connections between samples and the songs that incorporate them, with the goal of enhancin...",
     "url": "http://arxiv.org/abs/2502.06364v1"
-  },
-  {
-    "date": "2024-11-18",
-    "title": "Study of the Performance of CEEMDAN in Underdetermined Speech Separation",
-    "authors": [
-      "Rawad Melhem",
-      "Riad Hamadeh",
-      "Assef Jafar"
-    ],
-    "summary": "The CEEMDAN algorithm is one of the modern methods used in the analysis of non-stationary signals. This research presents a study of the effectiveness of this method in audio source separation to know the limits of its work. It concluded two conditions related to frequencies and amplitudes of mixed ...",
-    "url": "http://arxiv.org/abs/2411.11312v1"
   }
 ]

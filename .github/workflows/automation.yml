@@ -2,8 +2,8 @@ name: LASS Daily Automation
 
 on:
   schedule:
-    - cron: '0 6 * * *' # Tous les jours à 06:00 UTC
-  workflow_dispatch: # Permet de lancer l'action manuellement depuis GitHub
+    - cron: '0 6 * * *' 
+  workflow_dispatch: 
 
 jobs:
   update-veille:
@@ -33,5 +33,5 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add data/lass_papers.json README.md
-          git diff --quiet && git diff --staged --quiet || git commit -m "🤖 Update LASS papers database"
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update LASS papers"
           git push

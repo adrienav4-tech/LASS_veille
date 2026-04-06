@@ -43,7 +43,7 @@ def update_readme_table(papers):
         content = f.read()
 
     # Construction du nouveau tableau
-    table = "| 📅 Date | 📄 Titre du Papier | 👥 Auteurs Principaux | 🔗 Lien |\n"
+    table = "|Date  | Titrer | Auteurs Principaux | Lien |\n"
     table += "|---|---|---|---|\n"
     for p in papers:
         # Formate les auteurs (Max 2 + et al.)

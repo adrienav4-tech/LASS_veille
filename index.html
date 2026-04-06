@@ -1749,17 +1749,26 @@ body {
 </main>
 
 <script>
-
+// ============================================================
+// NAVIGATION
+// ============================================================
 function showPage(name, btn) {
+  // Cache toutes les pages
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  // Active la page
   document.getElementById('page-' + name).classList.add('active');
+  // Met à jour la sidebar
   document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
   if (btn) btn.classList.add('active');
+  // Ferme le menu mobile
   closeSidebar();
- 
+  // Scroll top
   window.scrollTo(0, 0);
 }
 
+// ============================================================
+// SIDEBAR MOBILE
+// ============================================================
 function toggleSidebar() {
   const sidebar = document.getElementById('sidebar');
   const overlay = document.getElementById('overlay');
@@ -1772,6 +1781,9 @@ function closeSidebar() {
   document.getElementById('overlay').classList.remove('active');
 }
 
+// ============================================================
+// CHARGEMENT DES PAPERS
+// ============================================================
 let allPapers = [];
 
 async function fetchPapers() {
@@ -1781,9 +1793,13 @@ async function fetchPapers() {
     if (!response.ok) throw new Error('JSON non trouvé');
     allPapers = await response.json();
 
-   document.getElementById('count-badge').textContent = allPapers.length;
+    // Mise à jour du compteur
+    document.getElementById('count-badge').textContent = allPapers.length;
     document.getElementById('stat-papers').textContent = allPapers.length;
+    // Réinitialise la pagination à chaque rechargement
+    visibleCount = 25;
 
+    // Mise à jour date
     if (allPapers.length > 0 && allPapers[0].date) {
       document.getElementById('last-update').textContent = allPapers[0].date;
     }
@@ -1801,60 +1817,71 @@ async function fetchPapers() {
   }
 }
 
+// Pagination & filtre courant
+let visibleCount = 25;
+let currentFilterSource = 'all';
+
+function getFilteredPapers() {
+  if (currentFilterSource === 'all') return allPapers;
+  return allPapers.filter(p => p.source === currentFilterSource);
+}
+
+function paperCard(p) {
+  const authors = (p.authors || []).slice(0, 3).join(', ') + ((p.authors || []).length > 3 ? ' <em>et al.</em>' : '');
+  const source = p.source || 'arxiv';
+  const sourceClass = {'arxiv':'source-arxiv','scholar':'source-scholar','semantic':'source-semantic','ieee':'source-ieee'}[source] || 'source-arxiv';
+  const sourceLabel = {'arxiv':'arXiv','scholar':'Google Scholar','semantic':'Semantic Scholar','ieee':'IEEE'}[source] || source;
+  const tags = (p.tags || []).slice(0, 3).map(t => `<span class="paper-tag">${t}</span>`).join('');
+  return `
+    <div class="paper-card" data-source="${source}">
+      <div class="paper-top">
+        <div><div class="paper-date">${p.date || ''}</div></div>
+        <span class="paper-source-badge ${sourceClass}">${sourceLabel}</span>
+      </div>
+      <div class="paper-title">${p.title || 'Sans titre'}</div>
+      <div class="paper-authors">${authors}</div>
+      <div class="paper-abstract">${p.summary || p.abstract || 'Résumé non disponible.'}</div>
+      <div class="paper-footer">
+        <div class="paper-tags">${tags}</div>
+        <a href="${p.url || '#'}" target="_blank" class="paper-link">Lire l'article ↗</a>
+      </div>
+    </div>`;
+}
+
 function renderPapers(papers) {
   const container = document.getElementById('papers-list');
   if (papers.length === 0) {
     container.innerHTML = '<div class="loading-state">Aucune publication trouvée pour ce filtre.</div>';
     return;
   }
+  const slice = papers.slice(0, visibleCount);
+  const remaining = papers.length - visibleCount;
+  const footer = remaining > 0
+    ? `<div style="text-align:center;padding:2rem;">
+         <button class="btn-ghost" onclick="loadMore()">Charger ${Math.min(remaining, 25)} de plus (${remaining} restants)</button>
+       </div>`
+    : `<div style="text-align:center;padding:1.5rem;font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--muted);">
+         ✓ ${papers.length} article${papers.length > 1 ? 's' : ''} dans l'archive
+       </div>`;
+  container.innerHTML = slice.map(paperCard).join('') + footer;
+}
 
-  container.innerHTML = papers.map(p => {
-    const authors = (p.authors || []).slice(0, 3).join(', ') + ((p.authors || []).length > 3 ? ' <em>et al.</em>' : '');
-    const source = p.source || 'arxiv';
-    const sourceClass = {
-      'arxiv': 'source-arxiv',
-      'scholar': 'source-scholar',
-      'semantic': 'source-semantic',
-      'ieee': 'source-ieee'
-    }[source] || 'source-arxiv';
-    const sourceLabel = {
-      'arxiv': 'arXiv',
-      'scholar': 'Google Scholar',
-      'semantic': 'Semantic Scholar',
-      'ieee': 'IEEE'
-    }[source] || source;
-
-    const tags = (p.tags || []).slice(0, 3).map(t => `<span class="paper-tag">${t}</span>`).join('');
-
-    return `
-      <div class="paper-card" data-source="${source}">
-        <div class="paper-top">
-          <div>
-            <div class="paper-date">${p.date || ''}</div>
-          </div>
-          <span class="paper-source-badge ${sourceClass}">${sourceLabel}</span>
-        </div>
-        <div class="paper-title">${p.title || 'Sans titre'}</div>
-        <div class="paper-authors">${authors}</div>
-        <div class="paper-abstract">${p.summary || p.abstract || 'Résumé non disponible.'}</div>
-        <div class="paper-footer">
-          <div class="paper-tags">${tags}</div>
-          <a href="${p.url || '#'}" target="_blank" class="paper-link">Lire l'article ↗</a>
-        </div>
-      </div>`;
-  }).join('');
+function loadMore() {
+  visibleCount += 25;
+  renderPapers(getFilteredPapers());
 }
 
 function filterPapers(source, btn) {
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  if (source === 'all') {
-    renderPapers(allPapers);
-  } else {
-    renderPapers(allPapers.filter(p => p.source === source));
-  }
+  currentFilterSource = source;
+  visibleCount = 25; // reset pagination on filter change
+  renderPapers(getFilteredPapers());
 }
 
+// ============================================================
+// INIT
+// ============================================================
 fetchPapers();
 </script>
 </body>

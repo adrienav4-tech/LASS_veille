@@ -20,6 +20,9 @@ import requests
 logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
 log = logging.getLogger(__name__)
 
+# ==============================================================
+# BASE DE MOTS-CLÉS
+# ==============================================================
 KEYWORDS = {
     "core": [
         "Language-Augmented Audio Source Separation",
@@ -57,11 +60,15 @@ KEYWORDS = {
     ],
 }
 
+# Toutes les requêtes aplaties
 ALL_QUERIES = [q for group in KEYWORDS.values() for q in group]
 
+# ==============================================================
+# CONFIG
+# ==============================================================
 MAX_RESULTS_PER_SOURCE = 25
 MAX_FINAL = 25
-DAYS_LOOKBACK = 90  
+DAYS_LOOKBACK = 90  # Fenêtre de recherche en jours
 DATA_DIR = "data"
 OUTPUT_FILE = os.path.join(DATA_DIR, "lass_papers.json")
 
@@ -70,6 +77,10 @@ SEMANTIC_SCHOLAR_KEY = os.environ.get("SEMANTIC_SCHOLAR_KEY", "")
 
 IEEE_API = "https://ieeexplore.ieee.org/rest/search"
 IEEE_KEY = os.environ.get("IEEE_API_KEY", "")
+
+# ==============================================================
+# UTILITAIRES
+# ==============================================================
 
 def paper_id(title: str) -> str:
     """Hash court pour déduplications."""
@@ -135,13 +146,18 @@ def tag_paper(paper: dict) -> list:
             tags.append(tag)
     return tags[:4]
 
+
+# ==============================================================
+# SOURCE 1 : arXiv
+# ==============================================================
+
 def fetch_arxiv(queries: list) -> list:
     log.info(f"arXiv — {len(queries)} requêtes")
     papers = []
     client = arxiv.Client(page_size=10, delay_seconds=1.5)
     cutoff = datetime.now() - timedelta(days=DAYS_LOOKBACK)
 
-    for query in queries[:8]: 
+    for query in queries[:8]:  # Limite pour éviter le rate-limit
         try:
             search = arxiv.Search(
                 query=query,
@@ -168,6 +184,9 @@ def fetch_arxiv(queries: list) -> list:
     return papers
 
 
+# ==============================================================
+# SOURCE 2 : Semantic Scholar
+# ==============================================================
 
 def fetch_semantic_scholar(queries: list) -> list:
     log.info(f"Semantic Scholar — {len(queries)} requêtes")
@@ -213,6 +232,10 @@ def fetch_semantic_scholar(queries: list) -> list:
     return papers
 
 
+# ==============================================================
+# SOURCE 3 : IEEE Xplore
+# ==============================================================
+
 def fetch_ieee(queries: list) -> list:
     if not IEEE_KEY:
         log.warning("IEEE — clé API manquante (IEEE_API_KEY), source ignorée")
@@ -251,6 +274,10 @@ def fetch_ieee(queries: list) -> list:
     return papers
 
 
+# ==============================================================
+# SOURCE 4 : Google Scholar (scholarly)
+# ==============================================================
+
 def fetch_google_scholar(queries: list) -> list:
     try:
         from scholarly import scholarly, ProxyGenerator
@@ -287,17 +314,35 @@ def fetch_google_scholar(queries: list) -> list:
                     "tags": [],
                 })
                 count += 1
-            time.sleep(3.0)
+            time.sleep(3.0)  # Scholar est plus strict sur le rate-limit
         except Exception as e:
             log.warning(f"Google Scholar error [{query}]: {e}")
     log.info(f"Google Scholar — {len(papers)} résultats bruts")
     return papers
 
 
+# ==============================================================
+# PIPELINE PRINCIPAL
+# ==============================================================
+
 def main():
     os.makedirs(DATA_DIR, exist_ok=True)
 
+    # ==============================================================
+    # CHARGEMENT DE L'ARCHIVE EXISTANTE
+    # Les anciens articles sont toujours conservés et fusionnés avec
+    # les nouveaux. On ne supprime jamais un article déjà indexé.
+    # ==============================================================
+    existing_papers = []
+    if os.path.exists(OUTPUT_FILE):
+        try:
+            with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+                existing_papers = json.load(f)
+            log.info(f"Archive existante chargée : {len(existing_papers)} articles")
+        except Exception as e:
+            log.warning(f"Impossible de lire l'archive existante : {e}")
 
+    # Sous-ensemble de requêtes pour chaque source
     core_queries = KEYWORDS["core"]
     model_queries = KEYWORDS["models"]
     method_queries = KEYWORDS["methods"]
@@ -306,6 +351,7 @@ def main():
 
     log.info("=== Démarrage de la collecte LASS ===")
 
+    # Collecte parallèle (prudente — certains endpoints sont fragiles)
     with ThreadPoolExecutor(max_workers=2) as exe:
         futures = {
             exe.submit(fetch_arxiv, core_queries + model_queries): "arXiv",
@@ -320,36 +366,64 @@ def main():
             except Exception as e:
                 log.error(f"{source_name} a échoué : {e}")
 
+    # Sources séquentielles (plus fragiles, rate-limits stricts)
     all_papers.extend(fetch_ieee(core_queries + model_queries))
     all_papers.extend(fetch_google_scholar(core_queries[:3]))
 
-    log.info(f"Total brut : {len(all_papers)} articles")
+    log.info(f"Total brut nouvelles collectes : {len(all_papers)} articles")
 
-    all_papers = [p for p in all_papers if p.get("title", "").strip()]
+    # ==============================================================
+    # FUSION : nouveaux articles + archive existante
+    # Les nouveaux passent en premier (priorité au scoring),
+    # les anciens complètent derrière. La déduplication élimine
+    # ensuite les doublons — les nouveaux l'emportent sur les anciens
+    # en cas de même titre (ils ont potentiellement un résumé + complet).
+    # ==============================================================
+    merged = all_papers + existing_papers
+    log.info(f"Total après fusion avec archive : {len(merged)} articles")
 
-    all_papers = deduplicate(all_papers)
-    log.info(f"Après déduplication : {len(all_papers)} articles")
+    # Filtrage : supprimer les articles sans titre
+    merged = [p for p in merged if p.get("title", "").strip()]
 
+    # Déduplification (les nouveaux en tête sont conservés en priorité)
+    merged = deduplicate(merged)
+    log.info(f"Après déduplication : {len(merged)} articles")
+
+    # Scoring de pertinence
     flat_keywords = ALL_QUERIES
-    for p in all_papers:
+    for p in merged:
         p["_score"] = relevance_score(p, flat_keywords)
-        p["tags"] = tag_paper(p)
+        if not p.get("tags"):
+            p["tags"] = tag_paper(p)
 
-    all_papers = [p for p in all_papers if p["_score"] >= 1]
-    log.info(f"Après filtrage pertinence : {len(all_papers)} articles")
+    # Filtrer les articles hors-sujet (score < 1)
+    # EXCEPTION : on conserve toujours les anciens articles déjà validés
+    new_ids = {paper_id(p.get("title", "")) for p in all_papers}
+    merged = [
+        p for p in merged
+        if p["_score"] >= 1 or paper_id(p.get("title", "")) not in new_ids
+    ]
+    log.info(f"Après filtrage pertinence : {len(merged)} articles")
 
-    all_papers.sort(key=lambda p: (p["_score"], p.get("date", "")), reverse=True)
+    # Tri : par date décroissante (les plus récents d'abord),
+    # puis par score pour les ex-aequo
+    merged.sort(key=lambda p: (p.get("date", ""), p["_score"]), reverse=True)
 
-    final_papers = all_papers[:MAX_FINAL]
+    # Pas de limite MAX_FINAL sur l'archive — on garde TOUT
+    # Seule la page d'accueil affiche les 25 derniers via JS
+    final_papers = merged
 
+    # Nettoyage des champs internes
     for p in final_papers:
         p.pop("_score", None)
 
+    # Écriture JSON
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(final_papers, f, ensure_ascii=False, indent=2)
 
     log.info(f"=== Terminé : {len(final_papers)} articles écrits dans {OUTPUT_FILE} ===")
 
+    # Affichage résumé par source
     from collections import Counter
     sources = Counter(p["source"] for p in final_papers)
     for src, count in sources.items():

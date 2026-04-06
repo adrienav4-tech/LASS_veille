@@ -1,3 +1,4 @@
 arxiv==2.1.0
 requests>=2.31.0
 scholarly>=1.7.11
+httpx>=0.24.0,<0.25.0

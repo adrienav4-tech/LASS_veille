@@ -53,7 +53,6 @@ def update_readme_table(papers):
             
         table += f"| {p['date']} | **{p['title']}** | {authors_str} | [Lire]({p['url']}) |\n"
 
-    # Remplacement via balises invisibles
     new_content = re.sub(
         r"(\n).*?(\n)",
         r"\1" + table + r"\2",

@@ -1,0 +1,36 @@
+[
+  {
+    "title": "MMAudioSep: Taming Video-to-Audio Generative Model Towards Video/Text-Queried Sound Separation",
+    "authors": [
+      "Akira Takahashi",
+      "Shusuke Takahashi",
+      "Yuki Mitsufuji"
+    ],
+    "date": "2025-10-10",
+    "summary": "We introduce MMAudioSep, a generative model for video/text-queried sound separation that is founded on a pretrained video-to-audio model. By leveraging knowledge about the relationship between video/text and audio learned through a pretrained audio generative model, we can train the model more efficiently, i.e., the model does not need to be trained from scratch. We evaluate the performance of MMAudioSep by comparing it to existing separation models, including models based on both deterministic ",
+    "url": "https://arxiv.org/abs/2510.09065",
+    "source": "semantic",
+    "venue": "arXiv.org",
+    "tags": [
+      "AudioSep"
+    ]
+  },
+  {
+    "title": "Neural Audio Codecs for Prompt-Driven Universal Sound Separation",
+    "authors": [
+      "Adhiraj Banerjee",
+      "Vipul Arora"
+    ],
+    "date": "2025-09-15",
+    "summary": "Text-guided sound separation supports flexible audio editing across media and assistive applications, but existing models like AudioSep are too compute-heavy for edge deployment. Neural audio codec (NAC) models such as CodecFormer and SDCodec are compute-efficient but limited to fixed-class separation. We introduce CodecSep, the first NAC-based model for on-device universal, text-driven separation. CodecSep combines DAC compression with a Transformer masker modulated by CLAP-derived FiLM paramet",
+    "url": "https://arxiv.org/abs/2509.11717",
+    "source": "semantic",
+    "venue": "arXiv.org",
+    "tags": [
+      "LASS",
+      "AudioSep",
+      "CLAP",
+      "Transformer"
+    ]
+  }
+]

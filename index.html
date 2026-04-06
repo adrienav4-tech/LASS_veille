@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LASS Veille — Language-Augmented Audio Source Separation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   VARIABLES & RESET
+   ============================================================ */
+:root {
+  --bg:         #0b0f1a;
+  --bg2:        #111827;
+  --bg3:        #1a2235;
+  --card:       #141c2e;
+  --border:     rgba(99,179,237,0.12);
+  --border2:    rgba(99,179,237,0.25);
+  --text:       #e2e8f0;
+  --muted:      #64748b;
+  --accent:     #63b3ed;
+  --accent2:    #90cdf4;
+  --gold:       #f6c90e;
+  --green:      #68d391;
+  --purple:     #b794f4;
+  --pink:       #fc8181;
+  --glow:       rgba(99,179,237,0.15);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ============================================================
+   SIDEBAR NAV
+   ============================================================ */
+.sidebar {
+  position: fixed;
+  top: 0; left: 0;
+  width: 240px;
+  height: 100vh;
+  background: var(--bg2);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  padding: 2rem 0;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-logo {
+  padding: 0 1.5rem 2rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-logo .logo-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.6rem;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.sidebar-logo .logo-sub {
+  font-size: 0.7rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.3rem;
+  font-family: 'DM Mono', monospace;
+}
+
+.nav-section-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  padding: 0 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'DM Mono', monospace;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 1.5rem;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s;
+  border-left: 2px solid transparent;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  width: 100%;
+  text-align: left;
+}
+
+.nav-item:hover {
+  color: var(--text);
+  background: rgba(99,179,237,0.05);
+}
+
+.nav-item.active {
+  color: var(--accent);
+  border-left-color: var(--accent);
+  background: rgba(99,179,237,0.08);
+}
+
+.nav-item .nav-icon {
+  font-size: 1.1rem;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.nav-badge {
+  margin-left: auto;
+  background: var(--accent);
+  color: var(--bg);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  font-family: 'DM Mono', monospace;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-family: 'DM Mono', monospace;
+}
+
+.sidebar-footer .update-dot {
+  display: inline-block;
+  width: 6px; height: 6px;
+  background: var(--green);
+  border-radius: 50%;
+  margin-right: 0.4rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* ============================================================
+   MAIN CONTENT
+   ============================================================ */
+.main {
+  margin-left: 240px;
+  min-height: 100vh;
+}
+
+.page {
+  display: none;
+  animation: pageIn 0.4s ease;
+}
+
+.page.active {
+  display: block;
+}
+
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   PAGE : ACCUEIL (HOME)
+   ============================================================ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -200px; right: -200px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(99,179,237,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -100px; left: 10%;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(183,148,244,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-kicker {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hero-kicker::before {
+  content: '';
+  display: block;
+  width: 30px; height: 1px;
+  background: var(--accent);
+}
+
+.hero-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+}
+
+.hero-title em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.hero-desc {
+  font-size: 1.15rem;
+  color: var(--muted);
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--bg);
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+  letter-spacing: 0.02em;
+}
+
+.btn-primary:hover {
+  background: var(--accent2);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(99,179,237,0.25);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 1px solid var(--border2);
+  transition: all 0.2s;
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Stats strip */
+.stats-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin: 4rem 0 0;
+}
+
+.stat-item {
+  padding: 2rem;
+  border-right: 1px solid var(--border);
+  text-align: center;
+}
+
+.stat-item:last-child { border-right: none; }
+
+.stat-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.5rem;
+  color: var(--accent);
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 0.3rem;
+}
+
+/* Cards grid home */
+.home-cards {
+  padding: 4rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.home-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--glow), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.home-card:hover {
+  border-color: var(--border2);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+}
+
+.home-card:hover::before { opacity: 1; }
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.card-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.card-arrow {
+  margin-top: 1.5rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Keywords cloud */
+.keywords-section {
+  padding: 3rem 5rem;
+  border-top: 1px solid var(--border);
+}
+
+.section-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.keywords-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.kw-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid;
+  transition: all 0.2s;
+}
+
+.kw-tag:hover {
+  transform: scale(1.05);
+  cursor: default;
+}
+
+.kw-core    { border-color: rgba(99,179,237,0.4);  color: var(--accent);  background: rgba(99,179,237,0.08); }
+.kw-method  { border-color: rgba(183,148,244,0.4); color: var(--purple); background: rgba(183,148,244,0.08); }
+.kw-app     { border-color: rgba(104,211,145,0.4); color: var(--green);  background: rgba(104,211,145,0.08); }
+.kw-model   { border-color: rgba(246,201,14,0.4);  color: var(--gold);   background: rgba(246,201,14,0.08); }
+
+/* ============================================================
+   PAGE : VEILLE
+   ============================================================ */
+.page-header {
+  padding: 3rem 4rem 2rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.page-header-left .page-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.page-header-left .page-sub {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter-btn {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'DM Mono', monospace;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(99,179,237,0.08);
+}
+
+.papers-grid {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.paper-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.75rem;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.paper-card:hover {
+  border-color: var(--border2);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.paper-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.paper-source-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.source-arxiv   { border-color: rgba(246,201,14,0.4);  color: var(--gold);   background: rgba(246,201,14,0.07); }
+.source-scholar { border-color: rgba(99,179,237,0.4);  color: var(--accent); background: rgba(99,179,237,0.07); }
+.source-semantic{ border-color: rgba(183,148,244,0.4); color: var(--purple); background: rgba(183,148,244,0.07); }
+.source-ieee    { border-color: rgba(104,211,145,0.4); color: var(--green);  background: rgba(104,211,145,0.07); }
+
+.paper-date {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.paper-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+  color: var(--text);
+}
+
+.paper-authors {
+  font-size: 0.82rem;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.paper-abstract {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.65;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.paper-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.paper-tags {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.paper-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+.paper-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.2s;
+}
+
+.paper-link:hover { color: var(--accent2); }
+
+.loading-state {
+  text-align: center;
+  padding: 4rem;
+  color: var(--muted);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.85rem;
+}
+
+.loading-state .spinner {
+  width: 32px; height: 32px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ============================================================
+   PAGE : CONCEPT LASS
+   ============================================================ */
+.concept-layout {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 4rem 5rem;
+}
+
+.concept-layout h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.15;
+  color: var(--text);
+}
+
+.concept-layout h2:first-child { margin-top: 0; }
+
+.concept-layout h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+}
+
+.concept-layout p {
+  color: #94a3b8;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.concept-layout strong { color: var(--text); }
+
+/* Figure containers */
+.figure {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2.5rem 0;
+  overflow-x: auto;
+}
+
+.figure-caption {
+  text-align: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 1.25rem;
+  line-height: 1.5;
+}
+
+.figure-caption strong { color: var(--accent); }
+
+/* Info boxes */
+.info-box {
+  background: rgba(99,179,237,0.06);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.info-box.purple {
+  background: rgba(183,148,244,0.06);
+  border-left-color: var(--purple);
+}
+
+.info-box.green {
+  background: rgba(104,211,145,0.06);
+  border-left-color: var(--green);
+}
+
+.info-box p { margin-bottom: 0; color: var(--muted); }
+.info-box p:last-child { margin-bottom: 0; }
+
+/* Model comparison table */
+.model-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin: 1.5rem 0;
+}
+
+.model-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.model-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: #94a3b8;
+  vertical-align: top;
+}
+
+.model-table tr:last-child td { border-bottom: none; }
+.model-table tr:hover td { background: rgba(255,255,255,0.02); }
+.model-table td:first-child { color: var(--text); font-weight: 600; }
+
+/* ============================================================
+   PAGE : PROCESSUS
+   ============================================================ */
+.process-layout {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 4rem 5rem;
+}
+
+.process-layout h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.process-layout h2:first-child { margin-top: 0; }
+
+.process-layout p {
+  color: #94a3b8;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Pipeline steps */
+.pipeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 2.5rem 0;
+  position: relative;
+}
+
+.pipeline-step {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  position: relative;
+}
+
+.pipeline-step::before {
+  content: '';
+  position: absolute;
+  left: 21px;
+  top: 44px;
+  bottom: -8px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+}
+
+.pipeline-step:last-child::before { display: none; }
+
+.step-dot {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg3);
+  border: 2px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  position: relative;
+  z-index: 1;
+}
+
+.step-content {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  flex: 1;
+  margin-bottom: 1.25rem;
+  transition: border-color 0.2s;
+}
+
+.step-content:hover { border-color: var(--border2); }
+
+.step-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: var(--text);
+}
+
+.step-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.step-badge {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(99,179,237,0.1);
+  color: var(--accent);
+  border: 1px solid rgba(99,179,237,0.2);
+  margin-left: 0.5rem;
+}
+
+/* Sources grid */
+.sources-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.source-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: all 0.25s;
+}
+
+.source-card:hover {
+  border-color: var(--border2);
+  transform: translateY(-2px);
+}
+
+.source-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.source-icon {
+  font-size: 1.5rem;
+}
+
+.source-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.source-type {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--muted);
+}
+
+.source-detail {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Keywords DB table */
+.kw-db {
+  margin: 2rem 0;
+}
+
+.kw-group {
+  margin-bottom: 1.5rem;
+}
+
+.kw-group-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.kw-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Mobile hamburger */
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 1rem; left: 1rem;
+  z-index: 200;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 50;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 900px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  .hero {
+    padding: 5rem 2rem 3rem;
+  }
+
+  .hero-title { font-size: 2.5rem; }
+
+  .stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-cards {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+
+  .papers-grid { padding: 1rem 2rem; }
+
+  .concept-layout, .process-layout {
+    padding: 2rem;
+  }
+
+  .sources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .keywords-section {
+    padding: 2rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- HAMBURGER (mobile) -->
+<button class="hamburger" onclick="toggleSidebar()">☰</button>
+<div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-title">LASS</div>
+    <div class="logo-sub">Veille Scientifique</div>
+  </div>
+
+  <div class="nav-section-label">Navigation</div>
+  <button class="nav-item active" onclick="showPage('home', this)">
+    <span class="nav-icon">🏠</span> Accueil
+  </button>
+  <button class="nav-item" onclick="showPage('veille', this)">
+    <span class="nav-icon">📡</span> Radar (Veille)
+    <span class="nav-badge" id="count-badge">—</span>
+  </button>
+
+  <div style="margin-top:1rem;"></div>
+  <div class="nav-section-label">Ressources</div>
+  <button class="nav-item" onclick="showPage('lass', this)">
+    <span class="nav-icon">🧠</span> Concept LASS
+  </button>
+  <button class="nav-item" onclick="showPage('process', this)">
+    <span class="nav-icon">⚙️</span> Processus de veille
+  </button>
+
+  <div class="sidebar-footer">
+    <span class="update-dot"></span>
+    Mise à jour : <span id="last-update">chaque jour à 6h</span>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- ========== PAGE : ACCUEIL ========== -->
+  <div class="page active" id="page-home">
+    <section class="hero">
+      <div class="hero-kicker">Veille scientifique automatisée</div>
+      <h1 class="hero-title">
+        Language-Augmented<br>
+        <em>Audio Source</em><br>
+        Separation
+      </h1>
+      <p class="hero-desc">
+        Suivi en temps réel des publications sur le LASS — séparation de sources audio pilotée par le langage naturel. arXiv, Google Scholar, Semantic Scholar et IEEE, tous agrégés chaque matin.
+      </p>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="showPage('veille', document.querySelector('.nav-item:nth-child(3)'))">
+          Voir les dernières publications →
+        </button>
+        <button class="btn-ghost" onclick="showPage('lass', document.querySelectorAll('.nav-item')[3])">
+          Comprendre le LASS
+        </button>
+      </div>
+
+      <div class="stats-strip">
+        <div class="stat-item">
+          <span class="stat-num" id="stat-papers">—</span>
+          <span class="stat-label">Publications indexées</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Sources agrégées</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">42</span>
+          <span class="stat-label">Mots-clés surveillés</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">24h</span>
+          <span class="stat-label">Cycle de mise à jour</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards nav -->
+    <div class="home-cards">
+      <div class="home-card" onclick="showPage('veille', document.querySelectorAll('.nav-item')[1])">
+        <span class="card-icon">📡</span>
+        <div class="card-title">Radar — Veille</div>
+        <div class="card-desc">Les 25 publications les plus récentes sur le LASS, filtrables par source (arXiv, Scholar, Semantic Scholar, IEEE).</div>
+        <div class="card-arrow">Explorer →</div>
+      </div>
+      <div class="home-card" onclick="showPage('lass', document.querySelectorAll('.nav-item')[3])">
+        <span class="card-icon">🧠</span>
+        <div class="card-title">Concept LASS</div>
+        <div class="card-desc">Architecture, modèles fondateurs, métriques d'évaluation — tout ce qu'il faut savoir sur le paradigme LASS.</div>
+        <div class="card-arrow">Lire →</div>
+      </div>
+      <div class="home-card" onclick="showPage('process', document.querySelectorAll('.nav-item')[4])">
+        <span class="card-icon">⚙️</span>
+        <div class="card-title">Processus de veille</div>
+        <div class="card-desc">Le pipeline technique complet : scraping multi-sources, base de mots-clés, GitHub Actions et déploiement automatique.</div>
+        <div class="card-arrow">Découvrir →</div>
+      </div>
+    </div>
+
+    <!-- Keywords cloud -->
+    <div class="keywords-section">
+      <div class="section-label">Base de mots-clés surveillés</div>
+      <div class="keywords-cloud">
+        <span class="kw-tag kw-core">Language-Augmented Audio</span>
+        <span class="kw-tag kw-core">LASS</span>
+        <span class="kw-tag kw-core">Audio Source Separation</span>
+        <span class="kw-tag kw-core">Text-queried Sound</span>
+        <span class="kw-tag kw-model">AudioSep</span>
+        <span class="kw-tag kw-model">CLAP</span>
+        <span class="kw-tag kw-model">AudioLDM</span>
+        <span class="kw-tag kw-model">MixIT</span>
+        <span class="kw-tag kw-model">SoundBeam</span>
+        <span class="kw-tag kw-method">Contrastive Language Audio</span>
+        <span class="kw-tag kw-method">Universal Sound Separation</span>
+        <span class="kw-tag kw-method">Query-based Separation</span>
+        <span class="kw-tag kw-method">Blind Source Separation</span>
+        <span class="kw-tag kw-method">U-Net Audio</span>
+        <span class="kw-tag kw-method">Audio Spectrogram Transformer</span>
+        <span class="kw-tag kw-method">Conditional Source Separation</span>
+        <span class="kw-tag kw-app">Sound Event Detection</span>
+        <span class="kw-tag kw-app">Music Source Separation</span>
+        <span class="kw-tag kw-app">Speech Enhancement</span>
+        <span class="kw-tag kw-app">Environmental Sound</span>
+        <span class="kw-tag kw-app">Audio Foundation Model</span>
+        <span class="kw-tag kw-app">Multimodal Audio</span>
+      </div>
+      <div style="margin-top:1rem; display:flex; gap:1.5rem; font-size:0.72rem; color:var(--muted); font-family:'DM Mono',monospace;">
+        <span><span class="kw-tag kw-core" style="padding:0.1rem 0.5rem; font-size:0.6rem;">bleu</span> Termes cœur</span>
+        <span><span class="kw-tag kw-model" style="padding:0.1rem 0.5rem; font-size:0.6rem;">jaune</span> Modèles</span>
+        <span><span class="kw-tag kw-method" style="padding:0.1rem 0.5rem; font-size:0.6rem;">violet</span> Méthodes</span>
+        <span><span class="kw-tag kw-app" style="padding:0.1rem 0.5rem; font-size:0.6rem;">vert</span> Applications</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== PAGE : VEILLE ========== -->
+  <div class="page" id="page-veille">
+    <div class="page-header">
+      <div class="page-header-left">
+        <h1 class="page-title">Radar — Veille</h1>
+        <p class="page-sub">Publications récentes sur le LASS · Mise à jour quotidienne à 6h00</p>
+      </div>
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterPapers('all', this)">Toutes</button>
+        <button class="filter-btn" onclick="filterPapers('arxiv', this)">arXiv</button>
+        <button class="filter-btn" onclick="filterPapers('scholar', this)">Google Scholar</button>
+        <button class="filter-btn" onclick="filterPapers('semantic', this)">Semantic Scholar</button>
+        <button class="filter-btn" onclick="filterPapers('ieee', this)">IEEE</button>
+      </div>
+    </div>
+
+    <div class="papers-grid" id="papers-list">
+      <div class="loading-state">
+        <div class="spinner"></div>
+        Chargement des publications...
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== PAGE : CONCEPT LASS ========== -->
+  <div class="page" id="page-lass">
+    <div class="concept-layout">
+      <h2>Qu'est-ce que le paradigme LASS ?</h2>
+      <p>
+        Le <strong>Language-Augmented Audio Source Separation (LASS)</strong> représente une rupture paradigmatique dans le traitement du signal audio. Là où la séparation aveugle de sources (BSS) tentait d'isoler tous les composants d'un mélange sans connaissance préalable, le LASS introduit une <strong>intention linguistique</strong> comme signal de guidage.
+      </p>
+      <p>
+        En termes concrets : au lieu de demander à un modèle de "tout séparer", on lui dit <em>"extrais uniquement les sirènes de police"</em> ou <em>"isole la guitare acoustique de ce mix"</em>. Cette requête en langage naturel oriente le modèle vers une cible précise au sein du mélange.
+      </p>
+
+      <div class="info-box">
+        <p><strong>Définition formelle.</strong> Soit un mélange audio <em>x = s₁ + s₂ + ... + sₙ</em> et une requête textuelle <em>q</em> décrivant une source cible <em>sₜ</em>. Un modèle LASS apprend la fonction <em>f(x, q) → ŝₜ</em> telle que ŝₜ ≈ sₜ.</p>
+      </div>
+
+      <!-- FIGURE 1 : Vue d'ensemble du pipeline LASS -->
+      <div class="figure">
+        <svg viewBox="0 0 780 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:'Outfit',sans-serif;">
+          <!-- Background blocs -->
+          <rect x="10" y="40" width="130" height="120" rx="10" fill="#1a2235" stroke="#63b3ed" stroke-width="1.5" stroke-opacity="0.4"/>
+          <rect x="175" y="40" width="130" height="120" rx="10" fill="#1a2235" stroke="#b794f4" stroke-width="1.5" stroke-opacity="0.4"/>
+          <rect x="340" y="40" width="200" height="120" rx="10" fill="#1a2235" stroke="#63b3ed" stroke-width="1.5" stroke-opacity="0.5"/>
+          <rect x="575" y="40" width="195" height="120" rx="10" fill="#1a2235" stroke="#68d391" stroke-width="1.5" stroke-opacity="0.4"/>
+
+          <!-- Labels titres -->
+          <text x="75" y="30" text-anchor="middle" fill="#64748b" font-size="11" font-family="'DM Mono',monospace">Entrée</text>
+          <text x="240" y="30" text-anchor="middle" fill="#64748b" font-size="11" font-family="'DM Mono',monospace">Encodeur</text>
+          <text x="440" y="30" text-anchor="middle" fill="#64748b" font-size="11" font-family="'DM Mono',monospace">Réseau de séparation</text>
+          <text x="672" y="30" text-anchor="middle" fill="#64748b" font-size="11" font-family="'DM Mono',monospace">Sortie</text>
+
+          <!-- Entrée audio -->
+          <text x="75" y="80" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">🎵 Mélange</text>
+          <text x="75" y="100" text-anchor="middle" fill="#64748b" font-size="10">x = s₁+s₂+…</text>
+          <!-- Requête texte -->
+          <text x="75" y="130" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">💬 Requête</text>
+          <text x="75" y="150" text-anchor="middle" fill="#64748b" font-size="10">"Isole la guitare"</text>
+
+          <!-- Flèches vers encodeur -->
+          <line x1="141" y1="85" x2="174" y2="85" stroke="#63b3ed" stroke-width="1.5" marker-end="url(#arr)"/>
+          <line x1="141" y1="140" x2="174" y2="140" stroke="#b794f4" stroke-width="1.5" marker-end="url(#arr2)"/>
+
+          <!-- Encodeur -->
+          <text x="240" y="80" text-anchor="middle" fill="#63b3ed" font-size="11">Audio Encoder</text>
+          <text x="240" y="97" text-anchor="middle" fill="#64748b" font-size="9">(CNN/Transformer)</text>
+          <rect x="190" y="107" width="100" height="18" rx="3" fill="#63b3ed" fill-opacity="0.15" stroke="#63b3ed" stroke-opacity="0.3" stroke-width="1"/>
+          <text x="240" y="120" text-anchor="middle" fill="#90cdf4" font-size="9">zₐ ∈ ℝᵈ</text>
+          <text x="240" y="142" text-anchor="middle" fill="#b794f4" font-size="11">Text Encoder</text>
+          <text x="240" y="159" text-anchor="middle" fill="#64748b" font-size="9">(CLAP / BERT)</text>
+
+          <!-- Flèche encodeur → réseau -->
+          <line x1="305" y1="100" x2="338" y2="100" stroke="#63b3ed" stroke-width="1.5" marker-end="url(#arr)"/>
+          <line x1="305" y1="150" x2="338" y2="150" stroke="#b794f4" stroke-width="1.5" marker-end="url(#arr2)"/>
+
+          <!-- Réseau séparation -->
+          <text x="440" y="75" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="700">U-Net / Transformer</text>
+          <text x="440" y="92" text-anchor="middle" fill="#64748b" font-size="9">conditioning par cross-attention</text>
+          <!-- Mini visualisation attention -->
+          <rect x="370" y="102" width="140" height="40" rx="4" fill="#0b0f1a"/>
+          <text x="440" y="118" text-anchor="middle" fill="#63b3ed" font-size="9" font-family="'DM Mono',monospace">z_text → Cross-Attention</text>
+          <text x="440" y="133" text-anchor="middle" fill="#b794f4" font-size="9" font-family="'DM Mono',monospace">↓  Masque M ∈ [0,1]ᴴˣᵂ</text>
+          <text x="440" y="155" text-anchor="middle" fill="#64748b" font-size="9">ŝₜ = M ⊙ Spectrogram(x)</text>
+
+          <!-- Flèche réseau → sortie -->
+          <line x1="541" y1="100" x2="574" y2="100" stroke="#68d391" stroke-width="1.5" marker-end="url(#arr3)"/>
+
+          <!-- Sortie -->
+          <text x="672" y="75" text-anchor="middle" fill="#68d391" font-size="12" font-weight="700">🎯 Source isolée</text>
+          <text x="672" y="92" text-anchor="middle" fill="#64748b" font-size="9">ŝₜ ≈ sₜ</text>
+          <rect x="600" y="100" width="145" height="30" rx="4" fill="#68d391" fill-opacity="0.08" stroke="#68d391" stroke-opacity="0.3" stroke-width="1"/>
+          <text x="672" y="119" text-anchor="middle" fill="#68d391" font-size="9">Signal audio reconstruit</text>
+          <text x="672" y="148" text-anchor="middle" fill="#64748b" font-size="8">SDR / SI-SDR / PESQ mesuré</text>
+
+          <!-- Markers -->
+          <defs>
+            <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#63b3ed"/>
+            </marker>
+            <marker id="arr2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#b794f4"/>
+            </marker>
+            <marker id="arr3" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#68d391"/>
+            </marker>
+          </defs>
+        </svg>
+        <div class="figure-caption"><strong>Figure 1.</strong> Pipeline général d'un système LASS. L'encodeur audio produit une représentation du mélange, l'encodeur de texte (CLAP/BERT) encode la requête. Le réseau de séparation utilise le vecteur textuel pour conditionner un masque appliqué au spectrogramme.</div>
+      </div>
+
+      <h2>L'espace latent commun texte-audio</h2>
+      <p>
+        Le mécanisme central du LASS repose sur un <strong>alignement multimodal</strong> : encoder le texte et l'audio dans un même espace vectoriel, de sorte que "guitare acoustique" et le son d'une guitare acoustique soient proches dans cet espace. C'est exactement ce que font les modèles de type <strong>CLAP</strong> (Contrastive Language-Audio Pretraining).
+      </p>
+
+      <div class="figure">
+        <svg viewBox="0 0 740 230" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:'Outfit',sans-serif;">
+          <!-- Espace latent -->
+          <ellipse cx="370" cy="115" rx="270" ry="95" fill="none" stroke="#63b3ed" stroke-width="1" stroke-dasharray="5,4" stroke-opacity="0.3"/>
+          <text x="370" y="15" text-anchor="middle" fill="#64748b" font-size="11" font-family="'DM Mono',monospace">Espace latent partagé (dimension d)</text>
+
+          <!-- Points audio -->
+          <circle cx="280" cy="80" r="8" fill="#63b3ed" fill-opacity="0.8"/>
+          <text x="280" y="65" text-anchor="middle" fill="#90cdf4" font-size="9">🎸 guitare</text>
+
+          <circle cx="340" cy="140" r="8" fill="#63b3ed" fill-opacity="0.8"/>
+          <text x="340" y="125" text-anchor="middle" fill="#90cdf4" font-size="9">🥁 drums</text>
+
+          <circle cx="450" cy="90" r="8" fill="#63b3ed" fill-opacity="0.8"/>
+          <text x="450" y="75" text-anchor="middle" fill="#90cdf4" font-size="9">🚒 sirène</text>
+
+          <circle cx="420" cy="155" r="8" fill="#63b3ed" fill-opacity="0.8"/>
+          <text x="420" y="170" text-anchor="middle" fill="#90cdf4" font-size="9">🐦 oiseau</text>
+
+          <!-- Points texte (proches des audios correspondants) -->
+          <circle cx="295" cy="88" r="6" fill="#b794f4" fill-opacity="0.9"/>
+          <text x="295" y="103" text-anchor="middle" fill="#d6bcfa" font-size="8">"guitar"</text>
+
+          <circle cx="355" cy="133" r="6" fill="#b794f4" fill-opacity="0.9"/>
+          <text x="355" y="148" text-anchor="middle" fill="#d6bcfa" font-size="8">"drums"</text>
+
+          <circle cx="462" cy="97" r="6" fill="#b794f4" fill-opacity="0.9"/>
+          <text x="462" y="112" text-anchor="middle" fill="#d6bcfa" font-size="8">"siren"</text>
+
+          <circle cx="433" cy="148" r="6" fill="#b794f4" fill-opacity="0.9"/>
+          <text x="433" y="163" text-anchor="middle" fill="#d6bcfa" font-size="8">"bird"</text>
+
+          <!-- Lignes de proximité -->
+          <line x1="280" y1="80" x2="295" y2="88" stroke="#f6c90e" stroke-width="1.5" stroke-opacity="0.6"/>
+          <line x1="340" y1="140" x2="355" y2="133" stroke="#f6c90e" stroke-width="1.5" stroke-opacity="0.6"/>
+          <line x1="450" y1="90" x2="462" y2="97" stroke="#f6c90e" stroke-width="1.5" stroke-opacity="0.6"/>
+          <line x1="420" y1="155" x2="433" y2="148" stroke="#f6c90e" stroke-width="1.5" stroke-opacity="0.6"/>
+
+          <!-- Légende -->
+          <circle cx="60" cy="190" r="6" fill="#63b3ed" fill-opacity="0.8"/>
+          <text x="73" y="195" fill="#94a3b8" font-size="10">Embeddings audio</text>
+          <circle cx="60" cy="210" r="5" fill="#b794f4" fill-opacity="0.9"/>
+          <text x="73" y="215" fill="#94a3b8" font-size="10">Embeddings texte</text>
+          <line x1="55" y1="228" x2="70" y2="228" stroke="#f6c90e" stroke-width="1.5"/>
+          <text x="73" y="232" fill="#94a3b8" font-size="10">Paires positives (contrastives)</text>
+
+          <!-- Encodeurs gauche/droite -->
+          <rect x="10" y="80" width="100" height="50" rx="8" fill="#1a2235" stroke="#63b3ed" stroke-width="1" stroke-opacity="0.4"/>
+          <text x="60" y="100" text-anchor="middle" fill="#90cdf4" font-size="10" font-weight="600">Audio Encoder</text>
+          <text x="60" y="115" text-anchor="middle" fill="#64748b" font-size="8">(CNN / AST)</text>
+          <text x="60" y="128" text-anchor="middle" fill="#64748b" font-size="8">zₐ = Enc_a(x)</text>
+
+          <rect x="625" y="80" width="105" height="50" rx="8" fill="#1a2235" stroke="#b794f4" stroke-width="1" stroke-opacity="0.4"/>
+          <text x="677" y="100" text-anchor="middle" fill="#d6bcfa" font-size="10" font-weight="600">Text Encoder</text>
+          <text x="677" y="115" text-anchor="middle" fill="#64748b" font-size="8">(BERT / T5)</text>
+          <text x="677" y="128" text-anchor="middle" fill="#64748b" font-size="8">z_t = Enc_t(q)</text>
+
+          <line x1="110" y1="105" x2="230" y2="100" stroke="#63b3ed" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5" marker-end="url(#arr)"/>
+          <line x1="625" y1="105" x2="510" y2="100" stroke="#b794f4" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5" marker-end="url(#arr2)"/>
+        </svg>
+        <div class="figure-caption"><strong>Figure 2.</strong> Apprentissage contrastif CLAP. Les paires (audio, description textuelle) sont rapprochées dans l'espace latent (perte InfoNCE), tandis que les paires non correspondantes sont éloignées. La proximité cosinus entre z_t et zₐ permet ensuite de guider la séparation.</div>
+      </div>
+
+      <h2>Architectures principales</h2>
+      <p>
+        Deux familles d'architectures dominent la littérature LASS :
+      </p>
+
+      <h3>U-Net conditionnel</h3>
+      <p>
+        Inspiré de la segmentation d'image, le <strong>U-Net audio</strong> opère sur le spectrogramme log-mel. L'encodeur compresse le signal en une représentation latente ; le décodeur reconstruit le spectrogramme de la source cible. Le conditionnement textuel se fait via <strong>FiLM (Feature-wise Linear Modulation)</strong> ou cross-attention à chaque niveau de l'encodeur.
+      </p>
+
+      <h3>Transformer séquentiel</h3>
+      <p>
+        Des modèles comme <strong>AudioSep</strong> utilisent un Transformer (ResUNet + QueryNet) où la requête textuelle sert de token de conditionnement dans les blocs d'attention. Cela permet une modélisation plus fine des dépendances à longue distance dans le signal audio.
+      </p>
+
+      <!-- FIGURE 3 : Architecture U-Net conditionnel -->
+      <div class="figure">
+        <svg viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:'Outfit',sans-serif;">
+          <!-- Titre -->
+          <text x="380" y="16" text-anchor="middle" fill="#64748b" font-size="10" font-family="'DM Mono',monospace">Architecture U-Net conditionnel pour LASS</text>
+
+          <!-- Encodeur (gauche → bas) -->
+          <!-- Conv Block 1 -->
+          <rect x="30" y="30" width="80" height="35" rx="5" fill="#1a2235" stroke="#63b3ed" stroke-width="1.5"/>
+          <text x="70" y="47" text-anchor="middle" fill="#90cdf4" font-size="9" font-weight="600">Conv Block 1</text>
+          <text x="70" y="58" text-anchor="middle" fill="#64748b" font-size="8">H×W×64</text>
+
+          <!-- Conv Block 2 -->
+          <rect x="30" y="90" width="80" height="35" rx="5" fill="#1a2235" stroke="#63b3ed" stroke-width="1.5"/>
+          <text x="70" y="107" text-anchor="middle" fill="#90cdf4" font-size="9" font-weight="600">Conv Block 2</text>
+          <text x="70" y="118" text-anchor="middle" fill="#64748b" font-size="8">H/2×W/2×128</text>
+
+          <!-- Bottleneck -->
+          <rect x="30" y="155" width="80" height="40" rx="5" fill="#0b0f1a" stroke="#f6c90e" stroke-width="2"/>
+          <text x="70" y="173" text-anchor="middle" fill="#f6c90e" font-size="9" font-weight="700">Bottleneck</text>
+          <text x="70" y="186" text-anchor="middle" fill="#64748b" font-size="8">H/4×W/4×256</text>
+
+          <!-- Flèches encodeur -->
+          <line x1="70" y1="65" x2="70" y2="89" stroke="#63b3ed" stroke-width="1.5" marker-end="url(#arr)"/>
+          <line x1="70" y1="125" x2="70" y2="154" stroke="#63b3ed" stroke-width="1.5" marker-end="url(#arr)"/>
+
+          <!-- FiLM conditioning (depuis texte) -->
+          <rect x="300" y="30" width="160" height="170" rx="8" fill="#111827" stroke="#b794f4" stroke-width="1.5" stroke-dasharray="5,3"/>
+          <text x="380" y="50" text-anchor="middle" fill="#b794f4" font-size="10" font-weight="600">Text Conditioning</text>
+          <text x="380" y="66" text-anchor="middle" fill="#64748b" font-size="8">(FiLM / Cross-Attention)</text>
+
+          <rect x="320" y="78" width="120" height="28" rx="4" fill="#1a2235" stroke="#b794f4" stroke-opacity="0.4"/>
+          <text x="380" y="94" text-anchor="middle" fill="#d6bcfa" font-size="8">γ, β = Linear(z_text)</text>
+          <text x="380" y="106" text-anchor="middle" fill="#64748b" font-size="7">y = γ ⊙ Norm(x) + β</text>
+
+          <rect x="320" y="118" width="120" height="28" rx="4" fill="#1a2235" stroke="#b794f4" stroke-opacity="0.4"/>
+          <text x="380" y="134" text-anchor="middle" fill="#d6bcfa" font-size="8">Injected at each level</text>
+          <text x="380" y="146" text-anchor="middle" fill="#64748b" font-size="7">enc1, enc2, bottleneck</text>
+
+          <rect x="320" y="158" width="120" height="28" rx="4" fill="#1a2235" stroke="#b794f4" stroke-opacity="0.4"/>
+          <text x="380" y="174" text-anchor="middle" fill="#d6bcfa" font-size="8">z_text ∈ ℝ⁵¹²</text>
+          <text x="380" y="186" text-anchor="middle" fill="#64748b" font-size="7">CLAP text encoder</text>
+
+          <!-- Skip connections -->
+          <line x1="110" y1="47" x2="590" y2="107" stroke="#f6c90e" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5"/>
+          <line x1="110" y1="107" x2="590" y2="47" stroke="#f6c90e" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5"/>
+          <text x="350" y="78" fill="#f6c90e" font-size="8" text-anchor="middle" fill-opacity="0.7">skip connections</text>
+
+          <!-- Décodeur (haut → droite) -->
+          <rect x="600" y="30" width="80" height="35" rx="5" fill="#1a2235" stroke="#68d391" stroke-width="1.5"/>
+          <text x="640" y="47" text-anchor="middle" fill="#68d391" font-size="9" font-weight="600">Conv Block 4</text>
+          <text x="640" y="58" text-anchor="middle" fill="#64748b" font-size="8">H×W×64</text>
+
+          <rect x="600" y="90" width="80" height="35" rx="5" fill="#1a2235" stroke="#68d391" stroke-width="1.5"/>
+          <text x="640" y="107" text-anchor="middle" fill="#68d391" font-size="9" font-weight="600">Conv Block 3</text>
+          <text x="640" y="118" text-anchor="middle" fill="#64748b" font-size="8">H/2×W/2×128</text>
+
+          <rect x="600" y="155" width="80" height="40" rx="5" fill="#0b0f1a" stroke="#68d391" stroke-width="2"/>
+          <text x="640" y="172" text-anchor="middle" fill="#68d391" font-size="9" font-weight="700">Masque</text>
+          <text x="640" y="185" text-anchor="middle" fill="#64748b" font-size="8">M ∈ [0,1]</text>
+
+          <!-- Flèches décodeur -->
+          <line x1="640" y1="154" x2="640" y2="126" stroke="#68d391" stroke-width="1.5" marker-end="url(#arr3)"/>
+          <line x1="640" y1="89" x2="640" y2="66" stroke="#68d391" stroke-width="1.5" marker-end="url(#arr3)"/>
+
+          <!-- Bottleneck → décodeur -->
+          <line x1="110" y1="175" x2="598" y2="175" stroke="#f6c90e" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#arrg)"/>
+
+          <!-- Sortie -->
+          <text x="640" y="210" text-anchor="middle" fill="#94a3b8" font-size="9">ŝₜ = M ⊙ STFT(x)</text>
+
+          <defs>
+            <marker id="arrg" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#f6c90e" fill-opacity="0.7"/>
+            </marker>
+          </defs>
+        </svg>
+        <div class="figure-caption"><strong>Figure 3.</strong> U-Net conditionnel pour LASS. L'encodeur extrait des features multi-échelles du spectrogramme ; le vecteur textuel z_text injecte son information via FiLM ou cross-attention. Les skip connections transmettent les features haute résolution au décodeur, qui produit un masque temps-fréquence.</div>
+      </div>
+
+      <h2>Modèles fondateurs</h2>
+      <table class="model-table">
+        <thead>
+          <tr>
+            <th>Modèle</th>
+            <th>Année</th>
+            <th>Architecture</th>
+            <th>Conditioning</th>
+            <th>Contribution clé</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CLAP</td>
+            <td>2022</td>
+            <td>HTSAT + RoBERTa</td>
+            <td>—</td>
+            <td>Alignement contrastif texte-audio à grande échelle (128K clips)</td>
+          </tr>
+          <tr>
+            <td>AudioSep</td>
+            <td>2023</td>
+            <td>ResUNet + QueryNet</td>
+            <td>Cross-attention</td>
+            <td>Premier modèle de fondation LASS universel, open-source</td>
+          </tr>
+          <tr>
+            <td>SoundBeam</td>
+            <td>2023</td>
+            <td>Transformer Encoder</td>
+            <td>FiLM</td>
+            <td>Séparation multi-canal avec requêtes textuelles libres</td>
+          </tr>
+          <tr>
+            <td>AudioLDM 2</td>
+            <td>2023</td>
+            <td>Latent Diffusion</td>
+            <td>Cross-attention</td>
+            <td>Génération et séparation dans un espace latent partagé</td>
+          </tr>
+          <tr>
+            <td>WavJourney</td>
+            <td>2023</td>
+            <td>LLM + AudioSep</td>
+            <td>Prompting</td>
+            <td>Pipeline LLM → séparation → composition audio</td>
+          </tr>
+          <tr>
+            <td>EzAudio</td>
+            <td>2024</td>
+            <td>DiT (Diffusion Transformer)</td>
+            <td>Cross-attention</td>
+            <td>Séparation et édition avec instructions en langage naturel</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Métriques d'évaluation</h2>
+      <div class="info-box purple">
+        <p>Les modèles LASS sont évalués sur des benchmarks comme <strong>MUSDB18</strong> (musique), <strong>ESC-50</strong> (sons environnementaux), <strong>FSDSounBank</strong> et <strong>AudioCaps</strong>. Les métriques principales sont le <strong>SDR</strong> (Signal-to-Distortion Ratio), le <strong>SI-SDR</strong> (Scale-Invariant SDR), et le <strong>PESQ</strong> (Perceptual Evaluation of Speech Quality) pour la parole.</p>
+      </div>
+
+      <!-- FIGURE 4 : Métriques -->
+      <div class="figure">
+        <svg viewBox="0 0 700 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:'Outfit',sans-serif;">
+          <!-- SDR -->
+          <rect x="20" y="20" width="190" height="120" rx="10" fill="#1a2235" stroke="#63b3ed" stroke-opacity="0.3" stroke-width="1"/>
+          <text x="115" y="45" text-anchor="middle" fill="#90cdf4" font-size="12" font-weight="700">SDR</text>
+          <text x="115" y="62" text-anchor="middle" fill="#64748b" font-size="8">Signal-to-Distortion Ratio</text>
+          <text x="115" y="90" text-anchor="middle" fill="#e2e8f0" font-size="10" font-family="'DM Mono',monospace">10 log₁₀(‖s‖² / ‖s−ŝ‖²)</text>
+          <text x="115" y="112" text-anchor="middle" fill="#64748b" font-size="8">Mesure globale du bruit de</text>
+          <text x="115" y="124" text-anchor="middle" fill="#64748b" font-size="8">distorsion et d'interférence</text>
+
+          <!-- SI-SDR -->
+          <rect x="255" y="20" width="190" height="120" rx="10" fill="#1a2235" stroke="#b794f4" stroke-opacity="0.3" stroke-width="1"/>
+          <text x="350" y="45" text-anchor="middle" fill="#d6bcfa" font-size="12" font-weight="700">SI-SDR</text>
+          <text x="350" y="62" text-anchor="middle" fill="#64748b" font-size="8">Scale-Invariant SDR</text>
+          <text x="350" y="90" text-anchor="middle" fill="#e2e8f0" font-size="10" font-family="'DM Mono',monospace">SDR(αs, ŝ) ∀α ∈ ℝ</text>
+          <text x="350" y="112" text-anchor="middle" fill="#64748b" font-size="8">Invariant aux différences</text>
+          <text x="350" y="124" text-anchor="middle" fill="#64748b" font-size="8">d'amplitude (plus robuste)</text>
+
+          <!-- PESQ -->
+          <rect x="490" y="20" width="190" height="120" rx="10" fill="#1a2235" stroke="#68d391" stroke-opacity="0.3" stroke-width="1"/>
+          <text x="585" y="45" text-anchor="middle" fill="#68d391" font-size="12" font-weight="700">PESQ / STOI</text>
+          <text x="585" y="62" text-anchor="middle" fill="#64748b" font-size="8">Qualité perceptuelle</text>
+          <text x="585" y="90" text-anchor="middle" fill="#e2e8f0" font-size="10" font-family="'DM Mono',monospace">Score ∈ [1, 4.5]</text>
+          <text x="585" y="112" text-anchor="middle" fill="#64748b" font-size="8">Corrèle avec la perception</text>
+          <text x="585" y="124" text-anchor="middle" fill="#64748b" font-size="8">humaine de la qualité</text>
+        </svg>
+        <div class="figure-caption"><strong>Figure 4.</strong> Les trois métriques principales pour évaluer la qualité de la source séparée. Un modèle LASS performant vise >15 dB de SDR sur MUSDB18 et >3.5 de PESQ sur les tâches de parole.</div>
+      </div>
+
+      <h2>Défis ouverts</h2>
+
+      <div class="info-box green">
+        <p><strong>Généralisation out-of-distribution.</strong> Les modèles LASS peinent à séparer des sons non vus à l'entraînement, notamment lorsque la requête textuelle décrit un concept abstrait ("le son de la peur") plutôt qu'une classe sonore précise.</p>
+      </div>
+
+      <div class="info-box purple">
+        <p><strong>Polysémie textuelle.</strong> La même description peut couvrir des sons très différents selon le contexte. "Basse" peut désigner un instrument ou une fréquence. L'ambiguïté linguistique reste un problème ouvert dans le conditionnement textuel.</p>
+      </div>
+
+      <div class="info-box">
+        <p><strong>Séparation multi-cibles.</strong> La plupart des modèles actuels sont mono-requête. Séparer simultanément plusieurs sources décrites par des requêtes différentes (ex. "la guitare ET le chant") reste un challenge architectural.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== PAGE : PROCESSUS DE VEILLE ========== -->
+  <div class="page" id="page-process">
+    <div class="process-layout">
+      <h2>Le Processus de veille</h2>
+      <p>
+        Cette page est mise à jour automatiquement chaque jour à 6h00 UTC via GitHub Actions. Le pipeline agrège des publications depuis <strong>quatre sources scientifiques</strong>, filtre par mots-clés thématiques, déduplique et publie sur GitHub Pages. Aucun serveur externe, aucune base de données payante.
+      </p>
+
+      <h2>Sources agrégées</h2>
+      <div class="sources-grid">
+        <div class="source-card">
+          <div class="source-card-header">
+            <span class="source-icon">📄</span>
+            <div>
+              <div class="source-name">arXiv</div>
+              <div class="source-type">Preprints · API officielle</div>
+            </div>
+          </div>
+          <div class="source-detail">
+            API REST <code>export.arxiv.org</code>. Requêtes sur les catégories <strong>cs.SD</strong> (Sound), <strong>eess.AS</strong> (Audio), <strong>cs.CL</strong> (NLP). Retourne titres, auteurs, résumés, PDF. Quota gratuit illimité.
+          </div>
+        </div>
+
+        <div class="source-card">
+          <div class="source-card-header">
+            <span class="source-icon">🎓</span>
+            <div>
+              <div class="source-name">Google Scholar</div>
+              <div class="source-type">Publications académiques · SerpAPI / scholarly</div>
+            </div>
+          </div>
+          <div class="source-detail">
+            Via la librairie Python <strong>scholarly</strong> (scraping) ou <strong>SerpAPI</strong> (payant, plus fiable). Accès aux citations, indices h, revues peer-reviewed absentes d'arXiv (IEEE, ACM, ISCA/Interspeech).
+          </div>
+        </div>
+
+        <div class="source-card">
+          <div class="source-card-header">
+            <span class="source-icon">🔬</span>
+            <div>
+              <div class="source-name">Semantic Scholar</div>
+              <div class="source-type">Graph sémantique · API officielle gratuite</div>
+            </div>
+          </div>
+          <div class="source-detail">
+            API REST officielle <code>api.semanticscholar.org</code>. Fournit en plus des citations croisées, l'influence académique (<em>influential citations</em>) et des recommandations basées sur le graphe de citations. Clé API gratuite, 100 req/5min.
+          </div>
+        </div>
+
+        <div class="source-card">
+          <div class="source-card-header">
+            <span class="source-icon">⚡</span>
+            <div>
+              <div class="source-name">IEEE Xplore</div>
+              <div class="source-type">Conférences & revues · API officielle</div>
+            </div>
+          </div>
+          <div class="source-detail">
+            API <code>ieeexplore.ieee.org/rest/search</code>. Indispensable pour couvrir <strong>ICASSP</strong>, <strong>ICLR</strong>, <strong>Interspeech</strong>, <strong>WASPAA</strong> — les conférences majeures du traitement du signal audio. Clé API gratuite (200 req/jour).
+          </div>
+        </div>
+      </div>
+
+      <h2>Base de mots-clés</h2>
+      <p>Le script Python utilise une base de mots-clés structurée en groupes thématiques. Chaque requête vers une API combine les termes d'un groupe via des opérateurs booléens.</p>
+
+      <div class="kw-db">
+        <div class="kw-group">
+          <div class="kw-group-title">🔵 Termes cœur (groupe A) — requis dans toutes les requêtes</div>
+          <div class="kw-list">
+            <span class="kw-tag kw-core">Language-Augmented Audio Source Separation</span>
+            <span class="kw-tag kw-core">LASS</span>
+            <span class="kw-tag kw-core">text-queried audio separation</span>
+            <span class="kw-tag kw-core">text-based sound separation</span>
+            <span class="kw-tag kw-core">natural language audio</span>
+            <span class="kw-tag kw-core">query-based source separation</span>
+          </div>
+        </div>
+        <div class="kw-group">
+          <div class="kw-group-title">🟡 Modèles (groupe B)</div>
+          <div class="kw-list">
+            <span class="kw-tag kw-model">AudioSep</span>
+            <span class="kw-tag kw-model">CLAP</span>
+            <span class="kw-tag kw-model">AudioLDM</span>
+            <span class="kw-tag kw-model">MixIT</span>
+            <span class="kw-tag kw-model">SoundBeam</span>
+            <span class="kw-tag kw-model">EzAudio</span>
+            <span class="kw-tag kw-model">WavJourney</span>
+            <span class="kw-tag kw-model">UniAudio</span>
+            <span class="kw-tag kw-model">LASSNet</span>
+          </div>
+        </div>
+        <div class="kw-group">
+          <div class="kw-group-title">🟣 Méthodes (groupe C)</div>
+          <div class="kw-list">
+            <span class="kw-tag kw-method">contrastive language audio pretraining</span>
+            <span class="kw-tag kw-method">universal sound separation</span>
+            <span class="kw-tag kw-method">conditional source separation</span>
+            <span class="kw-tag kw-method">FiLM conditioning audio</span>
+            <span class="kw-tag kw-method">cross-attention audio</span>
+            <span class="kw-tag kw-method">audio spectrogram transformer</span>
+            <span class="kw-tag kw-method">mask-based separation</span>
+            <span class="kw-tag kw-method">blind source separation NLP</span>
+          </div>
+        </div>
+        <div class="kw-group">
+          <div class="kw-group-title">🟢 Applications (groupe D)</div>
+          <div class="kw-list">
+            <span class="kw-tag kw-app">music source separation text</span>
+            <span class="kw-tag kw-app">speech enhancement language</span>
+            <span class="kw-tag kw-app">environmental sound separation</span>
+            <span class="kw-tag kw-app">sound event detection text</span>
+            <span class="kw-tag kw-app">audio foundation model</span>
+            <span class="kw-tag kw-app">multimodal audio separation</span>
+            <span class="kw-tag kw-app">foley sound text-driven</span>
+          </div>
+        </div>
+      </div>
+
+      <h2>Pipeline technique complet</h2>
+
+      <div class="pipeline">
+        <div class="pipeline-step">
+          <div class="step-dot">01</div>
+          <div class="step-content">
+            <div class="step-title">Déclenchement — GitHub Actions <span class="step-badge">cron: 0 6 * * *</span></div>
+            <div class="step-desc">Le workflow YAML se déclenche chaque jour à 6h00 UTC. Il provisionne un runner Ubuntu, installe Python 3.11 et les dépendances (<code>requirements.txt</code>).</div>
+          </div>
+        </div>
+
+        <div class="pipeline-step">
+          <div class="step-dot">02</div>
+          <div class="step-content">
+            <div class="step-title">Scraping multi-sources <span class="step-badge">fetch_papers.py</span></div>
+            <div class="step-desc">Le script interroge en parallèle : arXiv API, Semantic Scholar API, IEEE Xplore API et Google Scholar (via <em>scholarly</em>). Pour chaque source, les requêtes combinent les termes des groupes A+B et A+C. Les résultats bruts sont mis en file.</div>
+          </div>
+        </div>
+
+        <div class="pipeline-step">
+          <div class="step-dot">03</div>
+          <div class="step-content">
+            <div class="step-title">Filtrage & scoring <span class="step-badge">filter.py</span></div>
+            <div class="step-desc">Chaque article reçoit un score de pertinence basé sur la présence de mots-clés dans le titre (×3) et le résumé (×1). Seuls les articles avec un score ≥ 2 sont retenus. Les doublons (même DOI ou titre similaire à 90%) sont supprimés.</div>
+          </div>
+        </div>
+
+        <div class="pipeline-step">
+          <div class="step-dot">04</div>
+          <div class="step-content">
+            <div class="step-title">Génération JSON <span class="step-badge">data/lass_papers.json</span></div>
+            <div class="step-desc">Les 25 meilleurs articles (par score × récence) sont sérialisés en JSON avec les champs : <code>title</code>, <code>authors</code>, <code>date</code>, <code>summary</code>, <code>url</code>, <code>source</code>, <code>tags</code>. Le fichier est committé directement dans le repo.</div>
+          </div>
+        </div>
+
+        <div class="pipeline-step">
+          <div class="step-dot">05</div>
+          <div class="step-content">
+            <div class="step-title">Commit & déploiement <span class="step-badge">gh-pages</span></div>
+            <div class="step-desc">Le bot GitHub Actions commit le JSON mis à jour. GitHub Pages redéploie automatiquement. La page est accessible en quelques secondes après le commit. Le <code>last-update</code> est inscrit dans le JSON.</div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Schéma d'infrastructure</h2>
+      <div class="figure">
+        <svg viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;font-family:'Outfit',sans-serif;">
+          <!-- Sources -->
+          <rect x="10" y="30" width="80" height="36" rx="6" fill="#1a2235" stroke="#f6c90e" stroke-opacity="0.5" stroke-width="1.5"/>
+          <text x="50" y="51" text-anchor="middle" fill="#f6c90e" font-size="10" font-weight="600">arXiv API</text>
+
+          <rect x="10" y="82" width="80" height="36" rx="6" fill="#1a2235" stroke="#63b3ed" stroke-opacity="0.5" stroke-width="1.5"/>
+          <text x="50" y="103" text-anchor="middle" fill="#90cdf4" font-size="10" font-weight="600">Scholar</text>
+
+          <rect x="10" y="134" width="80" height="36" rx="6" fill="#1a2235" stroke="#b794f4" stroke-opacity="0.5" stroke-width="1.5"/>
+          <text x="50" y="152" text-anchor="middle" fill="#d6bcfa" font-size="9" font-weight="600">Semantic S.</text>
+
+          <rect x="10" y="0" width="80" height="26" rx="6" fill="#1a2235" stroke="#68d391" stroke-opacity="0.5" stroke-width="1.5"/>
+          <text x="50" y="17" text-anchor="middle" fill="#68d391" font-size="10" font-weight="600">IEEE API</text>
+
+          <!-- Flèches sources → script -->
+          <line x1="90" y1="13" x2="178" y2="75" stroke="#68d391" stroke-width="1" stroke-opacity="0.5" marker-end="url(#arr3)"/>
+          <line x1="90" y1="48" x2="178" y2="85" stroke="#f6c90e" stroke-width="1" stroke-opacity="0.5" marker-end="url(#arrg)"/>
+          <line x1="90" y1="100" x2="178" y2="95" stroke="#63b3ed" stroke-width="1" stroke-opacity="0.5" marker-end="url(#arr)"/>
+          <line x1="90" y1="152" x2="178" y2="105" stroke="#b794f4" stroke-width="1" stroke-opacity="0.5" marker-end="url(#arr2)"/>
+
+          <!-- Script Python -->
+          <rect x="180" y="55" width="130" height="75" rx="8" fill="#0b0f1a" stroke="#63b3ed" stroke-width="2"/>
+          <text x="245" y="80" text-anchor="middle" fill="#90cdf4" font-size="11" font-weight="700">fetch_papers.py</text>
+          <text x="245" y="96" text-anchor="middle" fill="#64748b" font-size="8">Filtrage · Scoring</text>
+          <text x="245" y="108" text-anchor="middle" fill="#64748b" font-size="8">Déduplication</text>
+          <text x="245" y="120" text-anchor="middle" fill="#64748b" font-size="8">→ lass_papers.json</text>
+
+          <!-- Script → GitHub Actions -->
+          <line x1="310" y1="92" x2="378" y2="92" stroke="#63b3ed" stroke-width="1.5" marker-end="url(#arr)"/>
+
+          <!-- GitHub Actions -->
+          <rect x="380" y="55" width="120" height="75" rx="8" fill="#1a2235" stroke="#f6c90e" stroke-width="1.5"/>
+          <text x="440" y="80" text-anchor="middle" fill="#f6c90e" font-size="11" font-weight="700">GitHub Actions</text>
+          <text x="440" y="97" text-anchor="middle" fill="#64748b" font-size="8">cron: 0 6 * * *</text>
+          <text x="440" y="109" text-anchor="middle" fill="#64748b" font-size="8">Ubuntu runner</text>
+          <text x="440" y="121" text-anchor="middle" fill="#64748b" font-size="8">git commit & push</text>
+
+          <!-- Actions → Pages -->
+          <line x1="500" y1="92" x2="568" y2="92" stroke="#f6c90e" stroke-width="1.5" marker-end="url(#arrg)"/>
+
+          <!-- GitHub Pages -->
+          <rect x="570" y="55" width="140" height="75" rx="8" fill="#1a2235" stroke="#68d391" stroke-width="1.5"/>
+          <text x="640" y="78" text-anchor="middle" fill="#68d391" font-size="11" font-weight="700">GitHub Pages</text>
+          <text x="640" y="95" text-anchor="middle" fill="#64748b" font-size="8">index.html</text>
+          <text x="640" y="107" text-anchor="middle" fill="#64748b" font-size="8">fetch(lass_papers.json)</text>
+          <text x="640" y="119" text-anchor="middle" fill="#64748b" font-size="8">→ Affichage dynamique</text>
+          <text x="640" y="143" text-anchor="middle" fill="#90cdf4" font-size="9">🌐 adrienav4-tech.github.io</text>
+          <text x="640" y="156" text-anchor="middle" fill="#64748b" font-size="7">/LASS_veille</text>
+
+          <!-- Cycle label -->
+          <text x="245" y="175" text-anchor="middle" fill="#64748b" font-size="9" font-family="'DM Mono',monospace">⟳ Cycle : toutes les 24h</text>
+        </svg>
+        <div class="figure-caption"><strong>Schéma d'infrastructure.</strong> Pipeline entièrement serverless sur GitHub. Le seul coût potentiel est la clé SerpAPI pour Google Scholar (plan gratuit : 100 req/mois).</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script>
+
+function showPage(name, btn) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  closeSidebar();
+ 
+  window.scrollTo(0, 0);
+}
+
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+  sidebar.classList.toggle('open');
+  overlay.classList.toggle('active');
+}
+
+function closeSidebar() {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('overlay').classList.remove('active');
+}
+
+let allPapers = [];
+
+async function fetchPapers() {
+  const container = document.getElementById('papers-list');
+  try {
+    const response = await fetch('data/lass_papers.json');
+    if (!response.ok) throw new Error('JSON non trouvé');
+    allPapers = await response.json();
+
+   document.getElementById('count-badge').textContent = allPapers.length;
+    document.getElementById('stat-papers').textContent = allPapers.length;
+
+    if (allPapers.length > 0 && allPapers[0].date) {
+      document.getElementById('last-update').textContent = allPapers[0].date;
+    }
+
+    renderPapers(allPapers);
+  } catch (e) {
+    container.innerHTML = `
+      <div style="text-align:center;padding:3rem;color:var(--muted);">
+        <div style="font-size:2rem;margin-bottom:1rem;">📭</div>
+        <div style="font-family:'DM Mono',monospace;font-size:0.8rem;">Impossible de charger les données.</div>
+        <div style="font-size:0.78rem;margin-top:0.5rem;">Vérifiez que le script Python a généré <code>data/lass_papers.json</code></div>
+      </div>`;
+    document.getElementById('count-badge').textContent = '0';
+    document.getElementById('stat-papers').textContent = '—';
+  }
+}
+
+function renderPapers(papers) {
+  const container = document.getElementById('papers-list');
+  if (papers.length === 0) {
+    container.innerHTML = '<div class="loading-state">Aucune publication trouvée pour ce filtre.</div>';
+    return;
+  }
+
+  container.innerHTML = papers.map(p => {
+    const authors = (p.authors || []).slice(0, 3).join(', ') + ((p.authors || []).length > 3 ? ' <em>et al.</em>' : '');
+    const source = p.source || 'arxiv';
+    const sourceClass = {
+      'arxiv': 'source-arxiv',
+      'scholar': 'source-scholar',
+      'semantic': 'source-semantic',
+      'ieee': 'source-ieee'
+    }[source] || 'source-arxiv';
+    const sourceLabel = {
+      'arxiv': 'arXiv',
+      'scholar': 'Google Scholar',
+      'semantic': 'Semantic Scholar',
+      'ieee': 'IEEE'
+    }[source] || source;
+
+    const tags = (p.tags || []).slice(0, 3).map(t => `<span class="paper-tag">${t}</span>`).join('');
+
+    return `
+      <div class="paper-card" data-source="${source}">
+        <div class="paper-top">
+          <div>
+            <div class="paper-date">${p.date || ''}</div>
+          </div>
+          <span class="paper-source-badge ${sourceClass}">${sourceLabel}</span>
+        </div>
+        <div class="paper-title">${p.title || 'Sans titre'}</div>
+        <div class="paper-authors">${authors}</div>
+        <div class="paper-abstract">${p.summary || p.abstract || 'Résumé non disponible.'}</div>
+        <div class="paper-footer">
+          <div class="paper-tags">${tags}</div>
+          <a href="${p.url || '#'}" target="_blank" class="paper-link">Lire l'article ↗</a>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function filterPapers(source, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  if (source === 'all') {
+    renderPapers(allPapers);
+  } else {
+    renderPapers(allPapers.filter(p => p.source === source));
+  }
+}
+
+fetchPapers();
+</script>
+</body>
+</html>

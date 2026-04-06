@@ -25,42 +25,62 @@ log = logging.getLogger(__name__)
 # ==============================================================
 KEYWORDS = {
     "core": [
+        # Termes longs (matching exact dans les résumés)
         "Language-Augmented Audio Source Separation",
-        "LASS audio",
-        "text-queried audio separation",
+        "LASS",
+        "text-queried audio",
         "text-based sound separation",
         "natural language audio separation",
         "query-based source separation",
+        "language-conditioned audio",
     ],
     "models": [
         "AudioSep",
-        "CLAP audio",
-        "AudioLDM separation",
-        "MixIT separation",
-        "SoundBeam separation",
-        "EzAudio separation",
+        "CLAP",
+        "AudioLDM",
+        "MixIT",
+        "SoundBeam",
+        "EzAudio",
         "WavJourney",
-        "UniAudio separation",
+        "UniAudio",
+        "Whispering",
     ],
     "methods": [
-        "contrastive language audio pretraining",
-        "universal sound separation text",
-        "conditional source separation language",
-        "FiLM conditioning audio",
-        "cross-attention audio separation",
-        "audio spectrogram transformer separation",
-        "mask-based audio separation text",
+        "contrastive language audio",
+        "universal sound separation",
+        "conditional source separation",
+        "audio source separation",
+        "sound source separation",
+        "music source separation",
+        "speech separation",
+        "audio spectrogram transformer",
+        "mask-based separation",
+        "text-driven separation",
     ],
     "applications": [
-        "music source separation text query",
-        "speech enhancement language model",
-        "environmental sound separation text",
-        "audio foundation model separation",
-        "multimodal audio separation",
+        "environmental sound",
+        "audio foundation model",
+        "multimodal audio",
+        "speech enhancement",
+        "music demixing",
+        "foley sound",
     ],
 }
 
-# Toutes les requêtes aplaties
+# Liste plate pour le scoring — on utilise les termes courts
+SCORE_KEYWORDS = [
+    # Score élevé : termes très spécifiques LASS
+    "audio source separation", "sound separation", "source separation",
+    "language-augmented", "text-queried", "text-based sound",
+    "audiosep", "clap", "audioldm", "mixup", "soundbeam",
+    "contrastive language audio", "universal sound separation",
+    # Score moyen : domaine audio général
+    "speech separation", "music separation", "music demixing",
+    "audio foundation", "sound event", "audio generation",
+    "spectrogram", "mel-spectrogram", "stft", "waveform",
+]
+
+# Toutes les requêtes aplaties (pour compatibilité)
 ALL_QUERIES = [q for group in KEYWORDS.values() for q in group]
 
 # ==============================================================
@@ -99,17 +119,20 @@ def normalize_date(date_str: str) -> str:
     return date_str[:10]
 
 
-def relevance_score(paper: dict, keywords: list) -> int:
-    """Score de pertinence basé sur la présence de mots-clés."""
+def relevance_score(paper: dict, keywords: list = None) -> int:
+    """Score de pertinence basé sur SCORE_KEYWORDS (termes courts).
+    Un article arXiv de cs.SD sur la séparation de sources doit scorer >= 1.
+    """
     score = 0
     title = (paper.get("title") or "").lower()
     summary = (paper.get("summary") or "").lower()
-    for kw in keywords:
+    # Utilise toujours SCORE_KEYWORDS — plus court = meilleur matching
+    for kw in SCORE_KEYWORDS:
         kw_low = kw.lower()
         if kw_low in title:
-            score += 3
-        if kw_low in summary:
-            score += 1
+            score += 3   # dans le titre = très pertinent
+        elif kw_low in summary:
+            score += 1   # dans le résumé = pertinent
     return score
 
 
@@ -151,33 +174,56 @@ def tag_paper(paper: dict) -> list:
 # SOURCE 1 : arXiv
 # ==============================================================
 
-def fetch_arxiv(queries: list) -> list:
-    log.info(f"arXiv — {len(queries)} requêtes")
-    papers = []
-    client = arxiv.Client(page_size=10, delay_seconds=1.5)
-    cutoff = datetime.now() - timedelta(days=DAYS_LOOKBACK)
+# Requêtes arXiv optimisées : termes courts + catégories audio
+# On utilise la syntaxe arXiv : ti/abs + catégories cs.SD et eess.AS
+ARXIV_QUERIES = [
+    # Termes cœur LASS — larges, matchent beaucoup
+    'ti:"audio source separation"',
+    'ti:"sound separation"',
+    'abs:"language-augmented" AND abs:"audio"',
+    'abs:"text-queried" AND abs:"audio"',
+    'abs:"text-based" AND abs:"sound separation"',
+    # Modèles connus
+    'ti:"AudioSep"',
+    'abs:"AudioSep"',
+    'ti:"CLAP" AND abs:"audio"',
+    'abs:"contrastive language-audio"',
+    # Méthodes générales audio — catégories ciblées
+    'cat:cs.SD AND abs:"source separation"',
+    'cat:eess.AS AND abs:"source separation"',
+    'cat:cs.SD AND abs:"sound separation"',
+    'cat:cs.SD AND abs:"speech separation"',
+    'cat:cs.SD AND abs:"music separation"',
+    # Foundation models audio
+    'abs:"audio foundation model"',
+    'abs:"universal sound separation"',
+]
 
-    for query in queries[:8]:  # Limite pour éviter le rate-limit
+def fetch_arxiv(queries: list = None) -> list:
+    """queries est ignoré — on utilise ARXIV_QUERIES optimisées."""
+    log.info(f"arXiv — {len(ARXIV_QUERIES)} requêtes optimisées")
+    papers = []
+    client = arxiv.Client(page_size=25, delay_seconds=2.0)
+
+    for query in ARXIV_QUERIES:
         try:
             search = arxiv.Search(
                 query=query,
-                max_results=8,
+                max_results=25,
                 sort_by=arxiv.SortCriterion.SubmittedDate,
                 sort_order=arxiv.SortOrder.Descending,
             )
             for r in client.results(search):
-                if r.published and r.published.replace(tzinfo=None) < cutoff:
-                    continue
                 papers.append({
                     "title": r.title,
                     "authors": [a.name for a in r.authors],
                     "date": r.published.strftime("%Y-%m-%d") if r.published else "",
-                    "summary": r.summary[:500],
+                    "summary": r.summary[:600],
                     "url": r.entry_id,
                     "source": "arxiv",
                     "tags": [],
                 })
-            time.sleep(1.0)
+            time.sleep(2.0)
         except Exception as e:
             log.warning(f"arXiv error [{query}]: {e}")
     log.info(f"arXiv — {len(papers)} résultats bruts")
@@ -389,21 +435,22 @@ def main():
     merged = deduplicate(merged)
     log.info(f"Après déduplication : {len(merged)} articles")
 
-    # Scoring de pertinence
-    flat_keywords = ALL_QUERIES
+    # Scoring de pertinence (utilise les termes courts de SCORE_KEYWORDS)
     for p in merged:
-        p["_score"] = relevance_score(p, flat_keywords)
+        p["_score"] = relevance_score(p)
         if not p.get("tags"):
             p["tags"] = tag_paper(p)
 
-    # Filtrer les articles hors-sujet (score < 1)
-    # EXCEPTION : on conserve toujours les anciens articles déjà validés
+    # Seuil bas = 1 pour les nouveaux articles venant de requêtes ciblées
+    # Les anciens articles archivés sont toujours conservés sans condition
     new_ids = {paper_id(p.get("title", "")) for p in all_papers}
+    before = len(merged)
     merged = [
         p for p in merged
-        if p["_score"] >= 1 or paper_id(p.get("title", "")) not in new_ids
+        if p["_score"] >= 1                                    # nouveau pertinent
+        or paper_id(p.get("title", "")) not in new_ids         # ancien archivé
     ]
-    log.info(f"Après filtrage pertinence : {len(merged)} articles")
+    log.info(f"Après filtrage pertinence : {len(merged)} articles (éliminés : {before - len(merged)})")
 
     # Tri : par date décroissante (les plus récents d'abord),
     # puis par score pour les ex-aequo

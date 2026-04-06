@@ -1,322 +1,36 @@
 [
   {
-    "date": "2026-04-01",
-    "title": "Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation",
+    "title": "MMAudioSep: Taming Video-to-Audio Generative Model Towards Video/Text-Queried Sound Separation",
     "authors": [
-      "Yun-Ning",
-      "Hung",
-      "Richard Vogl",
-      "Filip Korzeniowski",
-      "Igor Pereira"
+      "Akira Takahashi",
+      "Shusuke Takahashi",
+      "Yuki Mitsufuji"
     ],
-    "summary": "While diffusion models are best known for their performance in generative tasks, they have also been successfully applied to many other tasks, including audio source separation. However, current generative approaches to music source separation often underperform on standard objective metrics. In thi...",
-    "url": "http://arxiv.org/abs/2604.01120v1"
+    "date": "2025-10-10",
+    "summary": "We introduce MMAudioSep, a generative model for video/text-queried sound separation that is founded on a pretrained video-to-audio model. By leveraging knowledge about the relationship between video/text and audio learned through a pretrained audio generative model, we can train the model more efficiently, i.e., the model does not need to be trained from scratch. We evaluate the performance of MMAudioSep by comparing it to existing separation models, including models based on both deterministic ",
+    "url": "https://arxiv.org/abs/2510.09065",
+    "source": "semantic",
+    "venue": "arXiv.org",
+    "tags": [
+      "AudioSep"
+    ]
   },
   {
-    "date": "2026-03-27",
-    "title": "Cinematic Audio Source Separation Using Visual Cues",
-    "authors": [
-      "Kang Zhang",
-      "Suyeon Lee",
-      "Arda Senocak",
-      "Joon Son Chung"
-    ],
-    "summary": "Cinematic Audio Source Separation (CASS) aims to decompose mixed film audio into speech, music, and sound effects, enabling applications like dubbing and remastering. Existing CASS approaches are audio-only, overlooking the inherent audio-visual nature of films, where sounds often align with visual ...",
-    "url": "http://arxiv.org/abs/2603.26113v1"
-  },
-  {
-    "date": "2026-02-25",
-    "title": "A Knowledge-Driven Approach to Music Segmentation, Music Source Separation and Cinematic Audio Source Separation",
-    "authors": [
-      "Chun-wei Ho",
-      "Sabato Marco Siniscalchi",
-      "Kai Li",
-      "Chin-Hui Lee"
-    ],
-    "summary": "We propose a knowledge-driven, model-based approach to segmenting audio into single-category and mixed-category chunks with applications to source separation. \"Knowledge\" here denotes information associated with the data, such as music scores. \"Model\" here refers to tool that can be used for audio s...",
-    "url": "http://arxiv.org/abs/2602.21476v1"
-  },
-  {
-    "date": "2026-02-09",
-    "title": "Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation",
-    "authors": [
-      "Kohei Saijo",
-      "Yoshiaki Bando"
-    ],
-    "summary": "Time-frequency domain dual-path models have demonstrated strong performance and are widely used in source separation. Because their computational cost grows with the number of frequency bins, these models often use the band-split (BS) module in high-sampling-rate tasks such as music source separatio...",
-    "url": "http://arxiv.org/abs/2602.08671v1"
-  },
-  {
-    "date": "2025-12-23",
-    "title": "QuarkAudio Technical Report",
-    "authors": [
-      "Chengwei Liu",
-      "Haoyin Yan",
-      "Shaofei Xue",
-      "Xiaotao Liang",
-      "Xiaofu Chen",
-      "Bin Gong",
-      "Zheng Xue",
-      "Gang Song"
-    ],
-    "summary": "Many existing audio processing and generation models rely on task-specific architectures, resulting in fragmented development efforts and limited extensibility. It is therefore promising to design a unified framework capable of handling multiple tasks, while providing robust instruction and audio un...",
-    "url": "http://arxiv.org/abs/2512.20151v1"
-  },
-  {
-    "date": "2025-12-19",
-    "title": "SAM Audio: Segment Anything in Audio",
-    "authors": [
-      "Bowen Shi",
-      "Andros Tjandra",
-      "John Hoffman",
-      "Helin Wang",
-      "Yi-Chiao Wu",
-      "Luya Gao",
-      "Julius Richter",
-      "Matt Le",
-      "Apoorv Vyas",
-      "Sanyuan Chen",
-      "Christoph Feichtenhofer",
-      "Piotr Dollár",
-      "Wei-Ning Hsu",
-      "Ann Lee"
-    ],
-    "summary": "General audio source separation is a key capability for multimodal AI systems that can perceive and reason about sound. Despite substantial progress in recent years, existing separation models are either domain-specific, designed for fixed categories such as speech or music, or limited in controllab...",
-    "url": "http://arxiv.org/abs/2512.18099v1"
-  },
-  {
-    "date": "2025-11-10",
-    "title": "Metric Analysis for Spatial Semantic Segmentation of Sound Scenes",
-    "authors": [
-      "Mayank Mishra",
-      "Paul Magron",
-      "Romain Serizel"
-    ],
-    "summary": "Spatial semantic segmentation of sound scenes (S5) consists of jointly performing audio source separation and sound event classification from a multichannel audio mixture. Evaluating S5 systems with separation and classification metrics individually makes system comparison difficult, whereas existin...",
-    "url": "http://arxiv.org/abs/2511.07075v3"
-  },
-  {
-    "date": "2025-11-06",
-    "title": "PromptSep: Generative Audio Separation via Multimodal Prompting",
-    "authors": [
-      "Yutong Wen",
-      "Ke Chen",
-      "Prem Seetharaman",
-      "Oriol Nieto",
-      "Jiaqi Su",
-      "Rithesh Kumar",
-      "Minje Kim",
-      "Paris Smaragdis",
-      "Zeyu Jin",
-      "Justin Salamon"
-    ],
-    "summary": "Recent breakthroughs in language-queried audio source separation (LASS) have shown that generative models can achieve higher separation audio quality than traditional masking-based approaches. However, two key limitations restrict their practical use: (1) users often require operations beyond separa...",
-    "url": "http://arxiv.org/abs/2511.04623v1"
-  },
-  {
-    "date": "2025-11-06",
-    "title": "Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition",
-    "authors": [
-      "Giovanni Barbarino",
-      "Nicolas Gillis",
-      "Subhayan Saha"
-    ],
-    "summary": "Minimum-volume nonnegative matrix factorization (min-vol NMF) has been used successfully in many applications, such as hyperspectral imaging, chemical kinetics, spectroscopy, topic modeling, and audio source separation. However, its robustness to noise has been a long-standing open problem. In this ...",
-    "url": "http://arxiv.org/abs/2511.04291v1"
-  },
-  {
-    "date": "2025-10-30",
-    "title": "UniTok-Audio: A Unified Audio Generation Framework via Generative Modeling on Discrete Codec Tokens",
-    "authors": [
-      "Chengwei Liu",
-      "Haoyin Yan",
-      "Shaofei Xue",
-      "Xiaotao Liang",
-      "Yinghao Liu",
-      "Zheng Xue",
-      "Gang Song",
-      "Boyang Zhou"
-    ],
-    "summary": "Generative modeling has recently achieved remarkable success across text, image, and audio domains, demonstrating powerful capabilities for unified representation learning. However, audio generation models still face challenges in terms of audio quality and generalization ability across tasks. This ...",
-    "url": "http://arxiv.org/abs/2510.26372v1"
-  },
-  {
-    "date": "2025-09-19",
-    "title": "Blind Source Separation of Radar Signals in Time Domain Using Deep Learning",
-    "authors": [
-      "Sven Hinderer"
-    ],
-    "summary": "Identification and further analysis of radar emitters in a contested environment requires detection and separation of incoming signals. If they arrive from the same direction and at similar frequencies, deinterleaving them remains challenging. A solution to overcome this limitation becomes increasin...",
-    "url": "http://arxiv.org/abs/2509.15603v2"
-  },
-  {
-    "date": "2025-09-15",
     "title": "Neural Audio Codecs for Prompt-Driven Universal Sound Separation",
     "authors": [
       "Adhiraj Banerjee",
       "Vipul Arora"
     ],
-    "summary": "Text-guided sound separation supports flexible audio editing across media and assistive applications, but existing models like AudioSep are too compute-heavy for edge deployment. Neural audio codec (NAC) models such as CodecFormer and SDCodec are compute-efficient but limited to fixed-class separati...",
-    "url": "http://arxiv.org/abs/2509.11717v4"
-  },
-  {
-    "date": "2025-09-11",
-    "title": "MAPSS: Manifold-based Assessment of Perceptual Source Separation",
-    "authors": [
-      "Amir Ivry",
-      "Samuele Cornell",
-      "Shinji Watanabe"
-    ],
-    "summary": "Objective assessment of audio source-separation systems still mismatches subjective human perception, especially when interference from competing talkers and distortion of the target signal interact. We introduce Perceptual Separation (PS) and Perceptual Match (PM), a complementary pair of measures ...",
-    "url": "http://arxiv.org/abs/2509.09212v3"
-  },
-  {
-    "date": "2025-08-10",
-    "title": "Noise-Robust Sound Event Detection and Counting via Language-Queried Sound Separation",
-    "authors": [
-      "Yuanjian Chen",
-      "Yang Xiao",
-      "Han Yin",
-      "Yadong Guan",
-      "Xubo Liu"
-    ],
-    "summary": "Most sound event detection (SED) systems perform well on clean datasets but degrade significantly in noisy environments. Language-queried audio source separation (LASS) models show promise for robust SED by separating target events; existing methods require elaborate multi-stage training and lack ex...",
-    "url": "http://arxiv.org/abs/2508.07176v1"
-  },
-  {
-    "date": "2025-07-15",
-    "title": "FasTUSS: Faster Task-Aware Unified Source Separation",
-    "authors": [
-      "Francesco Paissan",
-      "Gordon Wichern",
-      "Yoshiki Masuyama",
-      "Ryo Aihara",
-      "François G. Germain",
-      "Kohei Saijo",
-      "Jonathan Le Roux"
-    ],
-    "summary": "Time-Frequency (TF) dual-path models are currently among the best performing audio source separation network architectures, achieving state-of-the-art performance in speech enhancement, music source separation, and cinematic audio source separation. While they are characterized by a relatively low p...",
-    "url": "http://arxiv.org/abs/2507.11435v1"
-  },
-  {
-    "date": "2025-07-15",
-    "title": "Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models",
-    "authors": [
-      "Paul A. Bereuter",
-      "Benjamin Stahl",
-      "Mark D. Plumbley",
-      "Alois Sontacchi"
-    ],
-    "summary": "Traditional Blind Source Separation Evaluation (BSS-Eval) metrics were originally designed to evaluate linear audio source separation models based on methods such as time-frequency masking. However, recent generative models may introduce nonlinear relationships between the separated and reference si...",
-    "url": "http://arxiv.org/abs/2507.11427v1"
-  },
-  {
-    "date": "2025-06-20",
-    "title": "Hybrid-Sep: Language-queried audio source separation via pre-trained Model Fusion and Adversarial Diffusion Training",
-    "authors": [
-      "Jianyuan Feng",
-      "Guangzheng Li",
-      "Yangfei Xu"
-    ],
-    "summary": "Language-queried Audio Separation (LASS) employs linguistic queries to isolate target sounds based on semantic descriptions. However, existing methods face challenges in aligning complex auditory features with linguistic context while preserving separation precision. Current research efforts focus p...",
-    "url": "http://arxiv.org/abs/2506.16833v1"
-  },
-  {
-    "date": "2025-06-04",
-    "title": "Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network",
-    "authors": [
-      "Kanami Imamura",
-      "Tomohiko Nakamura",
-      "Norihiro Takamune",
-      "Kohei Yatabe",
-      "Hiroshi Saruwatari"
-    ],
-    "summary": "Audio signal processing methods based on deep neural networks (DNNs) are typically trained only at a single sampling frequency (SF) and therefore require signal resampling to handle untrained SFs. However, recent studies have shown that signal resampling can degrade performance with untrained SFs. T...",
-    "url": "http://arxiv.org/abs/2506.03550v1"
-  },
-  {
-    "date": "2025-06-03",
-    "title": "DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization",
-    "authors": [
-      "Geonyoung Lee",
-      "Geonhee Han",
-      "Paul Hongsuck Seo"
-    ],
-    "summary": "Language-queried Audio Source Separation (LASS) enables open-vocabulary sound separation via natural language queries. While existing methods rely on task-specific training, we explore whether pretrained diffusion models, originally designed for audio generation, can inherently perform separation wi...",
-    "url": "http://arxiv.org/abs/2506.02858v2"
-  },
-  {
-    "date": "2025-06-03",
-    "title": "DnR-nonverbal: Cinematic Audio Source Separation Dataset Containing Non-Verbal Sounds",
-    "authors": [
-      "Takuya Hasumi",
-      "Yusuke Fujita"
-    ],
-    "summary": "We propose a new dataset for cinematic audio source separation (CASS) that handles non-verbal sounds. Existing CASS datasets only contain reading-style sounds as a speech stem. These datasets differ from actual movie audio, which is more likely to include acted-out voices. Consequently, models train...",
-    "url": "http://arxiv.org/abs/2506.02499v2"
-  },
-  {
-    "date": "2025-05-29",
-    "title": "ZeroSep: Separate Anything in Audio with Zero Training",
-    "authors": [
-      "Chao Huang",
-      "Yuesheng Ma",
-      "Junxuan Huang",
-      "Susan Liang",
-      "Yunlong Tang",
-      "Jing Bi",
-      "Wenqiang Liu",
-      "Nima Mesgarani",
-      "Chenliang Xu"
-    ],
-    "summary": "Audio source separation is fundamental for machines to understand complex acoustic environments and underpins numerous audio applications. Current supervised deep learning approaches, while powerful, are limited by the need for extensive, task-specific labeled data and struggle to generalize to the ...",
-    "url": "http://arxiv.org/abs/2505.23625v1"
-  },
-  {
-    "date": "2025-05-27",
-    "title": "Text-Queried Audio Source Separation via Hierarchical Modeling",
-    "authors": [
-      "Xinlei Yin",
-      "Xiulian Peng",
-      "Xue Jiang",
-      "Zhiwei Xiong",
-      "Yan Lu"
-    ],
-    "summary": "Target audio source separation with natural language queries presents a promising paradigm for extracting arbitrary audio events through arbitrary text descriptions. Existing methods mainly face two challenges, the difficulty in jointly modeling acoustic-textual alignment and semantic-aware separati...",
-    "url": "http://arxiv.org/abs/2505.21025v2"
-  },
-  {
-    "date": "2025-05-26",
-    "title": "Training-Free Multi-Step Audio Source Separation",
-    "authors": [
-      "Yongyi Zang",
-      "Jingyi Li",
-      "Qiuqiang Kong"
-    ],
-    "summary": "Audio source separation aims to separate a mixture into target sources. Previous audio source separation systems usually conduct one-step inference, which does not fully explore the separation ability of models. In this work, we reveal that pretrained one-step audio source separation models can be l...",
-    "url": "http://arxiv.org/abs/2505.19534v1"
-  },
-  {
-    "date": "2025-05-22",
-    "title": "Source Separation by Flow Matching",
-    "authors": [
-      "Robin Scheibler",
-      "John R. Hershey",
-      "Arnaud Doucet",
-      "Henry Li"
-    ],
-    "summary": "We consider the problem of single-channel audio source separation with the goal of reconstructing $K$ sources from their mixture. We address this ill-posed problem with FLOSS (FLOw matching for Source Separation), a constrained generation method based on flow matching, ensuring strict mixture consis...",
-    "url": "http://arxiv.org/abs/2505.16119v2"
-  },
-  {
-    "date": "2025-02-10",
-    "title": "Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset",
-    "authors": [
-      "Huw Cheston",
-      "Jan Van Balen",
-      "Simon Durand"
-    ],
-    "summary": "Sampling, the practice of reusing recorded music or sounds from another source in a new work, is common in popular music genres like hip-hop and rap. Numerous services have emerged that allow users to identify connections between samples and the songs that incorporate them, with the goal of enhancin...",
-    "url": "http://arxiv.org/abs/2502.06364v1"
+    "date": "2025-09-15",
+    "summary": "Text-guided sound separation supports flexible audio editing across media and assistive applications, but existing models like AudioSep are too compute-heavy for edge deployment. Neural audio codec (NAC) models such as CodecFormer and SDCodec are compute-efficient but limited to fixed-class separation. We introduce CodecSep, the first NAC-based model for on-device universal, text-driven separation. CodecSep combines DAC compression with a Transformer masker modulated by CLAP-derived FiLM paramet",
+    "url": "https://arxiv.org/abs/2509.11717",
+    "source": "semantic",
+    "venue": "arXiv.org",
+    "tags": [
+      "LASS",
+      "AudioSep",
+      "CLAP",
+      "Transformer"
+    ]
   }
 ]

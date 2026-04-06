@@ -1,1 +1,3 @@
-    arxiv==2.1.0
+arxiv==2.1.0
+requests>=2.31.0
+scholarly>=1.7.11

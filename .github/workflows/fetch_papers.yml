@@ -1,0 +1,63 @@
+name: LASS Veille — Collecte quotidienne
+
+on:
+  schedule:
+    # Chaque jour à 6h00 UTC
+    - cron: "0 6 * * *"
+  workflow_dispatch: # Déclenchement manuel possible
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout du repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Installation des dépendances
+        run: pip install -r requirements.txt
+
+      - name: Collecte des publications LASS
+        env:
+          SEMANTIC_SCHOLAR_KEY: ${{ secrets.SEMANTIC_SCHOLAR_KEY }}
+          IEEE_API_KEY: ${{ secrets.IEEE_API_KEY }}
+        run: python scripts/fetch_papers.py
+
+      - name: Vérification du JSON généré
+        run: |
+          echo "Articles collectés :"
+          python -c "
+          import json
+          with open('data/lass_papers.json') as f:
+              papers = json.load(f)
+          print(f'  Total : {len(papers)} articles')
+          from collections import Counter
+          sources = Counter(p.get('source', 'unknown') for p in papers)
+          for src, count in sources.items():
+              print(f'  {src}: {count}')
+          "
+
+      - name: Commit et push des données
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/lass_papers.json
+          git diff --cached --quiet || git commit -m "🤖 Veille LASS — $(date +'%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: Déploiement GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          exclude_assets: ".github,scripts,*.py,*.txt,*.md"

@@ -472,7 +472,7 @@ def main():
 
     # Affichage résumé par source
     from collections import Counter
-    sources = Counter(p["source"] for p in final_papers)
+    sources = Counter(p.get("source", "unknown") for p in final_papers)
     for src, count in sources.items():
         log.info(f"  {src}: {count} articles")
 

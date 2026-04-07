@@ -1012,25 +1012,25 @@ body {
 <aside class="sidebar" id="sidebar">
   <div class="sidebar-logo">
     <div class="logo-title">LASS</div>
-    <div class="logo-sub">Veille Scientifique</div>
+    <div class="logo-sub">Veille Technologique</div>
   </div>
 
   <div class="nav-section-label">Navigation</div>
   <button class="nav-item active" onclick="showPage('home', this)">
-    <span class="nav-icon">🏠</span> Accueil
+    <span class="nav-icon"> Accueil
   </button>
   <button class="nav-item" onclick="showPage('veille', this)">
-    <span class="nav-icon">📡</span> Radar (Veille)
+    <span class="nav-icon">Ressources
     <span class="nav-badge" id="count-badge">—</span>
   </button>
 
   <div style="margin-top:1rem;"></div>
   <div class="nav-section-label">Ressources</div>
   <button class="nav-item" onclick="showPage('lass', this)">
-    <span class="nav-icon">🧠</span> Concept LASS
+    <span class="nav-icon"> Concept LASS
   </button>
   <button class="nav-item" onclick="showPage('process', this)">
-    <span class="nav-icon">⚙️</span> Processus de veille
+    <span class="nav-icon"> Mon processus de veille
   </button>
 
   <div class="sidebar-footer">
@@ -1086,20 +1086,17 @@ body {
     <!-- Cards nav -->
     <div class="home-cards">
       <div class="home-card" onclick="showPage('veille', document.querySelectorAll('.nav-item')[1])">
-        <span class="card-icon">📡</span>
-        <div class="card-title">Radar — Veille</div>
+        <div class="card-title">Ressources</div>
         <div class="card-desc">Les 25 publications les plus récentes sur le LASS, filtrables par source (arXiv, Scholar, Semantic Scholar, IEEE).</div>
         <div class="card-arrow">Explorer →</div>
       </div>
       <div class="home-card" onclick="showPage('lass', document.querySelectorAll('.nav-item')[3])">
-        <span class="card-icon">🧠</span>
         <div class="card-title">Concept LASS</div>
         <div class="card-desc">Architecture, modèles fondateurs, métriques d'évaluation — tout ce qu'il faut savoir sur le paradigme LASS.</div>
         <div class="card-arrow">Lire →</div>
       </div>
       <div class="home-card" onclick="showPage('process', document.querySelectorAll('.nav-item')[4])">
-        <span class="card-icon">⚙️</span>
-        <div class="card-title">Processus de veille</div>
+        <div class="card-title">Mon processus de veille</div>
         <div class="card-desc">Le pipeline technique complet : scraping multi-sources, base de mots-clés, GitHub Actions et déploiement automatique.</div>
         <div class="card-arrow">Découvrir →</div>
       </div>
@@ -1879,9 +1876,7 @@ function filterPapers(source, btn) {
   renderPapers(getFilteredPapers());
 }
 
-// ============================================================
-// INIT
-// ============================================================
+
 fetchPapers();
 </script>
 </body>

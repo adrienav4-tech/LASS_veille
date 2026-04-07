@@ -937,6 +937,18 @@
     ]
   },
   {
+    "date": "2025-11-06",
+    "title": "Robustness of Minimum-Volume Nonnegative Matrix Factorization under an Expanded Sufficiently Scattered Condition",
+    "authors": [
+      "Giovanni Barbarino",
+      "Nicolas Gillis",
+      "Subhayan Saha"
+    ],
+    "summary": "Minimum-volume nonnegative matrix factorization (min-vol NMF) has been used successfully in many applications, such as hyperspectral imaging, chemical kinetics, spectroscopy, topic modeling, and audio source separation. However, its robustness to noise has been a long-standing open problem. In this ...",
+    "url": "http://arxiv.org/abs/2511.04291v1",
+    "tags": []
+  },
+  {
     "title": "Reference Microphone Selection for Guided Source Separation based on the Normalized L-p Norm",
     "authors": [
       "Anselm Lohmann",
@@ -1405,6 +1417,16 @@
     ]
   },
   {
+    "date": "2025-09-19",
+    "title": "Blind Source Separation of Radar Signals in Time Domain Using Deep Learning",
+    "authors": [
+      "Sven Hinderer"
+    ],
+    "summary": "Identification and further analysis of radar emitters in a contested environment requires detection and separation of incoming signals. If they arrive from the same direction and at similar frequencies, deinterleaving them remains challenging. A solution to overcome this limitation becomes increasin...",
+    "url": "http://arxiv.org/abs/2509.15603v2",
+    "tags": []
+  },
+  {
     "title": "Are Multimodal Foundation Models All That Is Needed for Emofake Detection?",
     "authors": [
       "Mohd Mujtaba Akhtar",
@@ -1523,6 +1545,18 @@
     "tags": [
       "Speech"
     ]
+  },
+  {
+    "date": "2025-09-11",
+    "title": "MAPSS: Manifold-based Assessment of Perceptual Source Separation",
+    "authors": [
+      "Amir Ivry",
+      "Samuele Cornell",
+      "Shinji Watanabe"
+    ],
+    "summary": "Objective assessment of audio source-separation systems still mismatches subjective human perception, especially when interference from competing talkers and distortion of the target signal interact. We introduce Perceptual Separation (PS) and Perceptual Match (PM), a complementary pair of measures ...",
+    "url": "http://arxiv.org/abs/2509.09212v3",
+    "tags": []
   },
   {
     "title": "A Multichannel Extension of Language-Queried Audio Source Separation via Independent Vector Analysis",
@@ -1661,6 +1695,40 @@
     ]
   },
   {
+    "date": "2025-07-15",
+    "title": "FasTUSS: Faster Task-Aware Unified Source Separation",
+    "authors": [
+      "Francesco Paissan",
+      "Gordon Wichern",
+      "Yoshiki Masuyama",
+      "Ryo Aihara",
+      "François G. Germain",
+      "Kohei Saijo",
+      "Jonathan Le Roux"
+    ],
+    "summary": "Time-Frequency (TF) dual-path models are currently among the best performing audio source separation network architectures, achieving state-of-the-art performance in speech enhancement, music source separation, and cinematic audio source separation. While they are characterized by a relatively low p...",
+    "url": "http://arxiv.org/abs/2507.11435v1",
+    "tags": [
+      "Music",
+      "Speech"
+    ]
+  },
+  {
+    "date": "2025-07-15",
+    "title": "Towards Reliable Objective Evaluation Metrics for Generative Singing Voice Separation Models",
+    "authors": [
+      "Paul A. Bereuter",
+      "Benjamin Stahl",
+      "Mark D. Plumbley",
+      "Alois Sontacchi"
+    ],
+    "summary": "Traditional Blind Source Separation Evaluation (BSS-Eval) metrics were originally designed to evaluate linear audio source separation models based on methods such as time-frequency masking. However, recent generative models may introduce nonlinear relationships between the separated and reference si...",
+    "url": "http://arxiv.org/abs/2507.11427v1",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
     "title": "CLEP-DG: Contrastive Learning for Speech Emotion Domain Generalization via Soft Prompt Tuning",
     "authors": [
       "Jiacheng Shi",
@@ -1770,6 +1838,20 @@
     ]
   },
   {
+    "date": "2025-06-04",
+    "title": "Local Equivariance Error-Based Metrics for Evaluating Sampling-Frequency-Independent Property of Neural Network",
+    "authors": [
+      "Kanami Imamura",
+      "Tomohiko Nakamura",
+      "Norihiro Takamune",
+      "Kohei Yatabe",
+      "Hiroshi Saruwatari"
+    ],
+    "summary": "Audio signal processing methods based on deep neural networks (DNNs) are typically trained only at a single sampling frequency (SF) and therefore require signal resampling to handle untrained SFs. However, recent studies have shown that signal resampling can degrade performance with untrained SFs. T...",
+    "url": "http://arxiv.org/abs/2506.03550v1",
+    "tags": []
+  },
+  {
     "title": "DGMO: Training-Free Audio Source Separation through Diffusion-Guided Mask Optimization",
     "authors": [
       "Geon Woo Lee",
@@ -1870,6 +1952,24 @@
     ]
   },
   {
+    "date": "2025-05-29",
+    "title": "ZeroSep: Separate Anything in Audio with Zero Training",
+    "authors": [
+      "Chao Huang",
+      "Yuesheng Ma",
+      "Junxuan Huang",
+      "Susan Liang",
+      "Yunlong Tang",
+      "Jing Bi",
+      "Wenqiang Liu",
+      "Nima Mesgarani",
+      "Chenliang Xu"
+    ],
+    "summary": "Audio source separation is fundamental for machines to understand complex acoustic environments and underpins numerous audio applications. Current supervised deep learning approaches, while powerful, are limited by the need for extensive, task-specific labeled data and struggle to generalize to the ...",
+    "url": "http://arxiv.org/abs/2505.23625v1",
+    "tags": []
+  },
+  {
     "title": "Text-Queried Audio Source Separation via Hierarchical Modeling",
     "authors": [
       "Xinlei Yin",
@@ -1940,6 +2040,19 @@
     "tags": [
       "Speech"
     ]
+  },
+  {
+    "date": "2025-05-22",
+    "title": "Source Separation by Flow Matching",
+    "authors": [
+      "Robin Scheibler",
+      "John R. Hershey",
+      "Arnaud Doucet",
+      "Henry Li"
+    ],
+    "summary": "We consider the problem of single-channel audio source separation with the goal of reconstructing $K$ sources from their mixture. We address this ill-posed problem with FLOSS (FLOw matching for Source Separation), a constrained generation method based on flow matching, ensuring strict mixture consis...",
+    "url": "http://arxiv.org/abs/2505.16119v2",
+    "tags": []
   },
   {
     "title": "Towards Pre-training an Effective Respiratory Audio Foundation Model",
@@ -2143,6 +2256,20 @@
     "source": "arxiv",
     "tags": [
       "CLAP"
+    ]
+  },
+  {
+    "date": "2025-02-10",
+    "title": "Automatic Identification of Samples in Hip-Hop Music via Multi-Loss Training and an Artificial Dataset",
+    "authors": [
+      "Huw Cheston",
+      "Jan Van Balen",
+      "Simon Durand"
+    ],
+    "summary": "Sampling, the practice of reusing recorded music or sounds from another source in a new work, is common in popular music genres like hip-hop and rap. Numerous services have emerged that allow users to identify connections between samples and the songs that incorporate them, with the goal of enhancin...",
+    "url": "http://arxiv.org/abs/2502.06364v1",
+    "tags": [
+      "Music"
     ]
   },
   {

@@ -1,5 +1,18 @@
 [
   {
+    "title": "StrADiff: A Structured Source-Wise Adaptive Diffusion Framework for Linear and Nonlinear Blind Source Separation",
+    "authors": [
+      "Yuan-Hao Wei"
+    ],
+    "date": "2026-04-04",
+    "summary": "This paper presents a Structured Source-Wise Adaptive Diffusion Framework for linear and nonlinear blind source separation. The framework interprets each latent dimension as a source component and assigns to it an individual adaptive diffusion mechanism, thereby establishing source-wise latent modeling rather than relying on a single shared latent prior. The resulting formulation learns source recovery and the mixing/reconstruction process jointly within a unified end-to-end objective, allowing model parameters and latent sources to adapt simultaneously during training. This yields a common fr",
+    "url": "http://arxiv.org/abs/2604.04973v1",
+    "source": "arxiv",
+    "tags": [
+      "Diffusion"
+    ]
+  },
+  {
     "title": "Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation",
     "authors": [
       "Yun-Ning",
@@ -880,21 +893,6 @@
     ]
   },
   {
-    "title": "Metric Analysis for Spatial Semantic Segmentation of Sound Scenes",
-    "authors": [
-      "Mayank Mishra",
-      "Paul Magron",
-      "Romain Serizel"
-    ],
-    "date": "2025-11-10",
-    "summary": "Spatial semantic segmentation of sound scenes (S5) consists of jointly performing audio source separation and sound event classification from a multichannel audio mixture. Evaluating S5 systems with separation and classification metrics individually makes system comparison difficult, whereas existing joint metrics, such as the class-aware signal-to-distortion ratio (CA-SDR), can conflate separation and labeling errors. In particular, CA-SDR relies on predicted class labels for source matching, which may obscure label swaps or misclassifications when the underlying source estimates remain perce",
-    "url": "http://arxiv.org/abs/2511.07075v3",
-    "source": "arxiv",
-    "tags": [
-      "LASS"
-    ]
-  },
-  {
     "title": "Speech Separation for Hearing-Impaired Children in the Classroom",
     "authors": [
       "Feyisayo Olalere",
@@ -911,6 +909,21 @@
     "tags": [
       "LASS",
       "Speech"
+    ]
+  },
+  {
+    "title": "Metric Analysis for Spatial Semantic Segmentation of Sound Scenes",
+    "authors": [
+      "Mayank Mishra",
+      "Paul Magron",
+      "Romain Serizel"
+    ],
+    "date": "2025-11-10",
+    "summary": "Spatial semantic segmentation of sound scenes (S5) consists of jointly performing audio source separation and sound event classification from a multichannel audio mixture. Evaluating S5 systems with separation and classification metrics individually makes system comparison difficult, whereas existing joint metrics, such as the class-aware signal-to-distortion ratio (CA-SDR), can conflate separation and labeling errors. In particular, CA-SDR relies on predicted class labels for source matching, which may obscure label swaps or misclassifications when the underlying source estimates remain perce",
+    "url": "http://arxiv.org/abs/2511.07075v3",
+    "source": "arxiv",
+    "tags": [
+      "LASS"
     ]
   },
   {

@@ -1,5 +1,24 @@
 [
   {
+    "title": "EvoTSE: Evolving Enrollment for Target Speaker Extraction",
+    "authors": [
+      "Zikai Liu",
+      "Ziqian Wang",
+      "Xingchen Li",
+      "Yike Zhu",
+      "Shuai Wang",
+      "Longshuai Xiao",
+      "Lei Xie"
+    ],
+    "date": "2026-04-08",
+    "summary": "Target Speaker Extraction (TSE) aims to isolate a specific speaker's voice from a mixture, guided by a pre-recorded enrollment. While TSE bypasses the global permutation ambiguity of blind source separation, it remains vulnerable to speaker confusion, where models mistakenly extract the interfering speaker. Furthermore, conventional TSE relies on static inference pipeline, where performance is limited by the quality of the fixed enrollment. To overcome these limitations, we propose EvoTSE, an evolving TSE framework in which the enrollment is continuously updated through reliability-filtered re",
+    "url": "http://arxiv.org/abs/2604.06810v2",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
     "title": "StrADiff: A Structured Source-Wise Adaptive Diffusion Framework for Linear and Nonlinear Blind Source Separation",
     "authors": [
       "Yuan-Hao Wei"

@@ -382,6 +382,22 @@
     "tags": []
   },
   {
+    "title": "UniAudio 2.0: A Unified Audio Language Model with Text-Aligned Factorized Audio Tokenization",
+    "authors": [
+      "Dongchao Yang",
+      "Yuanyuan Wang",
+      "Dading Chong",
+      "Songxiang Liu",
+      "Xixin Wu",
+      "Helen Meng"
+    ],
+    "date": "2026-02-04",
+    "summary": "We study two foundational problems in audio language models: (1) how to design an audio tokenizer that can serve as an intermediate representation for both understanding and generation; and (2) how to build an audio foundation model that generalizes in few-shot and zero-shot settings, analogous to large language models. To this end, we make the following two contributions. First, we propose ReasoningCodec, a discrete audio codec that factorizes audio into (i) reasoning tokens, which encode text-aligned, high-level analysis and planning representations for audio understanding and hierarchical g",
+    "url": "http://arxiv.org/abs/2602.04683v3",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
     "title": "The SJTU X-LANCE Lab System for MSR Challenge 2025",
     "authors": [
       "Jinxuan Zhu",
@@ -398,22 +414,6 @@
     "tags": [
       "Music"
     ]
-  },
-  {
-    "title": "UniAudio 2.0: A Unified Audio Language Model with Text-Aligned Factorized Audio Tokenization",
-    "authors": [
-      "Dongchao Yang",
-      "Yuanyuan Wang",
-      "Dading Chong",
-      "Songxiang Liu",
-      "Xixin Wu",
-      "Helen Meng"
-    ],
-    "date": "2026-02-04",
-    "summary": "We study two foundational problems in audio language models: (1) how to design an audio tokenizer that can serve as an intermediate representation for both understanding and generation; and (2) how to build an audio foundation model that generalizes in few-shot and zero-shot settings, analogous to large language models. To this end, we make the following two contributions. First, we propose ReasoningCodec, a discrete audio codec that factorizes audio into (i) reasoning tokens, which encode text-aligned, high-level analysis and planning representations for audio understanding and hierarchical g",
-    "url": "http://arxiv.org/abs/2602.04683v3",
-    "source": "arxiv",
-    "tags": []
   },
   {
     "title": "GRAM: Spatial general-purpose audio representations for real-world environments",
@@ -1076,23 +1076,6 @@
     ]
   },
   {
-    "title": "UniSE: A Unified Framework for Decoder-only Autoregressive LM-based Speech Enhancement",
-    "authors": [
-      "Haoyin Yan",
-      "Chengwei Liu",
-      "Shaofei Xue",
-      "Xiaotao Liang",
-      "Zheng Xue"
-    ],
-    "date": "2025-10-23",
-    "summary": "The development of neural audio codecs (NACs) has largely promoted applications of language models (LMs) to speech processing and understanding. However, there lacks the verification on the effectiveness of autoregressive (AR) LMbased models in unifying different sub-tasks of speech enhancement (SE). In this work, we propose UniSE, a unified decoder-only LM-based framework to handle different SE tasks including speech restoration, target speaker extraction and speech separation. It takes input speech features as conditions and generates discrete tokens of the target speech using AR modeling, w",
-    "url": "http://arxiv.org/abs/2510.20441v1",
-    "source": "arxiv",
-    "tags": [
-      "Speech"
-    ]
-  },
-  {
     "title": "R2-SVC: Towards Real-World Robust and Expressive Zero-shot Singing Voice Conversion",
     "authors": [
       "Junjie Zheng",
@@ -1106,6 +1089,23 @@
     "source": "arxiv",
     "tags": [
       "Music",
+      "Speech"
+    ]
+  },
+  {
+    "title": "UniSE: A Unified Framework for Decoder-only Autoregressive LM-based Speech Enhancement",
+    "authors": [
+      "Haoyin Yan",
+      "Chengwei Liu",
+      "Shaofei Xue",
+      "Xiaotao Liang",
+      "Zheng Xue"
+    ],
+    "date": "2025-10-23",
+    "summary": "The development of neural audio codecs (NACs) has largely promoted applications of language models (LMs) to speech processing and understanding. However, there lacks the verification on the effectiveness of autoregressive (AR) LMbased models in unifying different sub-tasks of speech enhancement (SE). In this work, we propose UniSE, a unified decoder-only LM-based framework to handle different SE tasks including speech restoration, target speaker extraction and speech separation. It takes input speech features as conditions and generates discrete tokens of the target speech using AR modeling, w",
+    "url": "http://arxiv.org/abs/2510.20441v1",
+    "source": "arxiv",
+    "tags": [
       "Speech"
     ]
   },

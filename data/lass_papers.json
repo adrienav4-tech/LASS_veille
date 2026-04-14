@@ -1,5 +1,41 @@
 [
   {
+    "title": "Discrete Token Modeling for Multi-Stem Music Source Separation with Language Models",
+    "authors": [
+      "Pengbo Lyu",
+      "Xiangyu Zhao",
+      "Chengwei Liu",
+      "Haoyin Yan",
+      "Xiaotao Liang",
+      "Hongyu Wang",
+      "Shaofei Xue"
+    ],
+    "date": "2026-04-10",
+    "summary": "We propose a generative framework for multi-track music source separation (MSS) that reformulates the task as conditional discrete token generation. Unlike conventional approaches that directly estimate continuous signals in the time or frequency domain, our method combines a Conformer-based conditional encoder, a dual-path neural audio codec (HCodec), and a decoder-only language model to autoregressively generate audio tokens for four target tracks. The generated tokens are decoded back to waveforms through the codec decoder. Evaluation on the MUSDB18-HQ benchmark shows that our generative ap",
+    "url": "http://arxiv.org/abs/2604.09371v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
+    "title": "Few-Shot Contrastive Adaptation for Audio Abuse Detection in Low-Resource Indic Languages",
+    "authors": [
+      "Aditya Narayan Sankaran",
+      "Reza Farahbakhsh",
+      "Noel Crespi"
+    ],
+    "date": "2026-04-10",
+    "summary": "Abusive speech detection is becoming increasingly important as social media shifts towards voice-based interaction, particularly in multilingual and low-resource settings. Most current systems rely on automatic speech recognition (ASR) followed by text-based hate speech classification, but this pipeline is vulnerable to transcription errors and discards prosodic information carried in speech. We investigate whether Contrastive Language-Audio Pre-training (CLAP) can support abusive speech detection directly from audio. Using the ADIMA dataset, we evaluate CLAP-based representations under few-sh",
+    "url": "http://arxiv.org/abs/2604.09094v1",
+    "source": "arxiv",
+    "tags": [
+      "LASS",
+      "CLAP",
+      "Speech"
+    ]
+  },
+  {
     "title": "EvoTSE: Evolving Enrollment for Target Speaker Extraction",
     "authors": [
       "Zikai Liu",
@@ -382,22 +418,6 @@
     "tags": []
   },
   {
-    "title": "UniAudio 2.0: A Unified Audio Language Model with Text-Aligned Factorized Audio Tokenization",
-    "authors": [
-      "Dongchao Yang",
-      "Yuanyuan Wang",
-      "Dading Chong",
-      "Songxiang Liu",
-      "Xixin Wu",
-      "Helen Meng"
-    ],
-    "date": "2026-02-04",
-    "summary": "We study two foundational problems in audio language models: (1) how to design an audio tokenizer that can serve as an intermediate representation for both understanding and generation; and (2) how to build an audio foundation model that generalizes in few-shot and zero-shot settings, analogous to large language models. To this end, we make the following two contributions. First, we propose ReasoningCodec, a discrete audio codec that factorizes audio into (i) reasoning tokens, which encode text-aligned, high-level analysis and planning representations for audio understanding and hierarchical g",
-    "url": "http://arxiv.org/abs/2602.04683v3",
-    "source": "arxiv",
-    "tags": []
-  },
-  {
     "title": "The SJTU X-LANCE Lab System for MSR Challenge 2025",
     "authors": [
       "Jinxuan Zhu",
@@ -414,6 +434,22 @@
     "tags": [
       "Music"
     ]
+  },
+  {
+    "title": "UniAudio 2.0: A Unified Audio Language Model with Text-Aligned Factorized Audio Tokenization",
+    "authors": [
+      "Dongchao Yang",
+      "Yuanyuan Wang",
+      "Dading Chong",
+      "Songxiang Liu",
+      "Xixin Wu",
+      "Helen Meng"
+    ],
+    "date": "2026-02-04",
+    "summary": "We study two foundational problems in audio language models: (1) how to design an audio tokenizer that can serve as an intermediate representation for both understanding and generation; and (2) how to build an audio foundation model that generalizes in few-shot and zero-shot settings, analogous to large language models. To this end, we make the following two contributions. First, we propose ReasoningCodec, a discrete audio codec that factorizes audio into (i) reasoning tokens, which encode text-aligned, high-level analysis and planning representations for audio understanding and hierarchical g",
+    "url": "http://arxiv.org/abs/2602.04683v3",
+    "source": "arxiv",
+    "tags": []
   },
   {
     "title": "GRAM: Spatial general-purpose audio representations for real-world environments",
@@ -1076,23 +1112,6 @@
     ]
   },
   {
-    "title": "R2-SVC: Towards Real-World Robust and Expressive Zero-shot Singing Voice Conversion",
-    "authors": [
-      "Junjie Zheng",
-      "Gongyu Chen",
-      "Chaofan Ding",
-      "Zihao Chen"
-    ],
-    "date": "2025-10-23",
-    "summary": "In real-world singing voice conversion (SVC) applications, environmental noise and the demand for expressive output pose significant challenges. Conventional methods, however, are typically designed without accounting for real deployment scenarios, as both training and inference usually rely on clean data. This mismatch hinders practical use, given the inevitable presence of diverse noise sources and artifacts from music separation. To tackle these issues, we propose R2-SVC, a robust and expressive SVC framework. First, we introduce simulation-based robustness enhancement through random fundam",
-    "url": "http://arxiv.org/abs/2510.20677v1",
-    "source": "arxiv",
-    "tags": [
-      "Music",
-      "Speech"
-    ]
-  },
-  {
     "title": "UniSE: A Unified Framework for Decoder-only Autoregressive LM-based Speech Enhancement",
     "authors": [
       "Haoyin Yan",
@@ -1106,6 +1125,23 @@
     "url": "http://arxiv.org/abs/2510.20441v1",
     "source": "arxiv",
     "tags": [
+      "Speech"
+    ]
+  },
+  {
+    "title": "R2-SVC: Towards Real-World Robust and Expressive Zero-shot Singing Voice Conversion",
+    "authors": [
+      "Junjie Zheng",
+      "Gongyu Chen",
+      "Chaofan Ding",
+      "Zihao Chen"
+    ],
+    "date": "2025-10-23",
+    "summary": "In real-world singing voice conversion (SVC) applications, environmental noise and the demand for expressive output pose significant challenges. Conventional methods, however, are typically designed without accounting for real deployment scenarios, as both training and inference usually rely on clean data. This mismatch hinders practical use, given the inevitable presence of diverse noise sources and artifacts from music separation. To tackle these issues, we propose R2-SVC, a robust and expressive SVC framework. First, we introduce simulation-based robustness enhancement through random fundam",
+    "url": "http://arxiv.org/abs/2510.20677v1",
+    "source": "arxiv",
+    "tags": [
+      "Music",
       "Speech"
     ]
   },

@@ -1,5 +1,18 @@
 [
   {
+    "title": "Audio Source Separation in Reverberant Environments using $β$-divergence based Nonnegative Factorization",
+    "authors": [
+      "Mahmoud Fakhry",
+      "Piergiorgio Svaizer",
+      "Maurizio Omologo"
+    ],
+    "date": "2026-04-14",
+    "summary": "In Gaussian model-based multichannel audio source separation, the likelihood of observed mixtures of source signals is parametrized by source spectral variances and by associated spatial covariance matrices. These parameters are estimated by maximizing the likelihood through an Expectation-Maximization algorithm and used to separate the signals by means of multichannel Wiener filtering.\n  We propose to estimate these parameters by applying nonnegative factorization based on prior information on source variances. In the nonnegative factorization, spectral basis matrices can be defined as the pr",
+    "url": "http://arxiv.org/abs/2604.12480v1",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
     "title": "Discrete Token Modeling for Multi-Stem Music Source Separation with Language Models",
     "authors": [
       "Pengbo Lyu",

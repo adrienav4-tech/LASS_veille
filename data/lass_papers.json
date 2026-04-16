@@ -487,7 +487,7 @@
     ],
     "date": "2026-02-01",
     "summary": "Audio Foundation Models (AFMs), a specialized category of Generative AI (GenAI), have the potential to transform signal processing (SP) education by integrating core applications such as speech and audio enhancement, denoising, source separation, feature extraction, automatic classification, and real-time signal analysis into learning and research. This paper introduces SPEduAFM, a conceptual AFM tailored for SP education, bridging traditional SP principles with GenAI-driven innovations. Through an envisioned case study, we outline how AFMs can enable a range of applications, including automat",
-    "url": "http://arxiv.org/abs/2602.01249v1",
+    "url": "http://arxiv.org/abs/2602.01249v2",
     "source": "arxiv",
     "tags": [
       "LASS",

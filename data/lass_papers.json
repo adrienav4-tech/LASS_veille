@@ -258,20 +258,6 @@
     ]
   },
   {
-    "title": "Robust Long-Form Bangla Speech Processing: Automatic Speech Recognition and Speaker Diarization",
-    "authors": [
-      "MD. Sagor Chowdhury",
-      "Adiba Fairooz Chowdhury"
-    ],
-    "date": "2026-02-25",
-    "summary": "We describe our end-to-end system for Bengali long-form speech recognition (ASR) and speaker diarization submitted to the DL Sprint 4.0 competition on Kaggle. Bengali presents substantial challenges for both tasks: a large phoneme inventory, significant dialectal variation, frequent code-mixing with English, and a relative scarcity of large-scale labelled corpora. For ASR we achieve a best private Word Error Rate (WER) of 0.37738 and public WER of 0.36137, combining a BengaliAI fine-tuned Whisper medium model with Demucs source separation for vocal isolation, silence-boundary chunking, and car",
-    "url": "http://arxiv.org/abs/2602.21741v1",
-    "source": "arxiv",
-    "tags": [
-      "Speech"
-    ]
-  },
-  {
     "title": "Moving Speaker Separation via Parallel Spectral-Spatial Processing",
     "authors": [
       "Yuzhu Wang",
@@ -282,6 +268,20 @@
     "date": "2026-02-25",
     "summary": "Multi-channel speech separation in dynamic environments is challenging as time-varying spatial and spectral features evolve at different temporal scales. Existing methods typically employ sequential architectures, forcing a single network stream to simultaneously model both feature types, creating an inherent modeling conflict. In this paper, we propose a dual-branch parallel spectral-spatial (PS2) architecture that separately processes spectral and spatial features through parallel streams. The spectral branch uses a bi-directional long short-term memory (BLSTM)-based frequency module, a Mamb",
     "url": "http://arxiv.org/abs/2602.22487v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
+    "title": "Robust Long-Form Bangla Speech Processing: Automatic Speech Recognition and Speaker Diarization",
+    "authors": [
+      "MD. Sagor Chowdhury",
+      "Adiba Fairooz Chowdhury"
+    ],
+    "date": "2026-02-25",
+    "summary": "We describe our end-to-end system for Bengali long-form speech recognition (ASR) and speaker diarization submitted to the DL Sprint 4.0 competition on Kaggle. Bengali presents substantial challenges for both tasks: a large phoneme inventory, significant dialectal variation, frequent code-mixing with English, and a relative scarcity of large-scale labelled corpora. For ASR we achieve a best private Word Error Rate (WER) of 0.37738 and public WER of 0.36137, combining a BengaliAI fine-tuned Whisper medium model with Demucs source separation for vocal isolation, silence-boundary chunking, and car",
+    "url": "http://arxiv.org/abs/2602.21741v1",
     "source": "arxiv",
     "tags": [
       "Speech"

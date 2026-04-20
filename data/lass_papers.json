@@ -25,7 +25,7 @@
     ],
     "date": "2026-04-10",
     "summary": "We propose a generative framework for multi-track music source separation (MSS) that reformulates the task as conditional discrete token generation. Unlike conventional approaches that directly estimate continuous signals in the time or frequency domain, our method combines a Conformer-based conditional encoder, a dual-path neural audio codec (HCodec), and a decoder-only language model to autoregressively generate audio tokens for four target tracks. The generated tokens are decoded back to waveforms through the codec decoder. Evaluation on the MUSDB18-HQ benchmark shows that our generative ap",
-    "url": "http://arxiv.org/abs/2604.09371v1",
+    "url": "http://arxiv.org/abs/2604.09371v2",
     "source": "arxiv",
     "tags": [
       "Music"
@@ -2951,6 +2951,22 @@
     "tags": [
       "CLAP"
     ]
+  },
+  {
+    "title": "Text-queried target sound event localization",
+    "authors": [
+      "J Zhao",
+      "X Qian",
+      "Y Xu",
+      "H Liu",
+      "Y Cao"
+    ],
+    "date": "2024",
+    "summary": "As there are no previous work on text-queried target sound source localization, we compare  different combinations of audio feature, text feature and fusion methods. We compare clip-",
+    "url": "https://arxiv.org/pdf/2406.16058",
+    "source": "scholar",
+    "venue": "2024 32nd …",
+    "tags": []
   },
   {
     "title": "Consistent and Relevant: Rethink the Query Embedding in General Sound Separation",

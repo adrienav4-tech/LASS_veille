@@ -1,5 +1,22 @@
 [
   {
+    "title": "Omni-Embed-Audio: Leveraging Multimodal LLMs for Robust Audio-Text Retrieval",
+    "authors": [
+      "HaeJun Yoo",
+      "Yongseop Shin",
+      "Insung Lee",
+      "Myoung-Wan Koo",
+      "Du-Seong Chang"
+    ],
+    "date": "2026-04-20",
+    "summary": "Audio-text retrieval systems based on Contrastive Language-Audio Pretraining (CLAP) achieve strong performance on traditional benchmarks; however, these benchmarks rely on caption-style queries that differ substantially from real-world search behavior, limiting their assessment of practical retrieval robustness. We present Omni-Embed-Audio (OEA), a retrieval-oriented encoder leveraging multimodal LLMs with native audio understanding. To systematically evaluate robustness beyond caption-style queries, we introduce User-Intent Queries (UIQs) - five formulations reflecting natural search behavior",
+    "url": "http://arxiv.org/abs/2604.18360v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP"
+    ]
+  },
+  {
     "title": "Audio Source Separation in Reverberant Environments using $β$-divergence based Nonnegative Factorization",
     "authors": [
       "Mahmoud Fakhry",
@@ -2405,6 +2422,24 @@
     "date": "2025",
     "summary": "Language-augmented approaches alleviate cold-start cases by incorporating descriptive  metadata, but without uncertainty handling, noisy semantics may mislead learning. Ideally,",
     "url": "https://www.researchgate.net/profile/Gholamreza-Zare-2/publication/397137958_EviGraph-LLMRec_Evidential_Graph-Language_Model_Fusion_for_Uncertainty-Aware_Recommendation/links/6905e1b6c900be105cbe6373/EviGraph-LLMRec-Evidential-Graph-Language-Model-Fusion-for-Uncertainty-Aware-Recommendation.pdf",
+    "source": "scholar",
+    "venue": "NA",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
+    "title": "Multimodal Model Based on Contrastive Language-Image Pretraining for Micro-Expression Recognition",
+    "authors": [
+      "P Yang",
+      "X Wu",
+      "Y Zhou",
+      "Q Wei",
+      "Z Zeng"
+    ],
+    "date": "2025",
+    "summary": "Language-augmented multimodal learning presents a promising paradigm for improving  microexpression analysis, effectively compensating for data scarcity through fine-grained",
+    "url": "https://www.researchsquare.com/article/rs-8133344/latest.pdf",
     "source": "scholar",
     "venue": "NA",
     "tags": [

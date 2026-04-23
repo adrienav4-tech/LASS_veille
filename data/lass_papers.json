@@ -1,5 +1,20 @@
 [
   {
+    "title": "Embedding-Based Intrusive Evaluation Metrics for Musical Source Separation Using MERT Representations",
+    "authors": [
+      "Paul A. Bereuter",
+      "Alois Sontacchi"
+    ],
+    "date": "2026-04-22",
+    "summary": "Evaluation of musical source separation (MSS) has traditionally relied on Blind Source Separation Evaluation (BSS-Eval) metrics. However, recent work suggests that BSS-Eval metrics exhibit low correlation between metrics and perceptual audio quality ratings from a listening test, which is considered the gold standard evaluation method. As an alternative approach in singing voice separation, embedding-based intrusive metrics that leverage latent representations from large self-supervised audio models such as Music undERstanding with large-scale self-supervised Training (MERT) embeddings have be",
+    "url": "http://arxiv.org/abs/2604.20270v1",
+    "source": "arxiv",
+    "tags": [
+      "Music",
+      "Speech"
+    ]
+  },
+  {
     "title": "Omni-Embed-Audio: Leveraging Multimodal LLMs for Robust Audio-Text Retrieval",
     "authors": [
       "HaeJun Yoo",

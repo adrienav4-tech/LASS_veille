@@ -123,7 +123,7 @@
     ],
     "date": "2026-04-01",
     "summary": "While diffusion models are best known for their performance in generative tasks, they have also been successfully applied to many other tasks, including audio source separation. However, current generative approaches to music source separation often underperform on standard objective metrics. In this paper, we address this issue by introducing a novel generative vocal separation model based on the Elucidated Diffusion Model (EDM) framework. Our model processes complex short-time Fourier transform spectrograms and employs an improved U-Net architecture based on music-informed design choices. Ou",
-    "url": "http://arxiv.org/abs/2604.01120v1",
+    "url": "http://arxiv.org/abs/2604.01120v2",
     "source": "arxiv",
     "tags": [
       "Music",
@@ -1273,7 +1273,7 @@
     "summary": "We introduce MMAudioSep, a generative model for video/text-queried sound separation that is founded on a pretrained video-to-audio model. By leveraging knowledge about the relationship between video/text and audio learned through a pretrained audio generative model, we can train the model more efficiently, i.e., the model does not need to be trained from scratch. We evaluate the performance of MMAudioSep by comparing it to existing separation models, including models based on both deterministic ",
     "url": "https://arxiv.org/abs/2510.09065",
     "source": "semantic",
-    "venue": "arXiv.org",
+    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
     "tags": [
       "AudioSep"
     ]

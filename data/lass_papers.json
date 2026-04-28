@@ -1642,6 +1642,22 @@
     ]
   },
   {
+    "title": "CodecSep: Prompt-Driven Universal Sound Separation on Neural Audio Codec Latents",
+    "authors": [
+      "Adhiraj Banerjee",
+      "Vipul Arora"
+    ],
+    "date": "2025-09-15",
+    "summary": "Text-guided sound separation enables flexible audio editing, assistive listening, and open-domain source extraction, but systems such as AudioSep remain too expensive for low-latency edge or codec-mediated deployment. Existing neural audio codec separators are efficient, yet largely restricted to fixed stems or closed taxonomies. We introduce CodecSep, a prompt-driven universal sound separation framework that extracts sources directly in neural audio codec latent space. CodecSep combines a frozen DAC backbone with a lightweight FiLM-conditioned Transformer masker driven by CLAP text embeddings",
+    "url": "http://arxiv.org/abs/2509.11717v5",
+    "source": "arxiv",
+    "tags": [
+      "AudioSep",
+      "CLAP",
+      "Transformer"
+    ]
+  },
+  {
     "title": "Error Analysis in a Modular Meeting Transcription System",
     "authors": [
       "Peter Vieting",

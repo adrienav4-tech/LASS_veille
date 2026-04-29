@@ -1,5 +1,22 @@
 [
   {
+    "title": "S-SONDO: Self-Supervised Knowledge Distillation for General Audio Foundation Models",
+    "authors": [
+      "Mohammed Ali El Adlouni",
+      "Aurian Quelennec",
+      "Pierre Chouteau",
+      "Geoffroy Peeters",
+      "Slim Essid"
+    ],
+    "date": "2026-04-27",
+    "summary": "General audio foundation models have recently achieved remarkable progress, enabling strong performance across diverse tasks. However, state-of-the-art models remain extremely large, often with hundreds of millions of parameters, leading to high inference costs and limited deployability on edge devices. Knowledge distillation is a proven strategy for model compression, but prior work in audio has mostly focused on supervised settings, relying on class logits, intermediate features, or architecture-specific techniques. Such assumptions exclude models that output only embeddings, such as self-su",
+    "url": "http://arxiv.org/abs/2604.24933v1",
+    "source": "arxiv",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
     "title": "Embedding-Based Intrusive Evaluation Metrics for Musical Source Separation Using MERT Representations",
     "authors": [
       "Paul A. Bereuter",
@@ -105,8 +122,8 @@
       "Yuan-Hao Wei"
     ],
     "date": "2026-04-04",
-    "summary": "This paper presents a Structured Source-Wise Adaptive Diffusion Framework for linear and nonlinear blind source separation. The framework interprets each latent dimension as a source component and assigns to it an individual adaptive diffusion mechanism, thereby establishing source-wise latent modeling rather than relying on a single shared latent prior. The resulting formulation learns source recovery and the mixing/reconstruction process jointly within a unified end-to-end objective, allowing model parameters and latent sources to adapt simultaneously during training. This yields a common fr",
-    "url": "http://arxiv.org/abs/2604.04973v1",
+    "summary": "This paper presents StrADiff, a Structured Source-Wise Adaptive Diffusion Framework for unsupervised blind source separation under linear and nonlinear mixing. The framework treats each latent dimension as a source branch and assigns to it an individual adaptive reverse diffusion mechanism, so that latent sources are recovered directly from observed mixtures through a single end-to-end objective, without supervised source labels or separate post-processing. Source-wise generation, structural regularization, and observation-space reconstruction are optimized jointly during training. In this ins",
+    "url": "http://arxiv.org/abs/2604.04973v2",
     "source": "arxiv",
     "tags": [
       "Diffusion"
@@ -834,6 +851,24 @@
     "tags": []
   },
   {
+    "title": "LLM4AD: Large Language Models for Autonomous Driving—Concept, Review, Benchmark, Experiments, and Future Trends",
+    "authors": [
+      "C Cui",
+      "Y Ma",
+      "SY Park",
+      "Z Yang",
+      "Y Zhou"
+    ],
+    "date": "2026",
+    "summary": "For evaluation, existing studies rely on language-augmented driving  In addition, the  Talk2Drive framework is designed to guarantee safety by architecturally separating the high-latency",
+    "url": "https://arxiv.org/pdf/2410.15281",
+    "source": "scholar",
+    "venue": "Proceedings of the …",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
     "title": "Contextual Biasing for LLM-Based ASR with Hotword Retrieval and Reinforcement Learning",
     "authors": [
       "YuXiang Kong",
@@ -1036,17 +1071,17 @@
       "Jiaqi Su",
       "Rithesh Kumar",
       "Minje Kim",
-      "Paris Smaragdis",
+      "P. Smaragdis",
       "Zeyu Jin",
       "Justin Salamon"
     ],
     "date": "2025-11-06",
-    "summary": "Recent breakthroughs in language-queried audio source separation (LASS) have shown that generative models can achieve higher separation audio quality than traditional masking-based approaches. However, two key limitations restrict their practical use: (1) users often require operations beyond separation, such as sound removal; and (2) relying solely on text prompts can be unintuitive for specifying sound sources. In this paper, we propose PromptSep to extend LASS into a broader framework for general-purpose sound separation. PromptSep leverages a conditional diffusion model enhanced with elabo",
-    "url": "http://arxiv.org/abs/2511.04623v1",
-    "source": "arxiv",
+    "summary": "Recent breakthroughs in language-queried audio source separation (LASS) have shown that generative models can achieve higher separation audio quality than traditional masking-based approaches. However, two key limitations restrict their practical use: (1) users often require operations beyond separation, such as sound removal; and (2) relying solely on text prompts can be unintuitive for specifying sound sources. In this paper, we propose PromptSep to extend LASS into a broader framework for gen",
+    "url": "https://arxiv.org/abs/2511.04623",
+    "source": "semantic",
+    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
     "tags": [
-      "LASS",
-      "Diffusion"
+      "LASS"
     ]
   },
   {
@@ -1624,6 +1659,22 @@
     ]
   },
   {
+    "title": "CodecSep: Prompt-Driven Universal Sound Separation on Neural Audio Codec Latents",
+    "authors": [
+      "Adhiraj Banerjee",
+      "Vipul Arora"
+    ],
+    "date": "2025-09-15",
+    "summary": "Text-guided sound separation enables flexible audio editing, assistive listening, and open-domain source extraction, but systems such as AudioSep remain too expensive for low-latency edge or codec-mediated deployment. Existing neural audio codec separators are efficient, yet largely restricted to fixed stems or closed taxonomies. We introduce CodecSep, a prompt-driven universal sound separation framework that extracts sources directly in neural audio codec latent space. CodecSep combines a frozen DAC backbone with a lightweight FiLM-conditioned Transformer masker driven by CLAP text embeddings",
+    "url": "http://arxiv.org/abs/2509.11717v5",
+    "source": "arxiv",
+    "tags": [
+      "AudioSep",
+      "CLAP",
+      "Transformer"
+    ]
+  },
+  {
     "title": "Neural Audio Codecs for Prompt-Driven Universal Sound Separation",
     "authors": [
       "Adhiraj Banerjee",
@@ -1636,22 +1687,6 @@
     "venue": "arXiv.org",
     "tags": [
       "LASS",
-      "AudioSep",
-      "CLAP",
-      "Transformer"
-    ]
-  },
-  {
-    "title": "CodecSep: Prompt-Driven Universal Sound Separation on Neural Audio Codec Latents",
-    "authors": [
-      "Adhiraj Banerjee",
-      "Vipul Arora"
-    ],
-    "date": "2025-09-15",
-    "summary": "Text-guided sound separation enables flexible audio editing, assistive listening, and open-domain source extraction, but systems such as AudioSep remain too expensive for low-latency edge or codec-mediated deployment. Existing neural audio codec separators are efficient, yet largely restricted to fixed stems or closed taxonomies. We introduce CodecSep, a prompt-driven universal sound separation framework that extracts sources directly in neural audio codec latent space. CodecSep combines a frozen DAC backbone with a lightweight FiLM-conditioned Transformer masker driven by CLAP text embeddings",
-    "url": "http://arxiv.org/abs/2509.11717v5",
-    "source": "arxiv",
-    "tags": [
       "AudioSep",
       "CLAP",
       "Transformer"
@@ -2446,20 +2481,6 @@
     ]
   },
   {
-    "title": "EviGraph-LLMRec: Evidential Graph-Language Model Fusion for Uncertainty-Aware Recommendation",
-    "authors": [
-      "G Zare"
-    ],
-    "date": "2025",
-    "summary": "Language-augmented approaches alleviate cold-start cases by incorporating descriptive  metadata, but without uncertainty handling, noisy semantics may mislead learning. Ideally,",
-    "url": "https://www.researchgate.net/profile/Gholamreza-Zare-2/publication/397137958_EviGraph-LLMRec_Evidential_Graph-Language_Model_Fusion_for_Uncertainty-Aware_Recommendation/links/6905e1b6c900be105cbe6373/EviGraph-LLMRec-Evidential-Graph-Language-Model-Fusion-for-Uncertainty-Aware-Recommendation.pdf",
-    "source": "scholar",
-    "venue": "NA",
-    "tags": [
-      "LASS"
-    ]
-  },
-  {
     "title": "Multimodal Model Based on Contrastive Language-Image Pretraining for Micro-Expression Recognition",
     "authors": [
       "P Yang",
@@ -2471,6 +2492,34 @@
     "date": "2025",
     "summary": "Language-augmented multimodal learning presents a promising paradigm for improving  microexpression analysis, effectively compensating for data scarcity through fine-grained",
     "url": "https://www.researchsquare.com/article/rs-8133344/latest.pdf",
+    "source": "scholar",
+    "venue": "NA",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
+    "title": "WhatWhen2Ask: Cost-Aware LLM Querying for Autonomous Robots in Uncertain Environments",
+    "authors": [
+      "V Thirumalai"
+    ],
+    "date": "2025",
+    "summary": "that principled, confidence-aware LLM querying can enhance decision-making in  uncertain environments, offering a step toward more efficient and cost-aware language-augmented",
+    "url": "https://dspace.mit.edu/bitstream/handle/1721.1/162960/thirumalai-vittalt-meng-eecs-2025-thesis.pdf?sequence=1&isAllowed=y",
+    "source": "scholar",
+    "venue": "NA",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
+    "title": "EviGraph-LLMRec: Evidential Graph-Language Model Fusion for Uncertainty-Aware Recommendation",
+    "authors": [
+      "G Zare"
+    ],
+    "date": "2025",
+    "summary": "Language-augmented approaches alleviate cold-start cases by incorporating descriptive  metadata, but without uncertainty handling, noisy semantics may mislead learning. Ideally,",
+    "url": "https://www.researchgate.net/profile/Gholamreza-Zare-2/publication/397137958_EviGraph-LLMRec_Evidential_Graph-Language_Model_Fusion_for_Uncertainty-Aware_Recommendation/links/6905e1b6c900be105cbe6373/EviGraph-LLMRec-Evidential-Graph-Language-Model-Fusion-for-Uncertainty-Aware-Recommendation.pdf",
     "source": "scholar",
     "venue": "NA",
     "tags": [

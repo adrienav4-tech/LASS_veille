@@ -1,5 +1,21 @@
 [
   {
+    "title": "A Knowledge-Driven Approach to Target Speech Extraction in the Presence of Background Sound Effects for Cinematic Audio Source Separation (CASS)",
+    "authors": [
+      "Chun-wei Ho",
+      "Sabato Marco Siniscalchi",
+      "Kai Li",
+      "Chin-Hui Lee"
+    ],
+    "date": "2026-04-30",
+    "summary": "We propose a knowledge-driven approach to speech target extraction in the presence of background sound effects already recorded in cinematic audio. The specific knowledge sources studied are manners of articulation that are detected in speech frames and adopted to form a knowledge vector as a part of features to enhance speech separation and target speech extraction because some short speech segments are often difficult to separate from mixed background sounds. Testing on the recent Sound Demixing Challenge data for cinematic audio source separation (CASS) shows that utilizing articulator-awar",
+    "url": "http://arxiv.org/abs/2604.27403v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
     "title": "S-SONDO: Self-Supervised Knowledge Distillation for General Audio Foundation Models",
     "authors": [
       "Mohammed Ali El Adlouni",

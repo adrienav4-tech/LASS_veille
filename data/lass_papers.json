@@ -2497,6 +2497,20 @@
     ]
   },
   {
+    "title": "EviGraph-LLMRec: Evidential Graph-Language Model Fusion for Uncertainty-Aware Recommendation",
+    "authors": [
+      "G Zare"
+    ],
+    "date": "2025",
+    "summary": "Language-augmented approaches alleviate cold-start cases by incorporating descriptive  metadata, but without uncertainty handling, noisy semantics may mislead learning. Ideally,",
+    "url": "https://www.researchgate.net/profile/Gholamreza-Zare-2/publication/397137958_EviGraph-LLMRec_Evidential_Graph-Language_Model_Fusion_for_Uncertainty-Aware_Recommendation/links/6905e1b6c900be105cbe6373/EviGraph-LLMRec-Evidential-Graph-Language-Model-Fusion-for-Uncertainty-Aware-Recommendation.pdf",
+    "source": "scholar",
+    "venue": "NA",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
     "title": "Multimodal Model Based on Contrastive Language-Image Pretraining for Micro-Expression Recognition",
     "authors": [
       "P Yang",
@@ -2522,20 +2536,6 @@
     "date": "2025",
     "summary": "that principled, confidence-aware LLM querying can enhance decision-making in  uncertain environments, offering a step toward more efficient and cost-aware language-augmented",
     "url": "https://dspace.mit.edu/bitstream/handle/1721.1/162960/thirumalai-vittalt-meng-eecs-2025-thesis.pdf?sequence=1&isAllowed=y",
-    "source": "scholar",
-    "venue": "NA",
-    "tags": [
-      "LASS"
-    ]
-  },
-  {
-    "title": "EviGraph-LLMRec: Evidential Graph-Language Model Fusion for Uncertainty-Aware Recommendation",
-    "authors": [
-      "G Zare"
-    ],
-    "date": "2025",
-    "summary": "Language-augmented approaches alleviate cold-start cases by incorporating descriptive  metadata, but without uncertainty handling, noisy semantics may mislead learning. Ideally,",
-    "url": "https://www.researchgate.net/profile/Gholamreza-Zare-2/publication/397137958_EviGraph-LLMRec_Evidential_Graph-Language_Model_Fusion_for_Uncertainty-Aware_Recommendation/links/6905e1b6c900be105cbe6373/EviGraph-LLMRec-Evidential-Graph-Language-Model-Fusion-for-Uncertainty-Aware-Recommendation.pdf",
     "source": "scholar",
     "venue": "NA",
     "tags": [

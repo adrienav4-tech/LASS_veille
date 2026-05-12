@@ -1,5 +1,21 @@
 [
   {
+    "title": "Remix the Timbre: Diffusion-Based Style Transfer Across Polyphonic Stems",
+    "authors": [
+      "Leduo Chen",
+      "Junchuan Zhao",
+      "Shengchen Li"
+    ],
+    "date": "2026-05-10",
+    "summary": "Timbre transfer aims to modify the timbral identity of a musical recording while preserving the original melody and rhythm. While single-instrument timbre transfer has made substantial progress, existing approaches to multi-instrument settings rely on separate-then-transfer pipelines that propagate source separation artifacts and produce incoherent synthesized timbres across stems. This paper proposes MixtureTT, to the best of our knowledge the first system for flexible per-stem timbre transfer directly from a polyphonic mixture. Given a mixture and a separate timbre reference for each target ",
+    "url": "http://arxiv.org/abs/2605.09259v1",
+    "source": "arxiv",
+    "tags": [
+      "Music",
+      "Diffusion"
+    ]
+  },
+  {
     "title": "A Knowledge-Driven Approach to Target Speech Extraction in the Presence of Background Sound Effects for Cinematic Audio Source Separation (CASS)",
     "authors": [
       "Chun-wei Ho",

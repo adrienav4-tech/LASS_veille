@@ -339,20 +339,6 @@
     ]
   },
   {
-    "title": "Robust Long-Form Bangla Speech Processing: Automatic Speech Recognition and Speaker Diarization",
-    "authors": [
-      "MD. Sagor Chowdhury",
-      "Adiba Fairooz Chowdhury"
-    ],
-    "date": "2026-02-25",
-    "summary": "We describe our end-to-end system for Bengali long-form speech recognition (ASR) and speaker diarization submitted to the DL Sprint 4.0 competition on Kaggle. Bengali presents substantial challenges for both tasks: a large phoneme inventory, significant dialectal variation, frequent code-mixing with English, and a relative scarcity of large-scale labelled corpora. For ASR we achieve a best private Word Error Rate (WER) of 0.37738 and public WER of 0.36137, combining a BengaliAI fine-tuned Whisper medium model with Demucs source separation for vocal isolation, silence-boundary chunking, and car",
-    "url": "http://arxiv.org/abs/2602.21741v1",
-    "source": "arxiv",
-    "tags": [
-      "Speech"
-    ]
-  },
-  {
     "title": "Moving Speaker Separation via Parallel Spectral-Spatial Processing",
     "authors": [
       "Yuzhu Wang",
@@ -363,6 +349,20 @@
     "date": "2026-02-25",
     "summary": "Multi-channel speech separation in dynamic environments is challenging as time-varying spatial and spectral features evolve at different temporal scales. Existing methods typically employ sequential architectures, forcing a single network stream to simultaneously model both feature types, creating an inherent modeling conflict. In this paper, we propose a dual-branch parallel spectral-spatial (PS2) architecture that separately processes spectral and spatial features through parallel streams. The spectral branch uses a bi-directional long short-term memory (BLSTM)-based frequency module, a Mamb",
     "url": "http://arxiv.org/abs/2602.22487v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
+    "title": "Robust Long-Form Bangla Speech Processing: Automatic Speech Recognition and Speaker Diarization",
+    "authors": [
+      "MD. Sagor Chowdhury",
+      "Adiba Fairooz Chowdhury"
+    ],
+    "date": "2026-02-25",
+    "summary": "We describe our end-to-end system for Bengali long-form speech recognition (ASR) and speaker diarization submitted to the DL Sprint 4.0 competition on Kaggle. Bengali presents substantial challenges for both tasks: a large phoneme inventory, significant dialectal variation, frequent code-mixing with English, and a relative scarcity of large-scale labelled corpora. For ASR we achieve a best private Word Error Rate (WER) of 0.37738 and public WER of 0.36137, combining a BengaliAI fine-tuned Whisper medium model with Demucs source separation for vocal isolation, silence-boundary chunking, and car",
+    "url": "http://arxiv.org/abs/2602.21741v1",
     "source": "arxiv",
     "tags": [
       "Speech"
@@ -789,26 +789,6 @@
     ]
   },
   {
-    "title": "SLAP: Scalable Language-Audio Pretraining with Variable-Duration Audio and Multi-Objective Training",
-    "authors": [
-      "Xinhao Mei",
-      "Gael Le Lan",
-      "Haohe Liu",
-      "Zhaoheng Ni",
-      "Varun Nagaraja",
-      "Yang Liu",
-      "Yangyang Shi",
-      "Vikas Chandra"
-    ],
-    "date": "2026-01-18",
-    "summary": "Contrastive language-audio pretraining (CLAP) has achieved notable success in learning semantically rich audio representations and is widely adopted for various audio-related tasks. However, current CLAP models face several key limitations. First, they are typically trained on relatively small datasets, often comprising a few million audio samples. Second, existing CLAP models are restricted to short and fixed duration, which constrains their usage in real-world scenarios with variable-duration audio. Third, the standard contrastive training objective operates on global representations, which ",
-    "url": "http://arxiv.org/abs/2601.12594v1",
-    "source": "arxiv",
-    "tags": [
-      "CLAP"
-    ]
-  },
-  {
     "title": "Robust Online Overdetermined Independent Vector Analysis Based on Bilinear Decomposition",
     "authors": [
       "Kang Chen",
@@ -827,6 +807,26 @@
     "source": "arxiv",
     "tags": [
       "Speech"
+    ]
+  },
+  {
+    "title": "SLAP: Scalable Language-Audio Pretraining with Variable-Duration Audio and Multi-Objective Training",
+    "authors": [
+      "Xinhao Mei",
+      "Gael Le Lan",
+      "Haohe Liu",
+      "Zhaoheng Ni",
+      "Varun Nagaraja",
+      "Yang Liu",
+      "Yangyang Shi",
+      "Vikas Chandra"
+    ],
+    "date": "2026-01-18",
+    "summary": "Contrastive language-audio pretraining (CLAP) has achieved notable success in learning semantically rich audio representations and is widely adopted for various audio-related tasks. However, current CLAP models face several key limitations. First, they are typically trained on relatively small datasets, often comprising a few million audio samples. Second, existing CLAP models are restricted to short and fixed duration, which constrains their usage in real-world scenarios with variable-duration audio. Third, the standard contrastive training objective operates on global representations, which ",
+    "url": "http://arxiv.org/abs/2601.12594v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP"
     ]
   },
   {
@@ -3412,24 +3412,6 @@
     ]
   },
   {
-    "title": "CLIPSep: Learning Text-queried Sound Separation with Noisy Unlabeled Videos",
-    "authors": [
-      "Hao-Wen Dong",
-      "Naoya Takahashi",
-      "Yuki Mitsufuji",
-      "Julian McAuley",
-      "Taylor Berg-Kirkpatrick"
-    ],
-    "date": "2022-12-14",
-    "summary": "Recent years have seen progress beyond domain-specific sound separation for speech or music towards universal sound separation for arbitrary sounds. Prior work on universal sound separation has investigated separating a target sound out of an audio mixture given a text query. Such text-queried sound separation systems provide a natural and scalable interface for specifying arbitrary target sounds. However, supervised text-queried sound separation systems require costly labeled audio-text pairs for training. Moreover, the audio provided in existing datasets is often recorded in a controlled env",
-    "url": "http://arxiv.org/abs/2212.07065v2",
-    "source": "arxiv",
-    "tags": [
-      "Music",
-      "Speech"
-    ]
-  },
-  {
     "title": "Hyperbolic Audio Source Separation",
     "authors": [
       "Darius Petermann",
@@ -3612,6 +3594,21 @@
     "tags": [
       "Speech"
     ]
+  },
+  {
+    "title": "CLIPSep: Learning text-queried sound separation with noisy unlabeled videos",
+    "authors": [
+      "HW Dong",
+      "N Takahashi",
+      "Y Mitsufuji",
+      "J McAuley"
+    ],
+    "date": "2022",
+    "summary": "gap to noisy audio in the wild. In this work, we aim to approach text-queried universal  sound  We propose to leverage the visual modality as a bridge to learn the desired audio-textual",
+    "url": "https://arxiv.org/pdf/2212.07065",
+    "source": "scholar",
+    "venue": "arXiv preprint arXiv …",
+    "tags": []
   },
   {
     "title": "Zero-shot Audio Source Separation through Query-based Learning from Weakly-labeled Data",

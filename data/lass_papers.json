@@ -3412,6 +3412,24 @@
     ]
   },
   {
+    "title": "CLIPSep: Learning Text-queried Sound Separation with Noisy Unlabeled Videos",
+    "authors": [
+      "Hao-Wen Dong",
+      "Naoya Takahashi",
+      "Yuki Mitsufuji",
+      "Julian McAuley",
+      "Taylor Berg-Kirkpatrick"
+    ],
+    "date": "2022-12-14",
+    "summary": "Recent years have seen progress beyond domain-specific sound separation for speech or music towards universal sound separation for arbitrary sounds. Prior work on universal sound separation has investigated separating a target sound out of an audio mixture given a text query. Such text-queried sound separation systems provide a natural and scalable interface for specifying arbitrary target sounds. However, supervised text-queried sound separation systems require costly labeled audio-text pairs for training. Moreover, the audio provided in existing datasets is often recorded in a controlled env",
+    "url": "http://arxiv.org/abs/2212.07065v2",
+    "source": "arxiv",
+    "tags": [
+      "Music",
+      "Speech"
+    ]
+  },
+  {
     "title": "Hyperbolic Audio Source Separation",
     "authors": [
       "Darius Petermann",
@@ -3594,21 +3612,6 @@
     "tags": [
       "Speech"
     ]
-  },
-  {
-    "title": "CLIPSep: Learning text-queried sound separation with noisy unlabeled videos",
-    "authors": [
-      "HW Dong",
-      "N Takahashi",
-      "Y Mitsufuji",
-      "J McAuley"
-    ],
-    "date": "2022",
-    "summary": "gap to noisy audio in the wild. In this work, we aim to approach text-queried universal  sound  We propose to leverage the visual modality as a bridge to learn the desired audio-textual",
-    "url": "https://arxiv.org/pdf/2212.07065",
-    "source": "scholar",
-    "venue": "arXiv preprint arXiv …",
-    "tags": []
   },
   {
     "title": "Zero-shot Audio Source Separation through Query-based Learning from Weakly-labeled Data",

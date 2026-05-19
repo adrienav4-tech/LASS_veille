@@ -1,5 +1,18 @@
 [
   {
+    "title": "Can Large Audio Language Models Ignore Multilingual Distractors? An Evaluation of Their Selective Auditory Attention Capabilities",
+    "authors": [
+      "Heejoon Koo"
+    ],
+    "date": "2026-05-17",
+    "summary": "Robust selective auditory attention under multilingual interference is critical for reliable deployment of Large Audio Language Models (LALMs). We introduce MUSA, a cocktail party-inspired multilingual benchmark for source-grounded spoken-language understanding and reasoning. Each item pairs an English target dialogue with a semantically plausible distractor in English, Spanish, Korean, or Chinese, and evaluates models across (1) single, (2) source separation-based two-stage, (3) and end-to-end cocktail party settings under controlled SNRs. Evaluating two closed-source and four open-weight LAL",
+    "url": "http://arxiv.org/abs/2605.17225v1",
+    "source": "arxiv",
+    "tags": [
+      "Transformer"
+    ]
+  },
+  {
     "title": "Remix the Timbre: Diffusion-Based Style Transfer Across Polyphonic Stems",
     "authors": [
       "Leduo Chen",
@@ -339,6 +352,20 @@
     ]
   },
   {
+    "title": "Robust Long-Form Bangla Speech Processing: Automatic Speech Recognition and Speaker Diarization",
+    "authors": [
+      "MD. Sagor Chowdhury",
+      "Adiba Fairooz Chowdhury"
+    ],
+    "date": "2026-02-25",
+    "summary": "We describe our end-to-end system for Bengali long-form speech recognition (ASR) and speaker diarization submitted to the DL Sprint 4.0 competition on Kaggle. Bengali presents substantial challenges for both tasks: a large phoneme inventory, significant dialectal variation, frequent code-mixing with English, and a relative scarcity of large-scale labelled corpora. For ASR we achieve a best private Word Error Rate (WER) of 0.37738 and public WER of 0.36137, combining a BengaliAI fine-tuned Whisper medium model with Demucs source separation for vocal isolation, silence-boundary chunking, and car",
+    "url": "http://arxiv.org/abs/2602.21741v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
     "title": "Moving Speaker Separation via Parallel Spectral-Spatial Processing",
     "authors": [
       "Yuzhu Wang",
@@ -349,20 +376,6 @@
     "date": "2026-02-25",
     "summary": "Multi-channel speech separation in dynamic environments is challenging as time-varying spatial and spectral features evolve at different temporal scales. Existing methods typically employ sequential architectures, forcing a single network stream to simultaneously model both feature types, creating an inherent modeling conflict. In this paper, we propose a dual-branch parallel spectral-spatial (PS2) architecture that separately processes spectral and spatial features through parallel streams. The spectral branch uses a bi-directional long short-term memory (BLSTM)-based frequency module, a Mamb",
     "url": "http://arxiv.org/abs/2602.22487v1",
-    "source": "arxiv",
-    "tags": [
-      "Speech"
-    ]
-  },
-  {
-    "title": "Robust Long-Form Bangla Speech Processing: Automatic Speech Recognition and Speaker Diarization",
-    "authors": [
-      "MD. Sagor Chowdhury",
-      "Adiba Fairooz Chowdhury"
-    ],
-    "date": "2026-02-25",
-    "summary": "We describe our end-to-end system for Bengali long-form speech recognition (ASR) and speaker diarization submitted to the DL Sprint 4.0 competition on Kaggle. Bengali presents substantial challenges for both tasks: a large phoneme inventory, significant dialectal variation, frequent code-mixing with English, and a relative scarcity of large-scale labelled corpora. For ASR we achieve a best private Word Error Rate (WER) of 0.37738 and public WER of 0.36137, combining a BengaliAI fine-tuned Whisper medium model with Demucs source separation for vocal isolation, silence-boundary chunking, and car",
-    "url": "http://arxiv.org/abs/2602.21741v1",
     "source": "arxiv",
     "tags": [
       "Speech"
@@ -789,6 +802,26 @@
     ]
   },
   {
+    "title": "SLAP: Scalable Language-Audio Pretraining with Variable-Duration Audio and Multi-Objective Training",
+    "authors": [
+      "Xinhao Mei",
+      "Gael Le Lan",
+      "Haohe Liu",
+      "Zhaoheng Ni",
+      "Varun Nagaraja",
+      "Yang Liu",
+      "Yangyang Shi",
+      "Vikas Chandra"
+    ],
+    "date": "2026-01-18",
+    "summary": "Contrastive language-audio pretraining (CLAP) has achieved notable success in learning semantically rich audio representations and is widely adopted for various audio-related tasks. However, current CLAP models face several key limitations. First, they are typically trained on relatively small datasets, often comprising a few million audio samples. Second, existing CLAP models are restricted to short and fixed duration, which constrains their usage in real-world scenarios with variable-duration audio. Third, the standard contrastive training objective operates on global representations, which ",
+    "url": "http://arxiv.org/abs/2601.12594v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP"
+    ]
+  },
+  {
     "title": "Robust Online Overdetermined Independent Vector Analysis Based on Bilinear Decomposition",
     "authors": [
       "Kang Chen",
@@ -807,26 +840,6 @@
     "source": "arxiv",
     "tags": [
       "Speech"
-    ]
-  },
-  {
-    "title": "SLAP: Scalable Language-Audio Pretraining with Variable-Duration Audio and Multi-Objective Training",
-    "authors": [
-      "Xinhao Mei",
-      "Gael Le Lan",
-      "Haohe Liu",
-      "Zhaoheng Ni",
-      "Varun Nagaraja",
-      "Yang Liu",
-      "Yangyang Shi",
-      "Vikas Chandra"
-    ],
-    "date": "2026-01-18",
-    "summary": "Contrastive language-audio pretraining (CLAP) has achieved notable success in learning semantically rich audio representations and is widely adopted for various audio-related tasks. However, current CLAP models face several key limitations. First, they are typically trained on relatively small datasets, often comprising a few million audio samples. Second, existing CLAP models are restricted to short and fixed duration, which constrains their usage in real-world scenarios with variable-duration audio. Third, the standard contrastive training objective operates on global representations, which ",
-    "url": "http://arxiv.org/abs/2601.12594v1",
-    "source": "arxiv",
-    "tags": [
-      "CLAP"
     ]
   },
   {
@@ -2546,20 +2559,6 @@
     ]
   },
   {
-    "title": "EviGraph-LLMRec: Evidential Graph-Language Model Fusion for Uncertainty-Aware Recommendation",
-    "authors": [
-      "G Zare"
-    ],
-    "date": "2025",
-    "summary": "Language-augmented approaches alleviate cold-start cases by incorporating descriptive  metadata, but without uncertainty handling, noisy semantics may mislead learning. Ideally,",
-    "url": "https://www.researchgate.net/profile/Gholamreza-Zare-2/publication/397137958_EviGraph-LLMRec_Evidential_Graph-Language_Model_Fusion_for_Uncertainty-Aware_Recommendation/links/6905e1b6c900be105cbe6373/EviGraph-LLMRec-Evidential-Graph-Language-Model-Fusion-for-Uncertainty-Aware-Recommendation.pdf",
-    "source": "scholar",
-    "venue": "NA",
-    "tags": [
-      "LASS"
-    ]
-  },
-  {
     "title": "Multimodal Model Based on Contrastive Language-Image Pretraining for Micro-Expression Recognition",
     "authors": [
       "P Yang",
@@ -2571,6 +2570,20 @@
     "date": "2025",
     "summary": "Language-augmented multimodal learning presents a promising paradigm for improving  microexpression analysis, effectively compensating for data scarcity through fine-grained",
     "url": "https://www.researchsquare.com/article/rs-8133344/latest.pdf",
+    "source": "scholar",
+    "venue": "NA",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
+    "title": "EviGraph-LLMRec: Evidential Graph-Language Model Fusion for Uncertainty-Aware Recommendation",
+    "authors": [
+      "G Zare"
+    ],
+    "date": "2025",
+    "summary": "Language-augmented approaches alleviate cold-start cases by incorporating descriptive  metadata, but without uncertainty handling, noisy semantics may mislead learning. Ideally,",
+    "url": "https://www.researchgate.net/profile/Gholamreza-Zare-2/publication/397137958_EviGraph-LLMRec_Evidential_Graph-Language_Model_Fusion_for_Uncertainty-Aware_Recommendation/links/6905e1b6c900be105cbe6373/EviGraph-LLMRec-Evidential-Graph-Language-Model-Fusion-for-Uncertainty-Aware-Recommendation.pdf",
     "source": "scholar",
     "venue": "NA",
     "tags": [
@@ -3410,6 +3423,21 @@
       "Speech",
       "Transformer"
     ]
+  },
+  {
+    "title": "Audio-enhanced text-to-video retrieval using text-conditioned feature alignment",
+    "authors": [
+      "S Ibrahimi",
+      "X Sun",
+      "P Wang",
+      "A Garg"
+    ],
+    "date": "2023",
+    "summary": "We present an example from the MSR-VTT dataset [41] to highlight how audio provides  complementary information to the video to achieve improved text-queried retrieval. More",
+    "url": "http://openaccess.thecvf.com/content/ICCV2023/papers/Ibrahimi_Audio-Enhanced_Text-to-Video_Retrieval_using_Text-Conditioned_Feature_Alignment_ICCV_2023_paper.pdf",
+    "source": "scholar",
+    "venue": "Proceedings of the …",
+    "tags": []
   },
   {
     "title": "CLIPSep: Learning Text-queried Sound Separation with Noisy Unlabeled Videos",

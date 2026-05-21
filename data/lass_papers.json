@@ -1,5 +1,34 @@
 [
   {
+    "title": "Fast Multichannel NMF with Block-Diagonal Spatial Covariance Matrices for Efficient Blind Source Separation Using Distributed Microphone Arrays",
+    "authors": [
+      "Hirotaka Nishikori",
+      "Nobutaka Ito",
+      "Kouei Yamaoka",
+      "Norihiro Takamune",
+      "Hiroshi Saruwatari"
+    ],
+    "date": "2026-05-19",
+    "summary": "Distributed microphone arrays composed of multiple subarrays enable blind source separation over a wide spatial area. Directly applying fast multichannel nonnegative matrix factorization (FastMNMF) to all subarrays can exploit observations from all subarrays, but it requires repeated inversions of large matrices spanning all microphones, causing the computational cost to increase rapidly as the number of microphones grows. In contrast, applying FastMNMF to one subarray reduces the matrix size but cannot exploit observations from other subarrays. We propose distributed FastMNMF, which imposes a",
+    "url": "http://arxiv.org/abs/2605.19388v1",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
+    "title": "Cross-Talk Speech Reduction, by Separation, for Separation",
+    "authors": [
+      "Zhong-Qiu Wang",
+      "Samuele Cornell"
+    ],
+    "date": "2026-05-19",
+    "summary": "In conversational speech separation and recognition tasks, close-talk microphones are typically attached to each speaker during training data collection to capture near-field, close-talk mixture signals, in addition to using far-field microphones to record far-field mixture signals. Each such close-talk mixture exhibits a reasonably high energy level for the wearer and could intuitively serve as weak supervision for training far-field speech separation models directly on real-recorded far-field signals. However, they are not sufficiently clean for this purpose, as they often contain strong cro",
+    "url": "http://arxiv.org/abs/2605.19695v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
     "title": "Can Large Audio Language Models Ignore Multilingual Distractors? An Evaluation of Their Selective Auditory Attention Capabilities",
     "authors": [
       "Heejoon Koo"
@@ -2559,20 +2588,6 @@
     ]
   },
   {
-    "title": "EviGraph-LLMRec: Evidential Graph-Language Model Fusion for Uncertainty-Aware Recommendation",
-    "authors": [
-      "G Zare"
-    ],
-    "date": "2025",
-    "summary": "Language-augmented approaches alleviate cold-start cases by incorporating descriptive  metadata, but without uncertainty handling, noisy semantics may mislead learning. Ideally,",
-    "url": "https://www.researchgate.net/profile/Gholamreza-Zare-2/publication/397137958_EviGraph-LLMRec_Evidential_Graph-Language_Model_Fusion_for_Uncertainty-Aware_Recommendation/links/6905e1b6c900be105cbe6373/EviGraph-LLMRec-Evidential-Graph-Language-Model-Fusion-for-Uncertainty-Aware-Recommendation.pdf",
-    "source": "scholar",
-    "venue": "NA",
-    "tags": [
-      "LASS"
-    ]
-  },
-  {
     "title": "Multimodal Model Based on Contrastive Language-Image Pretraining for Micro-Expression Recognition",
     "authors": [
       "P Yang",
@@ -2584,6 +2599,20 @@
     "date": "2025",
     "summary": "Language-augmented multimodal learning presents a promising paradigm for improving  microexpression analysis, effectively compensating for data scarcity through fine-grained",
     "url": "https://www.researchsquare.com/article/rs-8133344/latest.pdf",
+    "source": "scholar",
+    "venue": "NA",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
+    "title": "EviGraph-LLMRec: Evidential Graph-Language Model Fusion for Uncertainty-Aware Recommendation",
+    "authors": [
+      "G Zare"
+    ],
+    "date": "2025",
+    "summary": "Language-augmented approaches alleviate cold-start cases by incorporating descriptive  metadata, but without uncertainty handling, noisy semantics may mislead learning. Ideally,",
+    "url": "https://www.researchgate.net/profile/Gholamreza-Zare-2/publication/397137958_EviGraph-LLMRec_Evidential_Graph-Language_Model_Fusion_for_Uncertainty-Aware_Recommendation/links/6905e1b6c900be105cbe6373/EviGraph-LLMRec-Evidential-Graph-Language-Model-Fusion-for-Uncertainty-Aware-Recommendation.pdf",
     "source": "scholar",
     "venue": "NA",
     "tags": [

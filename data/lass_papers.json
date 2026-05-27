@@ -1,5 +1,20 @@
 [
   {
+    "title": "MERIT: Learning Disentangled Music Representations for Audio Similarity",
+    "authors": [
+      "Abhinaba Roy",
+      "Junyi Liang",
+      "Dorien Herremans"
+    ],
+    "date": "2026-05-26",
+    "summary": "Current music similarity models typically compute a single, monolithic score, entangling distinct musical dimensions like melody, rhythm, and timbre. This limits user control and interpretability, making it impossible to execute nuanced queries. We introduce MERIT, a framework for learning disentangled, factor-specific music representations tailored to these three core dimensions. To overcome the lack of isolated musical variations in real-world audio, we use a novel training strategy that uses conditional audio generation and source-separated stems to strongly encourage single-factor variatio",
+    "url": "http://arxiv.org/abs/2605.27346v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
     "title": "Fast Multichannel NMF with Block-Diagonal Spatial Covariance Matrices for Efficient Blind Source Separation Using Distributed Microphone Arrays",
     "authors": [
       "Hirotaka Nishikori",
@@ -831,6 +846,26 @@
     ]
   },
   {
+    "title": "SLAP: Scalable Language-Audio Pretraining with Variable-Duration Audio and Multi-Objective Training",
+    "authors": [
+      "Xinhao Mei",
+      "Gael Le Lan",
+      "Haohe Liu",
+      "Zhaoheng Ni",
+      "Varun Nagaraja",
+      "Yang Liu",
+      "Yangyang Shi",
+      "Vikas Chandra"
+    ],
+    "date": "2026-01-18",
+    "summary": "Contrastive language-audio pretraining (CLAP) has achieved notable success in learning semantically rich audio representations and is widely adopted for various audio-related tasks. However, current CLAP models face several key limitations. First, they are typically trained on relatively small datasets, often comprising a few million audio samples. Second, existing CLAP models are restricted to short and fixed duration, which constrains their usage in real-world scenarios with variable-duration audio. Third, the standard contrastive training objective operates on global representations, which ",
+    "url": "http://arxiv.org/abs/2601.12594v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP"
+    ]
+  },
+  {
     "title": "Robust Online Overdetermined Independent Vector Analysis Based on Bilinear Decomposition",
     "authors": [
       "Kang Chen",
@@ -849,26 +884,6 @@
     "source": "arxiv",
     "tags": [
       "Speech"
-    ]
-  },
-  {
-    "title": "SLAP: Scalable Language-Audio Pretraining with Variable-Duration Audio and Multi-Objective Training",
-    "authors": [
-      "Xinhao Mei",
-      "Gael Le Lan",
-      "Haohe Liu",
-      "Zhaoheng Ni",
-      "Varun Nagaraja",
-      "Yang Liu",
-      "Yangyang Shi",
-      "Vikas Chandra"
-    ],
-    "date": "2026-01-18",
-    "summary": "Contrastive language-audio pretraining (CLAP) has achieved notable success in learning semantically rich audio representations and is widely adopted for various audio-related tasks. However, current CLAP models face several key limitations. First, they are typically trained on relatively small datasets, often comprising a few million audio samples. Second, existing CLAP models are restricted to short and fixed duration, which constrains their usage in real-world scenarios with variable-duration audio. Third, the standard contrastive training objective operates on global representations, which ",
-    "url": "http://arxiv.org/abs/2601.12594v1",
-    "source": "arxiv",
-    "tags": [
-      "CLAP"
     ]
   },
   {
@@ -1332,6 +1347,23 @@
     ]
   },
   {
+    "title": "MARS-Sep: Multimodal-Aligned Reinforced Sound Separation",
+    "authors": [
+      "Zihan Zhang",
+      "Xize Cheng",
+      "Zhennan Jiang",
+      "Dongjie Fu",
+      "Jingyuan Chen",
+      "Zhou Zhao",
+      "Tao Jin"
+    ],
+    "date": "2025-10-12",
+    "summary": "Universal sound separation faces a fundamental misalignment: models optimized for low-level signal metrics often produce semantically contaminated outputs, failing to suppress perceptually salient interference from acoustically similar sources. We introduce a preference alignment perspective, analogous to aligning LLMs with human intent. To address this, we introduce MARS-Sep, a reinforcement learning framework that reformulates separation as decision making. Instead of simply regressing ground-truth masks, MARS-Sep learns a factorized Beta mask policy that is steered by a preference reward mo",
+    "url": "http://arxiv.org/abs/2510.10509v2",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
     "title": "LSZone: A Lightweight Spatial Information Modeling Architecture for Real-time In-car Multi-zone Speech Separation",
     "authors": [
       "Jun Chen",
@@ -1353,23 +1385,6 @@
     "tags": [
       "Speech"
     ]
-  },
-  {
-    "title": "MARS-Sep: Multimodal-Aligned Reinforced Sound Separation",
-    "authors": [
-      "Zihan Zhang",
-      "Xize Cheng",
-      "Zhennan Jiang",
-      "Dongjie Fu",
-      "Jingyuan Chen",
-      "Zhou Zhao",
-      "Tao Jin"
-    ],
-    "date": "2025-10-12",
-    "summary": "Universal sound separation faces a fundamental misalignment: models optimized for low-level signal metrics often produce semantically contaminated outputs, failing to suppress perceptually salient interference from acoustically similar sources. We introduce a preference alignment perspective, analogous to aligning LLMs with human intent. To address this, we introduce MARS-Sep, a reinforcement learning framework that reformulates separation as decision making. Instead of simply regressing ground-truth masks, MARS-Sep learns a factorized Beta mask policy that is steered by a preference reward mo",
-    "url": "http://arxiv.org/abs/2510.10509v2",
-    "source": "arxiv",
-    "tags": []
   },
   {
     "title": "MMAudioSep: Taming Video-to-Audio Generative Model Towards Video/Text-Queried Sound Separation",
@@ -1505,6 +1520,23 @@
     ]
   },
   {
+    "title": "High-Quality Sound Separation Across Diverse Categories via Visually-Guided Generative Modeling",
+    "authors": [
+      "Chao Huang",
+      "Susan Liang",
+      "Yapeng Tian",
+      "Anurag Kumar",
+      "Chenliang Xu"
+    ],
+    "date": "2025-09-26",
+    "summary": "We propose DAVIS, a Diffusion-based Audio-VIsual Separation framework that solves the audio-visual sound source separation task through generative learning. Existing methods typically frame sound separation as a mask-based regression problem, achieving significant progress. However, they face limitations in capturing the complex data distribution required for high-quality separation of sounds from diverse categories. In contrast, DAVIS circumvents these issues by leveraging potent generative modeling paradigms, specifically Denoising Diffusion Probabilistic Models (DDPM) and the more recent Fl",
+    "url": "http://arxiv.org/abs/2509.22063v1",
+    "source": "arxiv",
+    "tags": [
+      "Diffusion"
+    ]
+  },
+  {
     "title": "From Coarse to Fine: Recursive Audio-Visual Semantic Enhancement for Speech Separation",
     "authors": [
       "Ke Xue",
@@ -1520,23 +1552,6 @@
     "source": "arxiv",
     "tags": [
       "Speech"
-    ]
-  },
-  {
-    "title": "High-Quality Sound Separation Across Diverse Categories via Visually-Guided Generative Modeling",
-    "authors": [
-      "Chao Huang",
-      "Susan Liang",
-      "Yapeng Tian",
-      "Anurag Kumar",
-      "Chenliang Xu"
-    ],
-    "date": "2025-09-26",
-    "summary": "We propose DAVIS, a Diffusion-based Audio-VIsual Separation framework that solves the audio-visual sound source separation task through generative learning. Existing methods typically frame sound separation as a mask-based regression problem, achieving significant progress. However, they face limitations in capturing the complex data distribution required for high-quality separation of sounds from diverse categories. In contrast, DAVIS circumvents these issues by leveraging potent generative modeling paradigms, specifically Denoising Diffusion Probabilistic Models (DDPM) and the more recent Fl",
-    "url": "http://arxiv.org/abs/2509.22063v1",
-    "source": "arxiv",
-    "tags": [
-      "Diffusion"
     ]
   },
   {

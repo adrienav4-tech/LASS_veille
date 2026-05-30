@@ -1,5 +1,21 @@
 [
   {
+    "title": "COMET: Concept Space Dissection of the Modality Gap in Audio-Text Multimodal Contrastive Embeddings",
+    "authors": [
+      "Yonggang Zhu",
+      "Liting Gao",
+      "Aidong Men",
+      "Wenwu Wang"
+    ],
+    "date": "2026-05-28",
+    "summary": "Contrastive Language-Audio Pretraining (CLAP) models are widely used for audio understanding and support modality-agnostic condition swapping in many zero-shot applications. However, their performance is heavily affected by the modality gap between audio and text embeddings. Existing explanations mainly attribute this gap to the cone effect, treating it as a shift between mean embeddings, yet correcting the mean alone yields only limited improvements. Alternative hypotheses, such as information imbalance and dimensionality collapse, have also been proposed, but they remain insufficiently verif",
+    "url": "http://arxiv.org/abs/2605.29628v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP"
+    ]
+  },
+  {
     "title": "MERIT: Learning Disentangled Music Representations for Audio Similarity",
     "authors": [
       "Abhinaba Roy",

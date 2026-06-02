@@ -1,5 +1,18 @@
 [
   {
+    "title": "Echo: A Joint-Embedding Predictive Architecture for Speaker Diarization and Speech Recognition in a Shared Latent Space",
+    "authors": [
+      "Louis Mouchon"
+    ],
+    "date": "2026-06-01",
+    "summary": "We present Echo, a proof-of-concept audio system built around a single 25 M-parameter ViT encoder. The encoder is pretrained with a JEPA objective and then specialised by stages to carry speaker identity, phonetic content, and dynamic source routing in the same 512-dimensional latent space, with no per-task fine-tuning at deployment. Light heads handle diarization (ArcFace + VBx) and dynamic source separation (null-target K-set prediction). On synthetic VoxCeleb2 mixtures with unknown K, the canonical stack reaches 15.00% blind DER, 97.80% PIT separation accuracy with +9.52 dB latent SI-SDR, a",
+    "url": "http://arxiv.org/abs/2606.01909v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
     "title": "COMET: Concept Space Dissection of the Modality Gap in Audio-Text Multimodal Contrastive Embeddings",
     "authors": [
       "Yonggang Zhu",
@@ -147,7 +160,7 @@
     ],
     "date": "2026-04-20",
     "summary": "Audio-text retrieval systems based on Contrastive Language-Audio Pretraining (CLAP) achieve strong performance on traditional benchmarks; however, these benchmarks rely on caption-style queries that differ substantially from real-world search behavior, limiting their assessment of practical retrieval robustness. We present Omni-Embed-Audio (OEA), a retrieval-oriented encoder leveraging multimodal LLMs with native audio understanding. To systematically evaluate robustness beyond caption-style queries, we introduce User-Intent Queries (UIQs) - five formulations reflecting natural search behavior",
-    "url": "http://arxiv.org/abs/2604.18360v1",
+    "url": "http://arxiv.org/abs/2604.18360v2",
     "source": "arxiv",
     "tags": [
       "CLAP"

@@ -1,5 +1,39 @@
 [
   {
+    "title": "SURF: Separation via Unsupervised Remixing Flow",
+    "authors": [
+      "Henry Li",
+      "Robin Scheibler",
+      "Efthymios Tzinis",
+      "Matt Shannon",
+      "Arnaud Doucet",
+      "John R. Hershey"
+    ],
+    "date": "2026-06-03",
+    "summary": "The goal of single-channel source separation is to reconstruct $K$ sources given their mixture. In supervised settings where vast amounts of clean source data are available, this challenging, ill-posed problem has been addressed successfully by generative diffusion and flow-based prior models. However, access to such clean source samples is often limited, and even when available, supervised models are vulnerable to domain shifts. To bridge this gap, we present Separation via Unsupervised Remixing Flow (SURF), an unsupervised flow matching approach for source separation that learns directly fro",
+    "url": "http://arxiv.org/abs/2606.04921v1",
+    "source": "arxiv",
+    "tags": [
+      "Diffusion"
+    ]
+  },
+  {
+    "title": "Feasibility of Time-Domain DNN-Based Speech Enhancement on Embedded FPGA for Hearing Aid",
+    "authors": [
+      "Feyisayo Olalere",
+      "Umut Altin",
+      "Kiki van der Heijden",
+      "Marcel van Gerven"
+    ],
+    "date": "2026-06-02",
+    "summary": "Hearing aids impose strict latency and power constraints that current DNN-based speech enhancement systems struggle to meet on embedded hardware. We characterize this gap by deploying both speech separation and denoising using the lightweight SuDoRM-RF++ architecture on the AMD-Xilinx Kria KV260, evaluated at FP32 and 16-bit fixed-point precision for each task. Across these configurations, first-sample latency tracks with on-chip parameter caching rather than arithmetic throughput, identifying data movement as the primary bottleneck. Precision reduction halves the model memory footprint withou",
+    "url": "http://arxiv.org/abs/2606.04221v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
     "title": "Echo: A Joint-Embedding Predictive Architecture for Speaker Diarization and Speech Recognition in a Shared Latent Space",
     "authors": [
       "Louis Mouchon"
@@ -708,7 +742,7 @@
     ],
     "date": "2026-01-30",
     "summary": "Query-based universal sound separation is fundamental to intelligent auditory systems, aiming to isolate specific sources from mixtures. Despite recent advances, existing methods continue to suffer from residual interference in complex acoustic scenes. This performance limitation stems largely from a data bottleneck: in-the-wild datasets contain weak labels and severe co-occurrence of events. These flaws induce models to learn spurious correlations between background noise and target categories instead of robust acoustic features. To address this, we propose an automated pipeline that eliminat",
-    "url": "http://arxiv.org/abs/2601.22599v1",
+    "url": "http://arxiv.org/abs/2601.22599v2",
     "source": "arxiv",
     "tags": []
   },

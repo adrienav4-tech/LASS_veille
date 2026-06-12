@@ -1,5 +1,20 @@
 [
   {
+    "title": "A Dual-Mode Faust-to-CLAP Compilation System",
+    "authors": [
+      "Facundo Franchino",
+      "Stéphane Letz",
+      "Jatin Chowdhury"
+    ],
+    "date": "2026-06-11",
+    "summary": "We describe faust2clap, a framework establishing the first officially maintained compilation pathway from Faust DSP specifications to the CLAP format. The system operates in two different modes. A static mode employs ahead-of-time compilation to yield native binaries of optimal efficiency, while a dynamic mode uses runtime interpretation to permit DSP code modification without interrupting the host application. This latter capability addresses a persistent friction in audio software development, namely the cumulative overhead of the edit, compile, and reload cycle. We detail the algorithmic ma",
+    "url": "http://arxiv.org/abs/2606.13193v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP"
+    ]
+  },
+  {
     "title": "SURF: Separation via Unsupervised Remixing Flow",
     "authors": [
       "Henry Li",
@@ -1155,6 +1170,28 @@
     "tags": [
       "CLAP",
       "Speech"
+    ]
+  },
+  {
+    "title": "A Phase-Enhanced Neural Network With Dual-Path Transformer for Single-Channel Chest Sound Separation",
+    "authors": [
+      "Yuqi Wang",
+      "Han Yang",
+      "Zhixing Gao",
+      "Zhiwei Dai",
+      "Kang Yu",
+      "Tingting Song",
+      "Hao Yang",
+      "Yunfeng Wang",
+      "Jun Zhang"
+    ],
+    "date": "2025-11-13",
+    "summary": "Auscultation of the chest is a fundamental diagnostic tool for cardiovascular and pulmonary diseases. However, the two main chest sound parts, heart sound (HS) and lung sound (LS), are often mixed, limitingdiagnostic accuracy. This paper presents a novel Phase-Enhanced Neural Network (PENN) for HS and LS separation. To address the under-utilization of phase information, PENN integrates a feedforward connection that feeds the input spectrum into the Restorer, enabling phase recovery based on the ",
+    "url": "https://doi.org/10.1109/JBHI.2025.3631643",
+    "source": "semantic",
+    "venue": "IEEE journal of biomedical and health informatics",
+    "tags": [
+      "Transformer"
     ]
   },
   {

@@ -2993,7 +2993,7 @@
     ],
     "date": "2024-09-07",
     "summary": "Existing methods utilizing spatial information for sound source separation require prior knowledge of the direction of arrival (DOA) of the source or utilize estimated but imprecise localization results, which impairs the separation performance, especially when the sound sources are moving. In fact, sound source localization and separation are interconnected problems, that is, sound source localization facilitates sound separation while sound separation contributes to refined source localization. This paper proposes a method utilizing the mutual facilitation mechanism between sound source loca",
-    "url": "http://arxiv.org/abs/2409.04843v2",
+    "url": "http://arxiv.org/abs/2409.04843v3",
     "source": "arxiv",
     "tags": []
   },

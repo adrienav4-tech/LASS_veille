@@ -1,5 +1,75 @@
 [
   {
+    "title": "ELSA: Acoustic Event-Level Semantic Alignment for Fine-Grained Reference-Free Text-to-Audio Evaluation",
+    "authors": [
+      "Shuntaro Suzuki",
+      "Kento Tokura",
+      "Daichi Yashima",
+      "Kanon Amemiya",
+      "Komei Sugiura",
+      "Shinnosuke Takamichi"
+    ],
+    "date": "2026-06-16",
+    "summary": "Text-to-audio (TTA) generation, synthesizing audio from natural language, has been widely studied for its ability to capture precise user intent. To effectively advance TTA models, it is essential to reliably evaluate generated audio without relying on costly human subjective ratings, motivating the development of automatic evaluation metrics that correlate well with human judgments. While recent CLAP-based metrics provide practical reference-free solutions, their coarse-grained text-audio similarity matching often correlates poorly with human ratings. To address this, we propose ELSA, a refer",
+    "url": "http://arxiv.org/abs/2606.17404v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP"
+    ]
+  },
+  {
+    "title": "Learning Input-Channel Permutation Equivariance for Multi-Channel Source Separation: Reducing Bleeding in Small Music Ensembles",
+    "authors": [
+      "Ruchi Pandey",
+      "Jaime Garcia-Martinez",
+      "Pablo Cabanas-Molero",
+      "David Diaz Guerra",
+      "Ricardo Falcon Perez",
+      "Tuomas Virtanen",
+      "Julio J. Carabias-Orti",
+      "Pedro Vera-Candeas"
+    ],
+    "date": "2026-06-15",
+    "summary": "Microphone bleed is a persistent challenge in small ensembles and orchestral recordings, where close microphones intended for individual instruments also capture leakage from nearby sources. This overlap degrades track isolation and complicates mixing. This paper addresses the bleeding problem by making channel-permutation-equivariance a core learning principle. During training, we apply the same random permutation to the input microphone channels and their corresponding reference targets. This discourages reliance on fixed channel-instrument associations and improves robustness to changes in ",
+    "url": "http://arxiv.org/abs/2606.16551v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
+    "title": "Transductive Zero-Shot Audio Classification with Audio-Language Models",
+    "authors": [
+      "Jingwen Zhou",
+      "Mingzhe Wang"
+    ],
+    "date": "2026-06-15",
+    "summary": "Contrastive language-audio pretraining (CLAP) enables zero-shot audio classification, but standard inference classifies each clip in isolation and ignores the structure of the unlabeled test set. We present the first systematic study of TransCLIP-style transductive inference for CLAP: a text-anchored spherical Gaussian-mixture EM that refines zero-shot posteriors using the audio-embedding statistics of the test batch, with no labels, no gradients, and negligible compute (about 15 ms on one CPU core for 2,000 clips). Across ESC-50, UrbanSound8K, and VocalSound, this consistently improves top-1 ",
+    "url": "http://arxiv.org/abs/2606.17160v1",
+    "source": "arxiv",
+    "tags": [
+      "LASS",
+      "CLAP"
+    ]
+  },
+  {
+    "title": "Geometrically Constrained Decentralized Independent Vector Analysis for Distributed Microphone Arrays",
+    "authors": [
+      "Changda Chen",
+      "Yichen Yang",
+      "Wei Liu",
+      "Bing Zhu",
+      "Gongping Huang",
+      "Shoji Makino",
+      "Shuai Wang"
+    ],
+    "date": "2026-06-14",
+    "summary": "This paper proposes a geometrically constrained decentralized independent vector analysis (GC-Dec-IVA) method for distributed microphone arrays. Recently proposed Dec-IVA method enables source separation by exchanging only power-related statistics to exploit cross-array information. However, this initial attempt often provides negligible improvement over applying IVA locally at each array, mainly due to the potential permutation inconsistency among arrays and the strong cross-array dependency implied by its source model. To address these limitations, we incorporate direction-of-arrival (DOA) i",
+    "url": "http://arxiv.org/abs/2606.15826v1",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
     "title": "A Dual-Mode Faust-to-CLAP Compilation System",
     "authors": [
       "Facundo Franchino",
@@ -720,8 +790,8 @@
       "Ethan Fetaya"
     ],
     "date": "2026-02-01",
-    "summary": "This paper addresses the challenge of audio-visual single-microphone speech separation and enhancement in the presence of real-world environmental noise. Our approach is based on generative inverse sampling, where we model clean speech and ambient noise with dedicated diffusion priors and jointly leverage them to recover all underlying sources. To achieve this, we reformulate a recent inverse sampler to match our setting. We evaluate on mixtures of 1, 2, and 3 speakers with noise and show that, despite being entirely unsupervised, our method consistently outperforms leading supervised baseline",
-    "url": "http://arxiv.org/abs/2602.01394v1",
+    "summary": "This paper addresses the challenge of audio-visual single-microphone speech separation and enhancement in the presence of real-world environmental noise. Our approach is based on generative inverse sampling, where we model clean speech and ambient noise with dedicated diffusion priors and jointly leverage them to recover all underlying sources. To achieve this, reformulate a recent inverse sampler to match our setting. We evaluate on mixtures of 1, 2, and 3 speakers with noise and show that, despite being entirely unsupervised, our method consistently outperforms leading supervised baselines i",
+    "url": "http://arxiv.org/abs/2602.01394v2",
     "source": "arxiv",
     "tags": [
       "Speech",

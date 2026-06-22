@@ -1088,6 +1088,43 @@
     "tags": []
   },
   {
+    "title": "Foundation Models Defining A New Era In Sensor-based Human Activity Recognition: A Survey And Outlook",
+    "authors": [
+      "S Bian",
+      "M Liu",
+      "LSS Ray",
+      "B Zhou",
+      "B Guo",
+      "Z Yu"
+    ],
+    "date": "2026",
+    "summary": "Language-augmented pipelines integrate physiological priors with LLM-based inference  for clinically aligned interpretation and explanation [151], while multimodal retrieval and",
+    "url": "https://dl.acm.org/doi/pdf/10.1145/3810230",
+    "source": "scholar",
+    "venue": "Proceedings of the …",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
+    "title": "Multi-modal Large Language Models for Perception in Autonomous Driving: Architecture, Taxonomy, and Challenges",
+    "authors": [
+      "Y Jing",
+      "X Zhang",
+      "M Zhou",
+      "Y Ji",
+      "Y Ding"
+    ],
+    "date": "2026",
+    "summary": "In summary, language-augmented autonomous driving datasets have evolved significantly,  transitioning from limited single-modality, specialized-task collections to unified multimodal",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11411796/",
+    "source": "scholar",
+    "venue": "IEEE Internet of …",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
     "title": "LLM4AD: Large Language Models for Autonomous Driving—Concept, Review, Benchmark, Experiments, and Future Trends",
     "authors": [
       "C Cui",
@@ -2773,6 +2810,38 @@
     ]
   },
   {
+    "title": "Towards Achieving General Video Understanding",
+    "authors": [
+      "R Gupta"
+    ],
+    "date": "2025",
+    "summary": "learning to the frontiers of multimodal and language-augmented vision research.  and  audio explaining the educational content [9, 117]. To capture audio cues, we consider the audio",
+    "url": "https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1496&context=etd2024",
+    "source": "scholar",
+    "venue": "NA",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
+    "title": "Towards general industrial intelligence: A survey of large models as a service in industrial IoT",
+    "authors": [
+      "J Tang",
+      "J Chen",
+      "J He",
+      "F Chen",
+      "Z Lv"
+    ],
+    "date": "2025",
+    "summary": "Recent developments have introduced Vision Foundation Models (VFMs) that broadly  fall into two categories: languageaugmented and purely visual models. Language-augmented",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11030757/",
+    "source": "scholar",
+    "venue": "… Surveys & Tutorials",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
     "title": "EviGraph-LLMRec: Evidential Graph-Language Model Fusion for Uncertainty-Aware Recommendation",
     "authors": [
       "G Zare"
@@ -3637,6 +3706,21 @@
       "Speech",
       "Transformer"
     ]
+  },
+  {
+    "title": "Clipsonic: Text-to-audio synthesis with unlabeled videos and pretrained language-vision models",
+    "authors": [
+      "HW Dong",
+      "X Liu",
+      "J Pons",
+      "G Bhattacharya"
+    ],
+    "date": "2023",
+    "summary": "text-queried audio synthesis without text-audio pairs. Prior work studied image-to-audio   ] propose to learn text-queried source separation and audio synthesis from unlabeled videos",
+    "url": "https://arxiv.org/pdf/2306.09635",
+    "source": "scholar",
+    "venue": "… Processing to Audio …",
+    "tags": []
   },
   {
     "title": "Audio-enhanced text-to-video retrieval using text-conditioned feature alignment",

@@ -1,5 +1,35 @@
 [
   {
+    "title": "Improving Text-to-Music Generation with Human Preference Rewards",
+    "authors": [
+      "Yonghyun Kim",
+      "Junwon Lee",
+      "Haiwen Xia",
+      "Yinghao Ma",
+      "Chris Donahue"
+    ],
+    "date": "2026-06-19",
+    "summary": "We describe our entry to the efficiency track of the Academic Text-to-Music (ATTM) Grand Challenge at ICME 2026. Beyond the challenge protocol's FAD-CLAP and CLAP score, we add a learned human-preference reward from TuneJury, a twin pairwise ranker trained over open music-preference datasets. The reward serves both as a training-time conditioning signal and as a sample-selection criterion. The pipeline combines five engineering decisions on a 120M-parameter FluxAudio-S backbone, four at training time and one at inference: (i) training-time reward conditioning that doubles as an inference-time ",
+    "url": "http://arxiv.org/abs/2606.21670v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP",
+      "Music"
+    ]
+  },
+  {
+    "title": "NAC: Neural Action Codec for Vision-Language-Action Models",
+    "authors": [
+      "Ahad Jawaid",
+      "Yu Xiang"
+    ],
+    "date": "2026-06-19",
+    "summary": "Vision-language-action (VLA) models rely on discrete action tokenizers to bridge continuous robot control and autoregressive sequence modeling, yet existing tokenizers often trade off between compression, latency, and downstream performance. We revisit this design through the lens of neural audio codecs-convolutional encoder-decoder architectures with residual vector quantization that serve as the standard front end for audio foundation models. Motivated by their success, we introduce the Neural Action Codec (NAC), which treats short robot action trajectories as multi-channel 1D signals and co",
+    "url": "http://arxiv.org/abs/2606.21372v1",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
     "title": "ELSA: Acoustic Event-Level Semantic Alignment for Fine-Grained Reference-Free Text-to-Audio Evaluation",
     "authors": [
       "Shuntaro Suzuki",
@@ -712,7 +742,7 @@
     ],
     "date": "2026-02-05",
     "summary": "Current audio foundation models typically rely on rigid, task-specific supervision, addressing isolated factors of audio rather than the whole. In contrast, human intelligence processes audio holistically, seamlessly bridging physical signals with abstract cognitive concepts to execute complex tasks. Grounded in this philosophy, we introduce Bagpiper, an 8B audio foundation model that interprets physical audio via rich captions, i.e., comprehensive natural language descriptions that encapsulate the critical cognitive concepts inherent in the signal (e.g., transcription, audio events). By pre-t",
-    "url": "http://arxiv.org/abs/2602.05220v2",
+    "url": "http://arxiv.org/abs/2602.05220v3",
     "source": "arxiv",
     "tags": []
   },
@@ -1808,10 +1838,9 @@
       "Mounya Elhilali"
     ],
     "date": "2025-09-23",
-    "summary": "Despite recent progress in large-scale sound event detection (SED) systems capable of handling hundreds of sound classes, existing multi-class classification frameworks remain fundamentally limited. They cannot process free-text sound queries, which enable more flexible and user-friendly interaction, and they lack zero-shot capabilities and offer poor few-shot adaptability. Although text-query-based separation methods have been explored, they primarily focus on source separation and are ill-suit",
-    "url": "https://arxiv.org/abs/2509.18606",
-    "source": "semantic",
-    "venue": "IEEE Workshop on Applications of Signal Processing to Audio and Acoustics",
+    "summary": "Despite recent progress in large-scale sound event detection (SED) systems capable of handling hundreds of sound classes, existing multi-class classification frameworks remain fundamentally limited. They cannot process free-text sound queries, which enable more flexible and user-friendly interaction, and they lack zero-shot capabilities and offer poor few-shot adaptability. Although text-query-based separation methods have been explored, they primarily focus on source separation and are ill-suited for SED tasks that require precise temporal localization and efficient detection across large and",
+    "url": "http://arxiv.org/abs/2509.18606v1",
+    "source": "arxiv",
     "tags": [
       "LASS"
     ]
@@ -1995,7 +2024,7 @@
     ],
     "date": "2025-09-15",
     "summary": "Text-guided sound separation enables flexible audio editing, assistive listening, and open-domain source extraction, but systems such as AudioSep remain too expensive for low-latency edge or codec-mediated deployment. Existing neural audio codec separators are efficient, yet largely restricted to fixed stems or closed taxonomies. We introduce CodecSep, a prompt-driven universal sound separation framework that extracts sources directly in neural audio codec latent space. CodecSep combines a frozen DAC backbone with a lightweight FiLM-conditioned Transformer masker driven by CLAP text embeddings",
-    "url": "http://arxiv.org/abs/2509.11717v5",
+    "url": "http://arxiv.org/abs/2509.11717v6",
     "source": "arxiv",
     "tags": [
       "AudioSep",
@@ -2608,9 +2637,10 @@
       "Jonathan Lorraine"
     ],
     "date": "2025-05-07",
-    "summary": "We introduce Audio-SDS, a generalization of Score Distillation Sampling (SDS) to text-conditioned audio diffusion models. While SDS was initially designed for text-to-3D generation using image diffusion, its core idea of distilling a powerful generative prior into a separate parametric representation extends to the audio domain. Leveraging a single pretrained model, Audio-SDS enables a broad range of tasks without requiring specialized datasets. In particular, we demonstrate how Audio-SDS can guide physically informed impact sound simulations, calibrate FM-synthesis parameters, and perform pro",
-    "url": "http://arxiv.org/abs/2505.04621v1",
-    "source": "arxiv",
+    "summary": "We introduce Audio-SDS, a generalization of Score Distillation Sampling (SDS) to text-conditioned audio diffusion models. While SDS was initially designed for text-to-3D generation using image diffusion, its core idea of distilling a powerful generative prior into a separate parametric representation extends to the audio domain. Leveraging a single pretrained model, Audio-SDS enables a broad range of tasks without requiring specialized datasets. In particular, we demonstrate how Audio-SDS can gu",
+    "url": "https://arxiv.org/abs/2505.04621",
+    "source": "semantic",
+    "venue": "arXiv.org",
     "tags": [
       "Diffusion"
     ]

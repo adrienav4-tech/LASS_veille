@@ -24,7 +24,7 @@
     ],
     "date": "2026-06-28",
     "summary": "Recent advances in speech separation (SS) have led to compact front-end models with small parameter sizes, yet their high computational cost remains a major barrier for deployment on edge devices. To address this, we propose TF-MoE, a sparse Mixture-of-Experts (MoE) framework that enhances model capacity with almost no increase in inference cost. Our method introduces dynamic expert specialization in time and frequency dimensions through alternating time-wise and frequency-wise MoE modules, each dynamically selecting experts per frame or mel band. Built upon a mel-band-splitting Conformer back",
-    "url": "http://arxiv.org/abs/2606.29575v1",
+    "url": "http://arxiv.org/abs/2606.29575v2",
     "source": "arxiv",
     "tags": [
       "Speech"
@@ -116,7 +116,7 @@
       "Ruchi Pandey",
       "Jaime Garcia-Martinez",
       "Pablo Cabanas-Molero",
-      "David Diaz Guerra",
+      "David Diaz-Guerra",
       "Ricardo Falcon Perez",
       "Tuomas Virtanen",
       "Julio J. Carabias-Orti",
@@ -124,7 +124,7 @@
     ],
     "date": "2026-06-15",
     "summary": "Microphone bleed is a persistent challenge in small ensembles and orchestral recordings, where close microphones intended for individual instruments also capture leakage from nearby sources. This overlap degrades track isolation and complicates mixing. This paper addresses the bleeding problem by making channel-permutation-equivariance a core learning principle. During training, we apply the same random permutation to the input microphone channels and their corresponding reference targets. This discourages reliance on fixed channel-instrument associations and improves robustness to changes in ",
-    "url": "http://arxiv.org/abs/2606.16551v1",
+    "url": "http://arxiv.org/abs/2606.16551v2",
     "source": "arxiv",
     "tags": [
       "Music"
@@ -1581,17 +1581,19 @@
     ]
   },
   {
-    "title": "UniSE: A Unified Framework for Decoder-only Autoregressive LM-based Speech Enhancement",
+    "title": "UniSE: A Unified Framework for Decoder-Only Autoregressive LM-Based Speech Enhancement",
     "authors": [
       "Haoyin Yan",
       "Chengwei Liu",
       "Shaofei Xue",
       "Xiaotao Liang",
+      "Yinghao Liu",
+      "Yuxiang Kong",
       "Zheng Xue"
     ],
     "date": "2025-10-23",
-    "summary": "The development of neural audio codecs (NACs) has largely promoted applications of language models (LMs) to speech processing and understanding. However, there lacks the verification on the effectiveness of autoregressive (AR) LMbased models in unifying different sub-tasks of speech enhancement (SE). In this work, we propose UniSE, a unified decoder-only LM-based framework to handle different SE tasks including speech restoration, target speaker extraction and speech separation. It takes input speech features as conditions and generates discrete tokens of the target speech using AR modeling, w",
-    "url": "http://arxiv.org/abs/2510.20441v1",
+    "summary": "Neural audio codecs have largely promoted the application of language models (LMs) for speech applications. However, the effectiveness of autoregressive LM-based models in unifying speech enhancement (SE) tasks remains underexplored. In this work, we propose UniSE, a unified decoder-only LM-based framework to handle different SE tasks including speech restoration, target speaker extraction, and speech separation. Conditioned on input speech features, it autoregressively generates target discrete tokens, facilitating compatibility between distinct learning patterns of multiple tasks. To further",
+    "url": "http://arxiv.org/abs/2510.20441v2",
     "source": "arxiv",
     "tags": [
       "Speech"
@@ -3044,10 +3046,9 @@
       "Rohan Kumar Das"
     ],
     "date": "2024-11-02",
-    "summary": "Sound Event Detection (SED) is challenging in noisy environments where overlapping sounds obscure target events. Language-queried audio source separation (LASS) aims to isolate the target sound events from a noisy clip. However, this approach can fail when the exact target sound is unknown, particularly in noisy test sets, leading to reduced performance. To address this issue, we leverage the capabilities of large language models (LLMs) to analyze and summarize acoustic data. By using LLMs to id",
-    "url": "https://arxiv.org/abs/2411.01174",
-    "source": "semantic",
-    "venue": "2025 IEEE International Conference on Acoustics, Speech, and Signal Processing Workshops (ICASSPW)",
+    "summary": "Sound Event Detection (SED) is challenging in noisy environments where overlapping sounds obscure target events. Language-queried audio source separation (LASS) aims to isolate the target sound events from a noisy clip. However, this approach can fail when the exact target sound is unknown, particularly in noisy test sets, leading to reduced performance. To address this issue, we leverage the capabilities of large language models (LLMs) to analyze and summarize acoustic data. By using LLMs to identify and select specific noise types, we implement a noise augmentation method for noise-robust fi",
+    "url": "http://arxiv.org/abs/2411.01174v2",
+    "source": "arxiv",
     "tags": [
       "LASS"
     ]

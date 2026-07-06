@@ -1181,6 +1181,24 @@
     "tags": []
   },
   {
+    "title": "A review on vision-centric coarse to fine-grained animal action recognition",
+    "authors": [
+      "A Zia",
+      "R Sharma",
+      "A Khamis",
+      "U Ali",
+      "X Li"
+    ],
+    "date": "2026",
+    "summary": "These approaches exemplify an emerging trend toward language-augmented perception,  where textual embeddings complement conventional visual and sensor-based features.",
+    "url": "https://link.springer.com/article/10.1007/s10462-026-11526-5",
+    "source": "scholar",
+    "venue": "Artificial Intelligence …",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
     "title": "Foundation Models Defining A New Era In Sensor-based Human Activity Recognition: A Survey And Outlook",
     "authors": [
       "S Bian",
@@ -2902,6 +2920,24 @@
     "source": "arxiv",
     "tags": [
       "CLAP"
+    ]
+  },
+  {
+    "title": "SALM: Spatial audio language model with structured embeddings for understanding and editing",
+    "authors": [
+      "J Hu",
+      "Y Cao",
+      "M Wu",
+      "Z Luo",
+      "J Yang"
+    ],
+    "date": "2025",
+    "summary": "Most of these approaches are designed for specific tasks-such as spatial sound question  answering and reasoning, spatial speech localization and recognition, or text-queried target",
+    "url": "https://arxiv.org/pdf/2507.16724",
+    "source": "scholar",
+    "venue": "arXiv preprint arXiv:2507.16724",
+    "tags": [
+      "Speech"
     ]
   },
   {

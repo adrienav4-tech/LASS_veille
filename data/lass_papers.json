@@ -1,5 +1,41 @@
 [
   {
+    "title": "Probing Low-Level Acoustic Attribute Encoding in CLAP Audio Embeddings",
+    "authors": [
+      "Héctor Martel",
+      "Joe Hennessy-Priest",
+      "Taemin Cho"
+    ],
+    "date": "2026-07-04",
+    "summary": "Audio foundation models are widely adopted as general-purpose feature extractors, yet the internal structure of their learned representations remains insufficiently understood. In this work, we analyze CLAP audio embeddings through a probing framework, studying the encoding of three fundamental perceptual dimensions: reverberation (RT60), loudness (LUFS), and spectral content, measured via spectral centroid (SC) and relative pitch (RP). Probes of increasing complexity are trained to predict each attribute from frozen embeddings across five datasets spanning noise, speech, monophonic musical no",
+    "url": "http://arxiv.org/abs/2607.03806v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP",
+      "Music",
+      "Speech"
+    ]
+  },
+  {
+    "title": "Mixture-Constrained Max Pooling Improves Separation-Based Bird Species Classification",
+    "authors": [
+      "Yuzhu Wang",
+      "Kalle Lahtinen",
+      "Patrik Lauha",
+      "Shiqi Zhang",
+      "Panu Somervuo",
+      "Otso Ovaskainen",
+      "Tuomas Virtanen"
+    ],
+    "date": "2026-07-03",
+    "summary": "Bird species classification from field recordings remains challenging due to overlapping vocalizations and incomplete species labels. We study source separation as a preprocessing for bird species classification to improve multi-species detection. Specifically, we employ an ensemble of two separators, FTRNN and TF-Locoformer, both trained with mixture invariant training (MixIT). To address the false positive gain caused by separation errors in separated outputs, we propose mixture-constrained max pooling (MCM), which clips the predicted probability from each separated channel based on the corr",
+    "url": "http://arxiv.org/abs/2607.03221v1",
+    "source": "arxiv",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
     "title": "Semi-Supervised Sound Event Detection with Conditional Mixup and Embedding-Level Contrastive Loss",
     "authors": [
       "Nian Shao",

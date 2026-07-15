@@ -1,5 +1,18 @@
 [
   {
+    "title": "Investigating the Integration of Spatial Information in Foundation-Model-Based Speaker Diarization",
+    "authors": [
+      "Marc Deegen",
+      "Adrian Meise",
+      "Reinhold Haeb-Umbach"
+    ],
+    "date": "2026-07-14",
+    "summary": "Spatial information gleaned from multi-channel input has been shown to lead to improvements in meeting processing tasks like diarization and source separation. At the same time, diarization based on features extracted by large pretrained single-channel foundation models, such as WavLM, achieved state-of-the-art performance. This work compares three approaches to integrate spatial features into foundation model-based diarization systems: the cascade of a beamformer and a single-channel foundation model, a multi-channel foundation model, and the conditioning of the downstream network on explicit",
+    "url": "http://arxiv.org/abs/2607.12647v1",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
     "title": "Flow Matching-Based Speech Source Separation with Best-of-N Biometric Sampling",
     "authors": [
       "Anastasia Zorkina",
@@ -899,6 +912,22 @@
     "tags": []
   },
   {
+    "title": "UniAudio 2.0: A Unified Audio Language Model with Text-Aligned Factorized Audio Tokenization",
+    "authors": [
+      "Dongchao Yang",
+      "Yuanyuan Wang",
+      "Dading Chong",
+      "Songxiang Liu",
+      "Xixin Wu",
+      "Helen Meng"
+    ],
+    "date": "2026-02-04",
+    "summary": "We study two foundational problems in audio language models: (1) how to design an audio tokenizer that can serve as an intermediate representation for both understanding and generation; and (2) how to build an audio foundation model that generalizes in few-shot and zero-shot settings, analogous to large language models. To this end, we make the following two contributions. First, we propose ReasoningCodec, a discrete audio codec that factorizes audio into (i) reasoning tokens, which encode text-aligned, high-level analysis and planning representations for audio understanding and hierarchical g",
+    "url": "http://arxiv.org/abs/2602.04683v3",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
     "title": "The SJTU X-LANCE Lab System for MSR Challenge 2025",
     "authors": [
       "Jinxuan Zhu",
@@ -915,22 +944,6 @@
     "tags": [
       "Music"
     ]
-  },
-  {
-    "title": "UniAudio 2.0: A Unified Audio Language Model with Text-Aligned Factorized Audio Tokenization",
-    "authors": [
-      "Dongchao Yang",
-      "Yuanyuan Wang",
-      "Dading Chong",
-      "Songxiang Liu",
-      "Xixin Wu",
-      "Helen Meng"
-    ],
-    "date": "2026-02-04",
-    "summary": "We study two foundational problems in audio language models: (1) how to design an audio tokenizer that can serve as an intermediate representation for both understanding and generation; and (2) how to build an audio foundation model that generalizes in few-shot and zero-shot settings, analogous to large language models. To this end, we make the following two contributions. First, we propose ReasoningCodec, a discrete audio codec that factorizes audio into (i) reasoning tokens, which encode text-aligned, high-level analysis and planning representations for audio understanding and hierarchical g",
-    "url": "http://arxiv.org/abs/2602.04683v3",
-    "source": "arxiv",
-    "tags": []
   },
   {
     "title": "GRAM: Spatial general-purpose audio representations for real-world environments",

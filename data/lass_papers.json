@@ -281,6 +281,22 @@
     ]
   },
   {
+    "title": "Feasibility of Time-Domain DNN-Based Speech Enhancement on Embedded FPGA for Hearing Aids",
+    "authors": [
+      "Feyisayo Olalere",
+      "Umut Altin",
+      "Kiki van der Heijden",
+      "Marcel van Gerven"
+    ],
+    "date": "2026-06-02",
+    "summary": "Hearing aids impose strict latency and power constraints that current DNN-based speech enhancement systems struggle to meet on embedded hardware. We characterize this gap by deploying both speech separation and denoising using the lightweight SuDoRM-RF++ architecture on the AMD-Xilinx Kria KV260, evaluated at FP32 and 16-bit fixed-point precision for each task. Across these configurations, first-sample latency tracks with on-chip parameter caching rather than arithmetic throughput, identifying data movement as the primary bottleneck. Precision reduction halves the model memory footprint withou",
+    "url": "http://arxiv.org/abs/2606.04221v2",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
     "title": "Feasibility of Time-Domain DNN-Based Speech Enhancement on Embedded FPGA for Hearing Aid",
     "authors": [
       "Feyisayo Olalere",

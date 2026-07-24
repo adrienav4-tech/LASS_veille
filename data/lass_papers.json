@@ -1,5 +1,24 @@
 [
   {
+    "title": "TF-MossFormer: Integrating Convolution Gated Local-Global Attentions for Enhanced Time-Frequency Domain Monaural Speech Separation",
+    "authors": [
+      "Shengkui Zhao",
+      "Zexu Pan",
+      "Haoxu Wang",
+      "Biao Tian",
+      "Bin Ma",
+      "Xiangang Li"
+    ],
+    "date": "2026-07-23",
+    "summary": "Transformers with global attention capture long-range dependencies but can miss the fine-grained local continuity crucial for speech separation. We propose TF-MossFormer, a time-frequency transformer that combines local and global attention to jointly model short- and long-range contexts for monaural speech separation. At its core is a content-aware sliding-window attention mechanism that dynamically adapts receptive fields for stronger local interactions, avoiding the rigidity of static convolutions. Unlike time-domain chunk-based methods, TF-MossFormer leverages the 2D spectrogram to model s",
+    "url": "http://arxiv.org/abs/2607.21128v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech",
+      "Transformer"
+    ]
+  },
+  {
     "title": "Investigating the Integration of Spatial Information in Foundation-Model-Based Speaker Diarization",
     "authors": [
       "Marc Deegen",

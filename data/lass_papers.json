@@ -1,5 +1,66 @@
 [
   {
+    "title": "CrowdioSet and PaRIRset: Two Datasets Towards Live Music Source Separation",
+    "authors": [
+      "Enric Gusó",
+      "Xavier Serra"
+    ],
+    "date": "2026-07-30",
+    "summary": "Most Music Source Separation (MSS) models do not generalize well to live music recordings because they are trained on studio recordings alone, disregarding the venue acoustics, the speaker system's response and audience noise. We propose to bridge this gap by providing and training a model on two novel datasets. First, we present CrowdioSet: a noise dataset comprising 4800 real ambience tracks from Freesound and synthetic sing-alongs for the vocals in MUSDB18 and MOISESDB datasets, generated from zero-shot singing voice conversions. CrowdioSet enables effective audio denoising for live recordi",
+    "url": "http://arxiv.org/abs/2607.27828v1",
+    "source": "arxiv",
+    "tags": [
+      "Music",
+      "Speech"
+    ]
+  },
+  {
+    "title": "Spacing Out: On the Reliability of Binaural Music Source Separation Metrics",
+    "authors": [
+      "Richa Namballa",
+      "Magdalena Fuentes"
+    ],
+    "date": "2026-07-28",
+    "summary": "Despite the rising popularity of immersive audio, binaural music remains underexplored in music information retrieval (MIR), particularly regarding the task of music source separation (MSS). While existing stereo MSS models can process binaural audio, they often degrade the spatial quality of the separated stems and undermine listener immersion. Through a perceptual study comparing binaural and stereo MSS outputs, we evaluate how well objective spatial distortion metrics correlate with human perception. Our findings reveal varied agreement between these metrics and human judgment, highlighting",
+    "url": "http://arxiv.org/abs/2607.25919v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
+    "title": "Text-Prompted CLAP: Learning Query-Conditioned Audio Representations via Contrastive Learning",
+    "authors": [
+      "Mohan Li",
+      "Rama Doddipatla",
+      "Philip C. Woodland"
+    ],
+    "date": "2026-07-27",
+    "summary": "Contrastive Language-Audio Pretraining (CLAP) learns aligned text and audio representations in a shared embedding space. However, independent encoding of each modality limits its ability to model cross-modal semantics in complex audio understanding and retrieval tasks. To address this limitation, this paper proposes Text-Prompted CLAP (TP-CLAP), a parameter-efficient extension of CLAP that introduces a cross-attention-based fusion module to incorporate textual prompts into audio features. TP-CLAP is trained using an audio multiple-choice question (audio-MCQ) framework, where it learns to align",
+    "url": "http://arxiv.org/abs/2607.25085v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP",
+      "Transformer"
+    ]
+  },
+  {
+    "title": "Music-Source-Separation-Training (MSST): A Unified Framework for Training and Evaluating Music Demixing Models",
+    "authors": [
+      "Roman Solovyev",
+      "Ilya Kiselev",
+      "Alexander Stempkovskiy",
+      "Tatiana Gabruseva"
+    ],
+    "date": "2026-07-25",
+    "summary": "Music Source Separation (MSS), the task of recovering individual sound components (stems) from a polyphonic mixture, is central to applications ranging from karaoke and remixing to audio restoration and content production. The separation quality depends on engineering decisions across the entire pipeline: model choice, training data preparation and augmentation, loss function and metrics choice, training configuration, validation, and post-processing. This paper presents MSST (Music-Source-Separation-Training) - a universal open-source framework for MSS tasks, which unifies training, validatio",
+    "url": "http://arxiv.org/abs/2607.23395v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
     "title": "TF-MossFormer: Integrating Convolution Gated Local-Global Attentions for Enhanced Time-Frequency Domain Monaural Speech Separation",
     "authors": [
       "Shengkui Zhao",
@@ -774,20 +835,6 @@
     ]
   },
   {
-    "title": "Robust Long-Form Bangla Speech Processing: Automatic Speech Recognition and Speaker Diarization",
-    "authors": [
-      "MD. Sagor Chowdhury",
-      "Adiba Fairooz Chowdhury"
-    ],
-    "date": "2026-02-25",
-    "summary": "We describe our end-to-end system for Bengali long-form speech recognition (ASR) and speaker diarization submitted to the DL Sprint 4.0 competition on Kaggle. Bengali presents substantial challenges for both tasks: a large phoneme inventory, significant dialectal variation, frequent code-mixing with English, and a relative scarcity of large-scale labelled corpora. For ASR we achieve a best private Word Error Rate (WER) of 0.37738 and public WER of 0.36137, combining a BengaliAI fine-tuned Whisper medium model with Demucs source separation for vocal isolation, silence-boundary chunking, and car",
-    "url": "http://arxiv.org/abs/2602.21741v1",
-    "source": "arxiv",
-    "tags": [
-      "Speech"
-    ]
-  },
-  {
     "title": "Moving Speaker Separation via Parallel Spectral-Spatial Processing",
     "authors": [
       "Yuzhu Wang",
@@ -798,6 +845,20 @@
     "date": "2026-02-25",
     "summary": "Multi-channel speech separation in dynamic environments is challenging as time-varying spatial and spectral features evolve at different temporal scales. Existing methods typically employ sequential architectures, forcing a single network stream to simultaneously model both feature types, creating an inherent modeling conflict. In this paper, we propose a dual-branch parallel spectral-spatial (PS2) architecture that separately processes spectral and spatial features through parallel streams. The spectral branch uses a bi-directional long short-term memory (BLSTM)-based frequency module, a Mamb",
     "url": "http://arxiv.org/abs/2602.22487v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
+    "title": "Robust Long-Form Bangla Speech Processing: Automatic Speech Recognition and Speaker Diarization",
+    "authors": [
+      "MD. Sagor Chowdhury",
+      "Adiba Fairooz Chowdhury"
+    ],
+    "date": "2026-02-25",
+    "summary": "We describe our end-to-end system for Bengali long-form speech recognition (ASR) and speaker diarization submitted to the DL Sprint 4.0 competition on Kaggle. Bengali presents substantial challenges for both tasks: a large phoneme inventory, significant dialectal variation, frequent code-mixing with English, and a relative scarcity of large-scale labelled corpora. For ASR we achieve a best private Word Error Rate (WER) of 0.37738 and public WER of 0.36137, combining a BengaliAI fine-tuned Whisper medium model with Demucs source separation for vocal isolation, silence-boundary chunking, and car",
+    "url": "http://arxiv.org/abs/2602.21741v1",
     "source": "arxiv",
     "tags": [
       "Speech"
@@ -3351,7 +3412,7 @@
       "Kohei Saijo",
       "Janek Ebbers",
       "François G. Germain",
-      "Sameer Khurana",
+      "S. Khurana",
       "G. Wichern",
       "Jonathan Le Roux"
     ],

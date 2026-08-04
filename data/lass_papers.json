@@ -1,5 +1,37 @@
 [
   {
+    "title": "Separate-and-Detect: Unified Drum Transcription and Stem Generation via Latent Diffusion",
+    "authors": [
+      "Wei-Han Hsu",
+      "Chih-Cheng Chang",
+      "Bo-Yu Chen",
+      "Li Su",
+      "Yi-Hsuan Yang"
+    ],
+    "date": "2026-08-02",
+    "summary": "Automatic Drum Transcription (ADT) is commonly formulated as a direct mapping from a music mixture to symbolic drum events. While effective for transcription, this formulation discards the acoustic stems that are useful for editing, remixing, and production. We revisit an alternative separate-and-detect formulation, where a drum source separation front end first produces five editable drum stems, and a fixed onset detector then converts each stem into symbolic events. The separator is built on a five-stem latent diffusion model that jointly generates kick, snare, toms, hi-hats, and cymbals in ",
+    "url": "http://arxiv.org/abs/2608.01093v1",
+    "source": "arxiv",
+    "tags": [
+      "Music",
+      "Diffusion"
+    ]
+  },
+  {
+    "title": "DRONEAUDIONET: Noise Suppression for Drone Audition-based Search and Rescue",
+    "authors": [
+      "Chitralekha Gupta",
+      "Soundarya Ramesh",
+      "Yifei Luo",
+      "Suranga Nanayakkara"
+    ],
+    "date": "2026-08-01",
+    "summary": "Microphones mounted on UAVs enable aerial acoustic scene analysis applications such as search-and-rescue, wildlife monitoring, and industrial inspection. However, drone rotor noise often dominates the mixture signal at SNRs well below -10 dB, making source recovery extremely challenging. Existing enhancement and source separation methods are typically designed for near-balanced mixtures and degrade substantially in drone audition settings. In this work, we propose DRONEAUDIONET, a drone noise suppression method that reframes a source separation model as a drone noise estimator. To better model",
+    "url": "http://arxiv.org/abs/2608.00875v1",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
     "title": "CrowdioSet and PaRIRset: Two Datasets Towards Live Music Source Separation",
     "authors": [
       "Enric Gusó",
@@ -1002,10 +1034,12 @@
       "Shinji Watanabe"
     ],
     "date": "2026-02-05",
-    "summary": "Current audio foundation models typically rely on rigid, task-specific supervision, addressing isolated factors of audio rather than the whole. In contrast, human intelligence processes audio holistically, seamlessly bridging physical signals with abstract cognitive concepts to execute complex tasks. Grounded in this philosophy, we introduce Bagpiper, an 8B audio foundation model that interprets physical audio via rich captions, i.e., comprehensive natural language descriptions that encapsulate the critical cognitive concepts inherent in the signal (e.g., transcription, audio events). By pre-t",
-    "url": "http://arxiv.org/abs/2602.05220v3",
+    "summary": "Current audio foundation models typically rely on rigid, task-specific supervision (e.g., speech recognition), addressing isolated factors of audio rather than the whole. In contrast, human processes audio holistically, seamlessly bridging raw audio waveform with abstract cognitive concepts (e.g., all perception details of audio events) to execute complex tasks. Grounded in this philosophy, we introduce Bagpiper, an 8B audio foundation model that interprets physical audio via rich captions, i.e., comprehensive natural language descriptions that encapsulate the critical cognitive concepts inher",
+    "url": "http://arxiv.org/abs/2602.05220v4",
     "source": "arxiv",
-    "tags": []
+    "tags": [
+      "Speech"
+    ]
   },
   {
     "title": "UniAudio 2.0: A Unified Audio Language Model with Text-Aligned Factorized Audio Tokenization",

@@ -1,5 +1,56 @@
 [
   {
+    "title": "Dynamic Clustering for Cross-Segment Permutation Alignment in Long Speech Separation",
+    "authors": [
+      "Yuzhu Wang",
+      "Archontis Politis",
+      "Konstantinos Drossos",
+      "Tuomas Virtanen"
+    ],
+    "date": "2026-08-10",
+    "summary": "Long speech separation typically employs a segment-separation-stitch paradigm where recordings are divided into short segments, processed independently, and stitched together. Its challenge lies in predicting cross-segment permutations. This paper proposes a training-free dynamic clustering approach for cross-segment permutation alignment using speaker embedding reference pools. The method predicts the permutation using the cosine similarity between current segment embeddings and the reference pools. The approach updates reference pools by retaining the most representative speaker embeddings b",
+    "url": "http://arxiv.org/abs/2608.09451v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
+    "title": "DAVE: A Decoupled Audio-Visual Enhancement Framework for Real-World Speech Separation",
+    "authors": [
+      "Wei Zhou",
+      "Wanyi Ning",
+      "Yinshang Guo",
+      "Qianxiao Fang",
+      "Haitao Qian",
+      "Yingpeng Li"
+    ],
+    "date": "2026-08-10",
+    "summary": "Audio-visual speech enhancement under real-world conditions remains challenging due to unreliable visual inputs and the lack of large-scale training data with realistic acoustic conditions. Existing approaches usually fuse visual features directly into the separation network, making them vulnerable to degraded visual signals. In this paper, we present DAVE, a decoupled audio-visual enhancement framework for real-world speech separation. Firstly, to address the data scarcity issue, we construct DAVE-Corpus, a large-scale training corpus with 219,411 mixtures generated from public meeting corpor",
+    "url": "http://arxiv.org/abs/2608.09288v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
+    "title": "Frame-Level Pansori Mode Classification with Complementary Audio Representations",
+    "authors": [
+      "Sangheon Park",
+      "Seonguk Ju",
+      "Suin Chung",
+      "Danbinaerin Han",
+      "Dasaem Jeong"
+    ],
+    "date": "2026-08-06",
+    "summary": "Pansori is a traditional Korean vocal genre whose mode system (jo) is defined not by scale alone but by the entanglement of pitch collection, microtonal ornament (sigimsae), and vocal timbre. In this study, we introduce a 46-hour frame-level pansori mode annotation, expert-labeled across all five canonical batang, and evaluate four complementary input representations (mel spectrogram, F0 contour, MIDI piano roll, and a multi-cultural SSL encoder) under two split strategies designed to detect shortcut learning. Across the three well-represented modes, performance degrades by only 2.1--3.6 point",
+    "url": "http://arxiv.org/abs/2608.06633v1",
+    "source": "arxiv",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
     "title": "Separate-and-Detect: Unified Drum Transcription and Stem Generation via Latent Diffusion",
     "authors": [
       "Wei-Han Hsu",
@@ -1413,24 +1464,6 @@
     "tags": []
   },
   {
-    "title": "A review on vision-centric coarse to fine-grained animal action recognition",
-    "authors": [
-      "A Zia",
-      "R Sharma",
-      "A Khamis",
-      "U Ali",
-      "X Li"
-    ],
-    "date": "2026",
-    "summary": "These approaches exemplify an emerging trend toward language-augmented perception,  where textual embeddings complement conventional visual and sensor-based features.",
-    "url": "https://link.springer.com/content/pdf/10.1007/s10462-026-11526-5.pdf",
-    "source": "scholar",
-    "venue": "Artificial Intelligence …",
-    "tags": [
-      "LASS"
-    ]
-  },
-  {
     "title": "Foundation Models Defining A New Era In Sensor-based Human Activity Recognition: A Survey And Outlook",
     "authors": [
       "S Bian",
@@ -1445,6 +1478,60 @@
     "url": "https://dl.acm.org/doi/pdf/10.1145/3810230",
     "source": "scholar",
     "venue": "Proceedings of the …",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
+    "title": "Multi-modal Large Language Models for Perception in Autonomous Driving: Architecture, Taxonomy, and Challenges",
+    "authors": [
+      "Y Jing",
+      "X Zhang",
+      "M Zhou",
+      "Y Ji",
+      "Y Ding"
+    ],
+    "date": "2026",
+    "summary": "In summary, language-augmented autonomous driving datasets have evolved significantly,  transitioning from limited single-modality, specialized-task collections to unified multimodal",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11411796/",
+    "source": "scholar",
+    "venue": "IEEE Internet of …",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
+    "title": "World Models: A Comprehensive Survey of Architectures, Methodologies, Reasoning Paradigms, and Applications",
+    "authors": [
+      "AH Zidan",
+      "Y Pan",
+      "H Jiang",
+      "R Yan",
+      "W Ruan"
+    ],
+    "date": "2026",
+    "summary": "We conclude with language-augmented and multi-modal world models, which combine  natural language with diverse sensory inputs to support richer grounding and broader",
+    "url": "https://arxiv.org/pdf/2606.00133",
+    "source": "scholar",
+    "venue": "arXiv preprint arXiv …",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
+    "title": "A review on vision-centric coarse to fine-grained animal action recognition",
+    "authors": [
+      "A Zia",
+      "R Sharma",
+      "A Khamis",
+      "U Ali",
+      "X Li"
+    ],
+    "date": "2026",
+    "summary": "These approaches exemplify an emerging trend toward language-augmented perception,  where textual embeddings complement conventional visual and sensor-based features.",
+    "url": "https://link.springer.com/content/pdf/10.1007/s10462-026-11526-5.pdf",
+    "source": "scholar",
+    "venue": "Artificial Intelligence …",
     "tags": [
       "LASS"
     ]
@@ -1465,24 +1552,6 @@
     "url": "https://arxiv.org/pdf/2603.05484",
     "source": "scholar",
     "venue": "arXiv preprint arXiv …",
-    "tags": [
-      "LASS"
-    ]
-  },
-  {
-    "title": "Multi-modal Large Language Models for Perception in Autonomous Driving: Architecture, Taxonomy, and Challenges",
-    "authors": [
-      "Y Jing",
-      "X Zhang",
-      "M Zhou",
-      "Y Ji",
-      "Y Ding"
-    ],
-    "date": "2026",
-    "summary": "In summary, language-augmented autonomous driving datasets have evolved significantly,  transitioning from limited single-modality, specialized-task collections to unified multimodal",
-    "url": "https://ieeexplore.ieee.org/abstract/document/11411796/",
-    "source": "scholar",
-    "venue": "IEEE Internet of …",
     "tags": [
       "LASS"
     ]
@@ -1851,6 +1920,23 @@
     ]
   },
   {
+    "title": "R2-SVC: Towards Real-World Robust and Expressive Zero-shot Singing Voice Conversion",
+    "authors": [
+      "Junjie Zheng",
+      "Gongyu Chen",
+      "Chaofan Ding",
+      "Zihao Chen"
+    ],
+    "date": "2025-10-23",
+    "summary": "In real-world singing voice conversion (SVC) applications, environmental noise and the demand for expressive output pose significant challenges. Conventional methods, however, are typically designed without accounting for real deployment scenarios, as both training and inference usually rely on clean data. This mismatch hinders practical use, given the inevitable presence of diverse noise sources and artifacts from music separation. To tackle these issues, we propose R2-SVC, a robust and expressive SVC framework. First, we introduce simulation-based robustness enhancement through random fundam",
+    "url": "http://arxiv.org/abs/2510.20677v1",
+    "source": "arxiv",
+    "tags": [
+      "Music",
+      "Speech"
+    ]
+  },
+  {
     "title": "UniSE: A Unified Framework for Decoder-Only Autoregressive LM-Based Speech Enhancement",
     "authors": [
       "Haoyin Yan",
@@ -1866,23 +1952,6 @@
     "url": "http://arxiv.org/abs/2510.20441v2",
     "source": "arxiv",
     "tags": [
-      "Speech"
-    ]
-  },
-  {
-    "title": "R2-SVC: Towards Real-World Robust and Expressive Zero-shot Singing Voice Conversion",
-    "authors": [
-      "Junjie Zheng",
-      "Gongyu Chen",
-      "Chaofan Ding",
-      "Zihao Chen"
-    ],
-    "date": "2025-10-23",
-    "summary": "In real-world singing voice conversion (SVC) applications, environmental noise and the demand for expressive output pose significant challenges. Conventional methods, however, are typically designed without accounting for real deployment scenarios, as both training and inference usually rely on clean data. This mismatch hinders practical use, given the inevitable presence of diverse noise sources and artifacts from music separation. To tackle these issues, we propose R2-SVC, a robust and expressive SVC framework. First, we introduce simulation-based robustness enhancement through random fundam",
-    "url": "http://arxiv.org/abs/2510.20677v1",
-    "source": "arxiv",
-    "tags": [
-      "Music",
       "Speech"
     ]
   },
@@ -3175,6 +3244,20 @@
     ]
   },
   {
+    "title": "Towards Achieving General Video Understanding",
+    "authors": [
+      "R Gupta"
+    ],
+    "date": "2025",
+    "summary": "learning to the frontiers of multimodal and language-augmented vision research.  and  audio explaining the educational content [9, 117]. To capture audio cues, we consider the audio",
+    "url": "https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1496&context=etd2024",
+    "source": "scholar",
+    "venue": "NA",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
     "title": "SALM: Spatial audio language model with structured embeddings for understanding and editing",
     "authors": [
       "J Hu",
@@ -3190,20 +3273,6 @@
     "venue": "arXiv preprint arXiv:2507.16724",
     "tags": [
       "Speech"
-    ]
-  },
-  {
-    "title": "Towards Achieving General Video Understanding",
-    "authors": [
-      "R Gupta"
-    ],
-    "date": "2025",
-    "summary": "learning to the frontiers of multimodal and language-augmented vision research.  and  audio explaining the educational content [9, 117]. To capture audio cues, we consider the audio",
-    "url": "https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1496&context=etd2024",
-    "source": "scholar",
-    "venue": "NA",
-    "tags": [
-      "LASS"
     ]
   },
   {

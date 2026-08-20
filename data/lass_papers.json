@@ -1,5 +1,34 @@
 [
   {
+    "title": "Singer-Informed Vocal Source Separation for Multi-Singer Music Mixtures",
+    "authors": [
+      "Jocelyn Xu",
+      "Minje Kim"
+    ],
+    "date": "2026-08-14",
+    "summary": "Music source separation systems typically extract a single vocal track and do not distinguish between multiple singers. We study singer-informed vocal source separation for multi-singer mixtures. Our framework introduces a short enrollment recording of a target singer to guide separation through a learned embedding. The singer embedding is incorporated using feature concatenation or feature-wise linear modulation (FiLM), enabling the model to focus on the target singer while suppressing interference. We construct a duet dataset based on DAMP-VSEP with quality filtering and non-overlapping enro",
+    "url": "http://arxiv.org/abs/2608.14516v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
+    "title": "The Note-Chord-Voice Framework: Structured Source Separation and Causal Inference for EV Charging Data",
+    "authors": [
+      "Jiajie Chen",
+      "Jinfeng Li"
+    ],
+    "date": "2026-08-14",
+    "summary": "Real-world EV charging data exhibit three interlocking pathologies: hardware fragmentation (network timeouts and billing resets split sessions), physical violations (independent energy/duration models produce impossible states like 50 kWh in 10 min on a 7 kW charger), and collider bias (clustering on post-treatment outcomes opens backdoor paths for price elasticity). We propose the Note-Chord-Voice framework, a music-inspired, axiom-driven pipeline that separates data cleaning (Repair Chords), structural pattern discovery (Harmonic Chords), descriptive source separation (NMF Voices), and causa",
+    "url": "http://arxiv.org/abs/2608.14756v1",
+    "source": "arxiv",
+    "tags": [
+      "Music",
+      "Speech"
+    ]
+  },
+  {
     "title": "Dynamic Clustering for Cross-Segment Permutation Alignment in Long Speech Separation",
     "authors": [
       "Yuzhu Wang",

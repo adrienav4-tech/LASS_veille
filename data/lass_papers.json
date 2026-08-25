@@ -1,5 +1,36 @@
 [
   {
+    "title": "FlowSep 2: Self-Supervised Flow Matching for Language-Queried Audio Source Separation",
+    "authors": [
+      "Yi Yuan",
+      "Xubo Liu",
+      "Haohe Liu",
+      "Xiyuan Kang",
+      "Mark D. Plumbley",
+      "Wenwu Wang"
+    ],
+    "date": "2026-08-22",
+    "summary": "Language-queried audio source separation (LASS) aims to extract target sources from audio mixtures according to natural language descriptions, offering a flexible and scalable interface for audio source separation. However, most existing LASS methods rely on discriminative, mask-based models, which estimate masks from the input mixture. These methods often over-suppress target sounds or fail to fully separate them, especially when multiple sound events strongly overlap in complex acoustic scenes. In this work, we propose FlowSep2, a text-conditioned flow-matching generative model for LASS. Ins",
+    "url": "http://arxiv.org/abs/2608.22111v1",
+    "source": "arxiv",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
+    "title": "Vibrato Matching for Modulation Control and Blending in Sound Mixtures",
+    "authors": [
+      "Jeremy Hyrkas"
+    ],
+    "date": "2026-08-22",
+    "summary": "In sound mixtures of more than one musical source, different vibrato patterns act as a cue that multiple sources are present for both human listeners and source separation algorithms. Matching the vibrato patterns of the signals in the mixture reduces the perception of multiple sources, particularly when the sources play in unison. This work introduces the vibrato matching algorithm, which first suppresses vibrato in a target signal and then transfers vibrato from a source signal to the target. An existing vibrato suppression algorithm is combined with a new algorithm for vibrato transfer, whi",
+    "url": "http://arxiv.org/abs/2608.22057v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
     "title": "Singer-Informed Vocal Source Separation for Multi-Singer Music Mixtures",
     "authors": [
       "Jocelyn Xu",

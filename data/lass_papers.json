@@ -1,5 +1,20 @@
 [
   {
+    "title": "Peng Yang 1, 2 Email 2960713699yp@ gmail. com Email guang@ zcst. edu. cn Xiaoguang Wu 3 Yanyang Zhou 1 Email CR7curry30_zyy@ outlook. com Qilin Wei 1 …",
+    "authors": [
+      "P Yang",
+      "X Wu"
+    ],
+    "date": "NA",
+    "summary": "Language-augmented multimodal learning presents a promising paradigm for improving  micro-expression analysis, effectively compensating for data scarcity through fine-grained",
+    "url": "https://assets-eu.researchsquare.com/files/rs-8133344/v1/c923e1ce6e6c2491cf3f4206.html",
+    "source": "scholar",
+    "venue": "NA",
+    "tags": [
+      "LASS"
+    ]
+  },
+  {
     "title": "FlowSep 2: Self-Supervised Flow Matching for Language-Queried Audio Source Separation",
     "authors": [
       "Yi Yuan",
@@ -11,7 +26,7 @@
     ],
     "date": "2026-08-22",
     "summary": "Language-queried audio source separation (LASS) aims to extract target sources from audio mixtures according to natural language descriptions, offering a flexible and scalable interface for audio source separation. However, most existing LASS methods rely on discriminative, mask-based models, which estimate masks from the input mixture. These methods often over-suppress target sounds or fail to fully separate them, especially when multiple sound events strongly overlap in complex acoustic scenes. In this work, we propose FlowSep2, a text-conditioned flow-matching generative model for LASS. Ins",
-    "url": "http://arxiv.org/abs/2608.22111v1",
+    "url": "http://arxiv.org/abs/2608.22111v2",
     "source": "arxiv",
     "tags": [
       "LASS"
@@ -3301,6 +3316,23 @@
     "source": "arxiv",
     "tags": [
       "CLAP"
+    ]
+  },
+  {
+    "title": "GD-Retriever: Controllable generative text-music retrieval with diffusion models",
+    "authors": [
+      "J Guinot",
+      "E Quinton",
+      "GĂ Fazekas"
+    ],
+    "date": "2025",
+    "summary": "Multimodal text-music joint embedding models have largely facilitated text-queried  for  audio-audio retrieval, we train a generative diffusion model conditioned on text to generate audio",
+    "url": "https://arxiv.org/pdf/2506.17886",
+    "source": "scholar",
+    "venue": "arXiv preprint arXiv:2506.17886",
+    "tags": [
+      "Music",
+      "Diffusion"
     ]
   },
   {

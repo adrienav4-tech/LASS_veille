@@ -15,6 +15,23 @@
     ]
   },
   {
+    "title": "AllMusicCaps: Album Reviews as Complementary Supervision for Music CLAP",
+    "authors": [
+      "Pablo Alonso-Jiménez",
+      "Xavier Lizarraga-Seijas",
+      "Xavier Serra",
+      "Dmitry Bogdanov"
+    ],
+    "date": "2026-08-26",
+    "summary": "Recent open text-audio contrastive models (CLAPs) are typically trained with LLM-generated captions derived from tag datasets or web search results, which tend to be accurate but expressively narrow. As a complementary source, we explore human-written album reviews, specifically expert reviews from AllMusic: they exist at scale and carry narrative cues, evaluative adjectives, and scene framing that other sources lack. Since raw reviews are too noisy for direct use as captions, we first build a caption corpus with 24,5346 samples via an LLM preprocessing pipeline that identifies descriptive mus",
+    "url": "http://arxiv.org/abs/2608.25244v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP",
+      "Music"
+    ]
+  },
+  {
     "title": "FlowSep 2: Self-Supervised Flow Matching for Language-Queried Audio Source Separation",
     "authors": [
       "Yi Yuan",
@@ -1539,6 +1556,20 @@
     "tags": []
   },
   {
+    "title": "Challenges and opportunities of generative artificial intelligence models in audio/acoustic domain: a comprehensive survey",
+    "authors": [
+      "S Dibbo",
+      "S Vhaduri",
+      "CH Lin"
+    ],
+    "date": "2026",
+    "summary": "multi-task audio generation since 2022 by discretizing audio into token sequences and  applying large-scale autoregressive language modeling [33–35]. The boundary between audio",
+    "url": "https://link.springer.com/content/pdf/10.1007/s10462-026-11670-y_reference.pdf",
+    "source": "scholar",
+    "venue": "Artificial Intelligence Review",
+    "tags": []
+  },
+  {
     "title": "Foundation Models Defining A New Era In Sensor-based Human Activity Recognition: A Survey And Outlook",
     "authors": [
       "S Bian",
@@ -2977,14 +3008,13 @@
       "Xinlei Yin",
       "Xiulian Peng",
       "Xue Jiang",
-      "Z. Xiong",
+      "Zhiwei Xiong",
       "Yan Lu"
     ],
     "date": "2025-05-27",
-    "summary": "Target audio source separation with natural language queries presents a promising paradigm for extracting arbitrary audio events through arbitrary text descriptions. Existing methods mainly face two challenges, the difficulty in jointly modeling acoustic-textual alignment and semantic-aware separation within a blindly-learned single-stage architecture, and the reliance on large-scale accurately-labeled training data to compensate for inefficient cross-modal learning and separation. To address th",
-    "url": "https://arxiv.org/abs/2505.21025",
-    "source": "semantic",
-    "venue": "IEEE Transactions on Audio, Speech, and Language Processing",
+    "summary": "Target audio source separation with natural language queries presents a promising paradigm for extracting arbitrary audio events through arbitrary text descriptions. Existing methods mainly face two challenges, the difficulty in jointly modeling acoustic-textual alignment and semantic-aware separation within a blindly-learned single-stage architecture, and the reliance on large-scale accurately-labeled training data to compensate for inefficient cross-modal learning and separation. To address these challenges, we propose a hierarchical decomposition framework, HSM-TSS, that decouples the task ",
+    "url": "http://arxiv.org/abs/2505.21025v2",
+    "source": "arxiv",
     "tags": []
   },
   {
@@ -3593,12 +3623,12 @@
       "Jianfeng Chen"
     ],
     "date": "2024-09-20",
-    "summary": "In sound event detection (SED), overlapping sound events pose a significant challenge, as certain events can be easily masked by background noise or other events, resulting in poor detection performance. To address this issue, we propose the text-queried SED (TQ-SED) framework. Specifically, we first pre-train a language-queried audio source separation (LASS) model to separate the audio tracks corresponding to different events from the input audio. Then, multiple target SED branches are employed",
-    "url": "https://arxiv.org/abs/2409.13292",
-    "source": "semantic",
-    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+    "summary": "In sound event detection (SED), overlapping sound events pose a significant challenge, as certain events can be easily masked by background noise or other events, resulting in poor detection performance. To address this issue, we propose the text-queried SED (TQ-SED) framework. Specifically, we first pre-train a language-queried audio source separation (LASS) model to separate the audio tracks corresponding to different events from the input audio. Then, multiple target SED branches are employed to detect individual events. AudioSep is a state-of-the-art LASS model, but has limitations in extr",
+    "url": "http://arxiv.org/abs/2409.13292v2",
+    "source": "arxiv",
     "tags": [
-      "LASS"
+      "LASS",
+      "AudioSep"
     ]
   },
   {
@@ -3607,15 +3637,14 @@
       "Kohei Saijo",
       "Janek Ebbers",
       "François G. Germain",
-      "S. Khurana",
-      "G. Wichern",
+      "Sameer Khurana",
+      "Gordon Wichern",
       "Jonathan Le Roux"
     ],
     "date": "2024-09-20",
-    "summary": "The goal of text-queried target sound extraction (TSE) is to extract from a mixture a sound source specified with a natural-language caption. While it is preferable to have access to large-scale text-audio pairs to address a variety of text queries, the limited number of available high-quality text-audio pairs hinders the data scaling. To this end, this work explores how to leverage audio-only data without any captions for the text-queried TSE task to potentially scale up the data amount. A stra",
-    "url": "https://arxiv.org/abs/2409.13152",
-    "source": "semantic",
-    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+    "summary": "The goal of text-queried target sound extraction (TSE) is to extract from a mixture a sound source specified with a natural-language caption. While it is preferable to have access to large-scale text-audio pairs to address a variety of text prompts, the limited number of available high-quality text-audio pairs hinders the data scaling. To this end, this work explores how to leverage audio-only data without any captions for the text-queried TSE task to potentially scale up the data amount. A straightforward way to do so is to use a joint audio-text embedding model, such as the contrastive langu",
+    "url": "http://arxiv.org/abs/2409.13152v1",
+    "source": "arxiv",
     "tags": []
   },
   {

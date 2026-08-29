@@ -1574,6 +1574,23 @@
     ]
   },
   {
+    "title": "CLAPMamba: CLAP-Guided Mamba for Language-Queried Target Sound Extraction",
+    "authors": [
+      "JY Yang",
+      "HJ Park",
+      "S Lee",
+      "SW Han"
+    ],
+    "date": "2026",
+    "summary": "To construct an audio representation that is semantically aligned with the text embedding,  we obtain the mixture audio embedding from the audio encoder of the pre-trained CLAP [24]",
+    "url": "https://ieeexplore.ieee.org/iel8/6287639/6514899/11359160.pdf",
+    "source": "scholar",
+    "venue": "IEEE Access",
+    "tags": [
+      "CLAP"
+    ]
+  },
+  {
     "title": "Challenges and opportunities of generative artificial intelligence models in audio/acoustic domain: a comprehensive survey",
     "authors": [
       "S Dibbo",

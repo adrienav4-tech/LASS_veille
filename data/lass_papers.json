@@ -15,6 +15,21 @@
     ]
   },
   {
+    "title": "Auditing Generative Audio Calls for Known-Task Audio-LLM Evaluation",
+    "authors": [
+      "Mengzhe Geng"
+    ],
+    "date": "2026-08-28",
+    "summary": "Speech and audio LLMs are often evaluated by asking whether a waveform prompt beats an automatic speech recognition (ASR) transcript. For known closed-set tasks, that comparison conflates two factors: access to acoustic evidence and the need to call a generative audio model. We evaluate this distinction as a controlled call-decision problem. For each example, a policy chooses among keeping a transcript label, using encoder evidence from Contrastive Language-Audio Pretraining (CLAP), Audio Spectrogram Transformer (AST), or WavLM, and calling Qwen2-Audio, Qwen2.5-Omni, or MOSS-Audio; the decisiv",
+    "url": "http://arxiv.org/abs/2608.27817v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP",
+      "Speech",
+      "Transformer"
+    ]
+  },
+  {
     "title": "AllMusicCaps: Album Reviews as Complementary Supervision for Music CLAP",
     "authors": [
       "Pablo Alonso-Jiménez",
@@ -1591,6 +1606,20 @@
     ]
   },
   {
+    "title": "Challenges and opportunities of generative artificial intelligence models in audio/acoustic domain: a comprehensive survey",
+    "authors": [
+      "S Dibbo",
+      "S Vhaduri",
+      "CH Lin"
+    ],
+    "date": "2026",
+    "summary": "multi-task audio generation since 2022 by discretizing audio into token sequences and  applying large-scale autoregressive language modeling [33–35]. The boundary between audio",
+    "url": "https://link.springer.com/content/pdf/10.1007/s10462-026-11670-y_reference.pdf",
+    "source": "scholar",
+    "venue": "Artificial Intelligence Review",
+    "tags": []
+  },
+  {
     "title": "World Models: A Comprehensive Survey of Architectures, Methodologies, Reasoning Paradigms, and Applications",
     "authors": [
       "AH Zidan",
@@ -1607,20 +1636,6 @@
     "tags": [
       "LASS"
     ]
-  },
-  {
-    "title": "Challenges and opportunities of generative artificial intelligence models in audio/acoustic domain: a comprehensive survey",
-    "authors": [
-      "S Dibbo",
-      "S Vhaduri",
-      "CH Lin"
-    ],
-    "date": "2026",
-    "summary": "multi-task audio generation since 2022 by discretizing audio into token sequences and  applying large-scale autoregressive language modeling [33–35]. The boundary between audio",
-    "url": "https://link.springer.com/content/pdf/10.1007/s10462-026-11670-y_reference.pdf",
-    "source": "scholar",
-    "venue": "Artificial Intelligence Review",
-    "tags": []
   },
   {
     "title": "CoSTALA: Compositional Spatio-Temporal Audio-Language Alignment via Multi-Grain Hierarchical Contrastive Learning",
@@ -3401,17 +3416,18 @@
     ]
   },
   {
-    "title": "Towards Achieving General Video Understanding",
+    "title": "Human-AI Systems for Creating, Consuming, and Interacting with Digital Content",
     "authors": [
-      "R Gupta"
+      "B Wang"
     ],
     "date": "2025",
-    "summary": "learning to the frontiers of multimodal and language-augmented vision research.  and  audio explaining the educational content [9, 117]. To capture audio cues, we consider the audio",
-    "url": "https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1496&context=etd2024",
+    "summary": "38 5.2 LAVE’s language-augmented video gallery features each video with a semantic   Audio Source Separation Audio source separation splits a mixed music track into multiple source",
+    "url": "https://utoronto.scholaris.ca/server/api/core/bitstreams/7254cebc-7f9a-4062-9566-7e789250ec09/content",
     "source": "scholar",
     "venue": "NA",
     "tags": [
-      "LASS"
+      "LASS",
+      "Music"
     ]
   },
   {
@@ -3429,6 +3445,20 @@
     "tags": [
       "Music",
       "Diffusion"
+    ]
+  },
+  {
+    "title": "Towards Achieving General Video Understanding",
+    "authors": [
+      "R Gupta"
+    ],
+    "date": "2025",
+    "summary": "learning to the frontiers of multimodal and language-augmented vision research.  and  audio explaining the educational content [9, 117]. To capture audio cues, we consider the audio",
+    "url": "https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1496&context=etd2024",
+    "source": "scholar",
+    "venue": "NA",
+    "tags": [
+      "LASS"
     ]
   },
   {

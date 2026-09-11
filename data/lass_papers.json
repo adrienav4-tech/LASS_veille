@@ -15,6 +15,42 @@
     ]
   },
   {
+    "title": "Downstream-Task-Aware Unified Source Separation",
+    "authors": [
+      "Yoshiki Mitsui",
+      "Ryo Aihara",
+      "Tatsuhiko Saito",
+      "Yoshiki Masuyama",
+      "Christoph Boeddeker",
+      "Julius Richter",
+      "Gordon Wichern",
+      "Jonathan Le Roux"
+    ],
+    "date": "2026-09-10",
+    "summary": "Task-aware unified source separation (TUSS) enables a single model to handle diverse separation tasks by conditioning on input prompts. However, conventional TUSS does not account for downstream task requirements, such as whether the enhanced speech will be used for human listening or automatic speech recognition (ASR). In this paper, we propose a prompt extension framework for TUSS that incorporates downstream task information into the input prompts and switches the loss function according to the given prompt during training, enabling outputs with different signal characteristics at inference",
+    "url": "http://arxiv.org/abs/2609.11092v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
+    "title": "EConv-TasNet: Efficient Conv-TasNet for Effective Speech Separation",
+    "authors": [
+      "Pei-Chun Chang",
+      "Chuan-Yi Liu"
+    ],
+    "date": "2026-09-10",
+    "summary": "Conv-TasNet has served as a strong baseline for time-domain speech separation, and many studies have extended it with advanced architectures such as dual-path networks, U-Nets, and attention mechanisms. However, these methods often introduce high computational cost and complexity, limiting their deployment in resource-constrained scenarios. To address this issue, we propose eConv-TasNet, an efficient variant of Conv-TasNet that improves both effectiveness and efficiency without relying on resource-intensive modules. The proposed model consists of a group-wise early-splitting (GES) module and a",
+    "url": "http://arxiv.org/abs/2609.11342v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech",
+      "Transformer",
+      "U-Net"
+    ]
+  },
+  {
     "title": "Audio Deepfake Detection Using Temporal Coherence Analysis",
     "authors": [
       "Justin D. Norman",

@@ -2367,7 +2367,7 @@
       "G. Wichern",
       "Kohei Saijo",
       "François G. Germain",
-      "Jonathan Le Roux"
+      "J. Le Roux"
     ],
     "date": "2025-10-01",
     "summary": "In addition to detection, classification, and localization of sound events, the ability to isolate the sound of one or multiple sound sources in an acoustic scene is important for downstream applications such as assisted listening, and virtual/augmented reality. Because of the wide variety of possible sound sources we may want to isolate, the ability to flexibly specify the source(s) of interest (e.g., via natural language queries) is necessary for most practical applications. In this talk I wil",
@@ -3818,8 +3818,8 @@
       "Janek Ebbers",
       "François G. Germain",
       "S. Khurana",
-      "G. Wichern",
-      "Jonathan Le Roux"
+      "Gordon Wiehern",
+      "J. Le Roux"
     ],
     "date": "2024-09-20",
     "summary": "The goal of text-queried target sound extraction (TSE) is to extract from a mixture a sound source specified with a natural-language caption. While it is preferable to have access to large-scale text-audio pairs to address a variety of text queries, the limited number of available high-quality text-audio pairs hinders the data scaling. To this end, this work explores how to leverage audio-only data without any captions for the text-queried TSE task to potentially scale up the data amount. A stra",
@@ -4445,7 +4445,7 @@
       "Glenn G. Ko",
       "Yuji Chai",
       "Coleman Hooper",
-      "M. Donato",
+      "Marco Donato",
       "P. Whatmough",
       "Alexander M. Rush",
       "D. Brooks",

@@ -15,6 +15,39 @@
     ]
   },
   {
+    "title": "Real-Time Music Source Separation on a Low-Power Audio DSP",
+    "authors": [
+      "Jianan Li",
+      "Li Liu",
+      "Ken Malsky",
+      "Gabby Yi"
+    ],
+    "date": "2026-09-10",
+    "summary": "Real-time music source separation is validated on desktop CPUs and GPUs. Does any published system fit the embedded audio hardware it targets? On a commercial audio DSP (2 MB SRAM, 2.07 GMAC/s measured), none does, and the constraints eliminate different models: memory rules out the 16-51 M parameter TasNet/X-UMX family, per-frame compute rules out RT-STT, needing 5.5x the available MAC rate. Parameter count predicts neither: weight reuse spans 1x to 345x. We then build one that fits. Training on continuous rather than block-padded convolution context proves essential: a model scoring 3.93 dB ",
+    "url": "http://arxiv.org/abs/2609.12201v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
+    "title": "Neural Multichannel Distant Speaker Diarization with Heavy-tailed Source Separation Model",
+    "authors": [
+      "Sicheng Mao",
+      "Baihan Li",
+      "Mathieu Fontaine",
+      "Anthony Larcher",
+      "Roland Badeau"
+    ],
+    "date": "2026-09-10",
+    "summary": "Distant speaker diarization remains challenging due to difficult acoustic environments, varying numbers of speakers and overlapping speech. Model-driven methods are proposed to exploit the speech source features in multi-channel recordings that help diarization. This paper generalizes a neural model that jointly learns to perform blind source separation and diarization over speech mixtures (neural FCASA) with heavy-tailed models. The popular Gaussian distribution has been applied for variance modeling in the original source separation model, which we replace with two families of heavy-tailed m",
+    "url": "http://arxiv.org/abs/2609.12154v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
     "title": "Downstream-Task-Aware Unified Source Separation",
     "authors": [
       "Yoshiki Mitsui",
@@ -81,6 +114,21 @@
     "tags": [
       "Speech",
       "Diffusion"
+    ]
+  },
+  {
+    "title": "Auditing Generative Audio Calls for Known-Task Audio-LLM Evaluatio",
+    "authors": [
+      "Mengzhe Geng"
+    ],
+    "date": "2026-08-28",
+    "summary": "Speech and audio LLMs are often evaluated by asking whether a waveform prompt beats an automatic speech recognition (ASR) transcript. For known closed-set tasks, that comparison conflates two factors: access to acoustic evidence and the need to call a generative audio model. We evaluate this distinction as a controlled call-decision problem. For each example, a policy chooses among keeping a transcript label, using encoder evidence from Contrastive Language-Audio Pretraining (CLAP), Audio Spectrogram Transformer (AST), or WavLM, and calling Qwen2-Audio, Qwen2.5-Omni, or MOSS-Audio; the decisiv",
+    "url": "http://arxiv.org/abs/2608.27817v3",
+    "source": "arxiv",
+    "tags": [
+      "CLAP",
+      "Speech",
+      "Transformer"
     ]
   },
   {
@@ -295,8 +343,8 @@
       "Philip C. Woodland"
     ],
     "date": "2026-07-27",
-    "summary": "Contrastive Language-Audio Pretraining (CLAP) learns aligned text and audio representations in a shared embedding space. However, independent encoding of each modality limits its ability to model cross-modal semantics in complex audio understanding and retrieval tasks. To address this limitation, this paper proposes Text-Prompted CLAP (TP-CLAP), a parameter-efficient extension of CLAP that introduces a cross-attention-based fusion module to incorporate textual prompts into audio features. TP-CLAP is trained using an audio multiple-choice question answering (AMCQA) framework, where it learns to",
-    "url": "http://arxiv.org/abs/2607.25085v2",
+    "summary": "Contrastive Language-Audio Pretraining (CLAP) aligns text and audio in a shared embedding space, but encoding each modality independently limits its ability to model cross-modal semantics in complex audio understanding and retrieval tasks. To address this limitation, this paper proposes Text-Prompted CLAP (TP-CLAP), a parameter-efficient extension of CLAP that introduces a cross-attention-based fusion module to incorporate textual prompts into audio features. TP-CLAP is trained using an audio multiple-choice question answering (AMCQA) framework, where it learns to align text-conditioned audio ",
+    "url": "http://arxiv.org/abs/2607.25085v4",
     "source": "arxiv",
     "tags": [
       "CLAP",
@@ -3947,7 +3995,7 @@
       "Qiaoxi Zhu",
       "Xubo Liu",
       "Wen-Bo Wang",
-      "Shuhan Qi",
+      "Shu-Han Qi",
       "Kejia Zhang",
       "Jianyuan Sun",
       "Wen-Wu Wang"

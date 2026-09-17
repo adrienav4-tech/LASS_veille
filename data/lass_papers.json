@@ -4766,11 +4766,14 @@
       "Hoda A. Abdelhafez"
     ],
     "date": "2021-09-01",
-    "summary": "",
+    "summary": "The Conv-TasNet and Demucs algorithms, can differentiate between two mixed signals, such as music and speech, the mixing operation proceed without any support information. The network of convolutional time-domain audio separations is used in Conv-TasNet algorithm, while there is a new waveform-to-waveform model in Demucs algorithm. The Demucs algorithm utilizes a procedure like the audio generation model and sizable decoder capacity. The algorithms are not pretrained; so, the process of separati",
     "url": "https://doi.org/10.25046/aj060515",
     "source": "semantic",
     "venue": "Advances in Science, Technology and Engineering Systems",
-    "tags": []
+    "tags": [
+      "Music",
+      "Speech"
+    ]
   },
   {
     "title": "A Hands-on Comparison of DNNs for Dialog Separation Using Transfer Learning from Music Source Separation",

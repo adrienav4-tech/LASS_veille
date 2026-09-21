@@ -15,6 +15,47 @@
     ]
   },
   {
+    "title": "Investigating the Performance and Energy Costs of Replicating Band-Split RNN for Music Source Separation",
+    "authors": [
+      "Paul Magron",
+      "Romain Serizel",
+      "Constance Douwes"
+    ],
+    "date": "2026-09-18",
+    "summary": "Band-split recurrent neural network (BSRNN) is a popular music source separation model that yields close to state-of-the-art results using reasonable computational resources and public datasets. It is therefore interesting from a reproducible research perspective, but achieving its performance is not straightforward since its full code is not available. In this paper, we conduct a replication of BSRNN via implementing the full pipeline. We extend the original paper's analysis by experimentally studying various design choices about data preprocessing, the optimization protocol, and architectura",
+    "url": "http://arxiv.org/abs/2609.21918v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
+    "title": "Rethinking Music Tokenization: A Semantic Codec toward High-Fidelity LLM Music Generation",
+    "authors": [
+      "Huakang Chen",
+      "Guobin Ma",
+      "Yuepeng Jiang",
+      "Dake Guo",
+      "Jingbin Hu",
+      "Hanke Xie",
+      "Wenhao Li",
+      "Lingxin Xiong",
+      "Jian Zhao",
+      "Zhonglin Jiang",
+      "Yong Chen",
+      "Lei Xie",
+      "Pengcheng Zhu"
+    ],
+    "date": "2026-09-18",
+    "summary": "Discrete audio tokenization has become the critical interface between raw waveforms and autoregressive modeling in recent music generation. As a result, music tokenizers must simultaneously support high-fidelity reconstruction and produce discrete sequences that remain amenable to language modeling. Existing reconstruction-oriented tokenizers often mix musical structure with fine acoustic details, producing high-entropy tokens that are hard to model. In contrast, semantics-guided alternatives are designed for speech and do not fit music well, often hurting reconstruction quality. We address th",
+    "url": "http://arxiv.org/abs/2609.21240v1",
+    "source": "arxiv",
+    "tags": [
+      "Music",
+      "Speech"
+    ]
+  },
+  {
     "title": "Real-Time Music Source Separation on a Low-Power Audio DSP",
     "authors": [
       "Jianan Li",

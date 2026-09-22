@@ -15,6 +15,38 @@
     ]
   },
   {
+    "title": "LiteCASS: A Lightweight End-to-End Network for Real-Time Stereo Cinematic Audio Source Separation",
+    "authors": [
+      "Yuanxin Guo",
+      "Qiang Ji",
+      "Mengmei Liu",
+      "Yuhan Lv",
+      "Ningning Pan",
+      "Gongping Huang"
+    ],
+    "date": "2026-09-20",
+    "summary": "Cinematic audio source separation (CASS) decomposes a soundtrack into dialogue, music, and sound-effects (SFX) stems. Existing CASS methods, however, suffer from two critical limitations: they rely on heavily parameterized network architectures and GPU-class hardware, limiting their use in real-time and resource-constrained scenarios, and they are overwhelmingly designed for monaural signals, leaving the stereo scenario largely unexplored. We present LiteCASS, to our knowledge the first lightweight end-to-end network for real-time stereo CASS. LiteCASS combines deterministic STFT subband rearr",
+    "url": "http://arxiv.org/abs/2609.23453v1",
+    "source": "arxiv",
+    "tags": [
+      "LASS",
+      "Music"
+    ]
+  },
+  {
+    "title": "If You Hear It, Help Find It: Orthogonal Knowledge Distillation for Open-Vocabulary Audio-Visual Event Localization",
+    "authors": [
+      "Yi Xu",
+      "Cheng Chen",
+      "Wenzhuo Lei"
+    ],
+    "date": "2026-09-20",
+    "summary": "Open-vocabulary audio-visual event localization (OV-AVEL) grounds a text-queried event in time from video, audio, and language. The supervision sources available to this task can differ in temporal-boundary reliability: on OV-AVEBench, our configured visual teacher gives more reliable boundary cues than the configured audio teacher, although the latter is a strong pretrained audio model and remains semantically informative. This is a setting-specific diagnostic rather than a universal ranking of vision and audio. We formulate the resulting challenge as supervision placement: which teacher sign",
+    "url": "http://arxiv.org/abs/2609.23376v1",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
     "title": "Investigating the Performance and Energy Costs of Replicating Band-Split RNN for Music Source Separation",
     "authors": [
       "Paul Magron",

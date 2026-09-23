@@ -637,6 +637,18 @@
     ]
   },
   {
+    "title": "NAC: Neural Action Codec for Vision-Language-Action Models",
+    "authors": [
+      "Ahad Jawaid",
+      "Yu Xiang"
+    ],
+    "date": "2026-06-19",
+    "summary": "Vision-language-action (VLA) models rely on discrete action tokenizers to bridge continuous robot control and autoregressive sequence modeling, yet existing tokenizers often trade off between compression, latency, and downstream performance. We revisit this design through the lens of neural audio codecs-convolutional encoder-decoder architectures with residual vector quantization that serve as the standard front end for audio foundation models. Motivated by their success, we introduce the Neural Action Codec (NAC), which treats short robot action trajectories as multi-channel 1D signals and co",
+    "url": "http://arxiv.org/abs/2606.21372v1",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
     "title": "Improving Text-to-Music Generation with Human Preference Rewards",
     "authors": [
       "Yonghyun Kim",
@@ -653,18 +665,6 @@
       "CLAP",
       "Music"
     ]
-  },
-  {
-    "title": "NAC: Neural Action Codec for Vision-Language-Action Models",
-    "authors": [
-      "Ahad Jawaid",
-      "Yu Xiang"
-    ],
-    "date": "2026-06-19",
-    "summary": "Vision-language-action (VLA) models rely on discrete action tokenizers to bridge continuous robot control and autoregressive sequence modeling, yet existing tokenizers often trade off between compression, latency, and downstream performance. We revisit this design through the lens of neural audio codecs-convolutional encoder-decoder architectures with residual vector quantization that serve as the standard front end for audio foundation models. Motivated by their success, we introduce the Neural Action Codec (NAC), which treats short robot action trajectories as multi-channel 1D signals and co",
-    "url": "http://arxiv.org/abs/2606.21372v1",
-    "source": "arxiv",
-    "tags": []
   },
   {
     "title": "ELSA: Acoustic Event-Level Semantic Alignment for Fine-Grained Reference-Free Text-to-Audio Evaluation",
@@ -2187,11 +2187,11 @@
       "Ke Chen",
       "Prem Seetharaman",
       "Oriol Nieto",
-      "Jiaqi Su",
+      "Jia-Qi Su",
       "Rithesh Kumar",
       "Minje Kim",
       "P. Smaragdis",
-      "Zeyu Jin",
+      "Ze-Yu Jin",
       "Justin Salamon"
     ],
     "date": "2025-11-06",

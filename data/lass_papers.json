@@ -15,6 +15,21 @@
     ]
   },
   {
+    "title": "A Stem-Agnostic Approach to Hybrid AI Music Detection",
+    "authors": [
+      "Richa Namballa",
+      "François Rigaud",
+      "Romain Hennequin"
+    ],
+    "date": "2026-09-22",
+    "summary": "The inclusion of generative audio in the music production process has led to an increase in hybrid music tracks that blend authentic human performances with AI-generated stems, challenging traditional AI music detectors which operate in a binary setting. In this work, we propose a stem-agnostic framework for identifying synthetic audio sources within hybrid musical mixtures. We introduce the inspectrogram, a novel time-frequency representation that maps localized probabilities of synthetic content across the audio spectrum. By combining the inspectrogram with a Wiener filter estimating target ",
+    "url": "http://arxiv.org/abs/2609.26956v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
     "title": "LiteCASS: A Lightweight End-to-End Network for Real-Time Stereo Cinematic Audio Source Separation",
     "authors": [
       "Yuanxin Guo",

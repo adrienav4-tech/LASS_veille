@@ -15,6 +15,37 @@
     ]
   },
   {
+    "title": "DAMSEP: Distance-Aware Monaural Source Separation using Multi-RIR Estimation",
+    "authors": [
+      "Wen Wen",
+      "Qiang Zhou",
+      "Yu Xi",
+      "Haoyu Li",
+      "Bohan Li",
+      "Kai Yu"
+    ],
+    "date": "2026-09-24",
+    "summary": "Although room impulse responses (RIRs) encode source-distance cues, conventional monaural source separation focuses on recovering audio content without estimating source-specific RIRs, losing the associated spatial information. To address this limitation, we propose Distance-Aware Monaural Source Separation using Multi-RIR Estimation (DAMSEP), the first end-to-end framework that is jointly trained for source separation and multi-source RIR estimation from a single-microphone mixture. DAMSEP integrates a separation backbone with shared dereverberation and RIR estimation modules to jointly recov",
+    "url": "http://arxiv.org/abs/2609.29749v1",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
+    "title": "STAM-ASR: Speaker-Temporal Anchoring with Memory for Multi-Speaker ASR",
+    "authors": [
+      "Victor Tolulope Olufemi",
+      "Syeda Faiza Ahmed Sara",
+      "Shammur Absar Chowdhury"
+    ],
+    "date": "2026-09-24",
+    "summary": "Natural conversations make both speech recognition and speaker attribution challenging for ASR, as speakers take turns, overlap, and reappear over time. We propose STAM-ASR, Speaker-Temporal Anchoring with Memory, a lightweight framework that extends an already pretrained AudioLLM for multi-speaker ASR. Without relying on an external diarization system, STAM-ASR learns speaker activity and speaker-aware representations directly from intermediate AudioLLM features. Hence providing explicit who and when cues to modulate the AudioLLM's semantic representation without explicit speech separation. S",
+    "url": "http://arxiv.org/abs/2609.29805v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
     "title": "A Stem-Agnostic Approach to Hybrid AI Music Detection",
     "authors": [
       "Richa Namballa",

@@ -4112,7 +4112,7 @@
       "Feiyang Xiao",
       "Jian Guan",
       "Qiaoxi Zhu",
-      "Xubo Liu",
+      "Xu-Bo Liu",
       "Wen-Bo Wang",
       "Shu-Han Qi",
       "Kejia Zhang",
@@ -4827,14 +4827,14 @@
   {
     "title": "Separate What You Describe: Language-Queried Audio Source Separation",
     "authors": [
-      "Xubo Liu",
+      "Xu-Bo Liu",
       "Haohe Liu",
       "Qiuqiang Kong",
       "Xinhao Mei",
       "Jinzheng Zhao",
       "Qiushi Huang",
       "Mark D. Plumbley",
-      "Wenwu Wang"
+      "Wen-Wu Wang"
     ],
     "date": "2022-03-28",
     "summary": "In this paper, we introduce the task of language-queried audio source separation (LASS), which aims to separate a target source from an audio mixture based on a natural language query of the target source (e.g.,\"a man tells a joke followed by people laughing\"). A unique challenge in LASS is associated with the complexity of natural language description and its relation with the audio sources. To address this issue, we proposed LASS-Net, an end-to-end neural network that is learned to jointly pro",

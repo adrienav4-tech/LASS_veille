@@ -15,6 +15,50 @@
     ]
   },
   {
+    "title": "Music Source Separation via Stem Discovery",
+    "authors": [
+      "V. Valtteri Kallinen",
+      "Eloi Moliner",
+      "Lauri Juvela",
+      "Vesa Välimäki"
+    ],
+    "date": "2026-09-25",
+    "summary": "Music source separation (MSS) methods aim to extract stems from music mixtures, which is important, for example, in karaoke, music remixing, and pedagogical applications. While earlier research on MSS systems has been dominated by models targeting narrow sets of general stems, there have recently been attempts to support broader source definitions. One of these methods uses audio queries to provide direct and descriptive control over the desired separation targets based on the sound itself. However, query-based separation remains cumbersome due to the need to provide audio examples with featur",
+    "url": "http://arxiv.org/abs/2609.30912v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
+    "title": "Audio emotion recognition for atypical hearing",
+    "authors": [
+      "Ulysse Roussel"
+    ],
+    "date": "2026-09-25",
+    "summary": "My doctoral work aims to explore Audio Emotion Recognition (AER) in the context of atypical listening. This research focuses on auditory hypersensitivity in people with autism, a phenomenon that is often difficult to evaluate and unique to each individual. Our core idea is to leverage our understanding of affect from acoustic traits, relying on the possibility of generalizing affective responses from a small amount of annotated data. As a first step, we fine-tune a large foundation model, Contrastive Language-Audio Pretraining (CLAP) using low-rank adaptation (LoRA), trained on a valence and a",
+    "url": "http://arxiv.org/abs/2609.31168v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP"
+    ]
+  },
+  {
+    "title": "Don't CLAP: Are Music-Text Models Bag-of-Words?",
+    "authors": [
+      "Yuan-Chiao Cheng",
+      "Alexander Lerch"
+    ],
+    "date": "2026-09-24",
+    "summary": "Text-to-music systems are assessed on audio quality and on how faithfully the music follows its prompt, and the CLAP score, the cosine similarity between a music-text model's audio and text embeddings, is the standard objective metric of faithfulness. We ask how accurately that score reflects the text: when an attribute is linked to an instrument (e.g., distorted guitar), does the text embedding capture that binding? To find out, we introduce an attribute swap perturbation: the caption of a real recording is edited by exchanging exactly one property, timbre, lead versus accompaniment, or order",
+    "url": "http://arxiv.org/abs/2609.30540v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP",
+      "Music"
+    ]
+  },
+  {
     "title": "DAMSEP: Distance-Aware Monaural Source Separation using Multi-RIR Estimation",
     "authors": [
       "Wen Wen",
@@ -26,7 +70,7 @@
     ],
     "date": "2026-09-24",
     "summary": "Although room impulse responses (RIRs) encode source-distance cues, conventional monaural source separation focuses on recovering audio content without estimating source-specific RIRs, losing the associated spatial information. To address this limitation, we propose Distance-Aware Monaural Source Separation using Multi-RIR Estimation (DAMSEP), the first end-to-end framework that is jointly trained for source separation and multi-source RIR estimation from a single-microphone mixture. DAMSEP integrates a separation backbone with shared dereverberation and RIR estimation modules to jointly recov",
-    "url": "http://arxiv.org/abs/2609.29749v1",
+    "url": "http://arxiv.org/abs/2609.29749v2",
     "source": "arxiv",
     "tags": []
   },
@@ -689,8 +733,8 @@
       "Yu Xiang"
     ],
     "date": "2026-06-19",
-    "summary": "Vision-language-action (VLA) models rely on discrete action tokenizers to bridge continuous robot control and autoregressive sequence modeling, yet existing tokenizers often trade off between compression, latency, and downstream performance. We revisit this design through the lens of neural audio codecs-convolutional encoder-decoder architectures with residual vector quantization that serve as the standard front end for audio foundation models. Motivated by their success, we introduce the Neural Action Codec (NAC), which treats short robot action trajectories as multi-channel 1D signals and co",
-    "url": "http://arxiv.org/abs/2606.21372v1",
+    "summary": "Vision-language-action (VLA) models rely on discrete action tokenizers to bridge continuous robot control and autoregressive sequence modeling, yet existing tokenizers often trade off between compression, latency, and downstream performance. We revisit this design through the lens of neural audio codecs - convolutional encoder-decoder architectures with residual vector quantization that serve as the standard front end for audio foundation models. Motivated by their success, we introduce the Neural Action Codec (NAC), which treats short robot action trajectories as multi-channel 1D signals and ",
+    "url": "http://arxiv.org/abs/2606.21372v2",
     "source": "arxiv",
     "tags": []
   },
@@ -4829,7 +4873,7 @@
     "authors": [
       "Xu-Bo Liu",
       "Haohe Liu",
-      "Qiuqiang Kong",
+      "Qiu-Qiang Kong",
       "Xinhao Mei",
       "Jinzheng Zhao",
       "Qiushi Huang",

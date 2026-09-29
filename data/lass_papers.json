@@ -15,6 +15,18 @@
     ]
   },
   {
+    "title": "SCISSOR: Score-Conditioned Instrument Source Separation for Orchestral Recordings",
+    "authors": [
+      "Yiheng Lu",
+      "Hao-Wen Dong"
+    ],
+    "date": "2026-09-27",
+    "summary": "Orchestral separation recovers instrument sections from mixtures in which shared pitches, harmonics, and timbres obscure source identity. An aligned score provides instrument labels, note pitches, and activity times. A score-informed approach appends piano rolls to audio features before mask prediction. We introduce SCISSOR (Score-Conditioned Instrument Source Separation for Orchestral Recordings), which uses the score to form a frame-wise query for each source. Each query matches a shared audio representation, and a softmax over instrument and background slots jointly assigns overlapping time",
+    "url": "http://arxiv.org/abs/2609.33265v1",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
     "title": "Music Source Separation via Stem Discovery",
     "authors": [
       "V. Valtteri Kallinen",
@@ -121,6 +133,24 @@
     "tags": [
       "LASS",
       "Music"
+    ]
+  },
+  {
+    "title": "RadarVox: Radar-Audio Multimodal Cocktail-Party Speech Separation with Speaker-Aware Cross-Modal Matching",
+    "authors": [
+      "Yanlin Xu",
+      "Yiwei Ru",
+      "Mupei Li",
+      "Yongji Liu",
+      "Jie Wang",
+      "Zhenan Sun"
+    ],
+    "date": "2026-09-20",
+    "summary": "In embodied voice interaction, cocktail-party speech perception requires both speech separation and speaker attribution across machine-generated and human speech sources. However, conventional audio-only blind source separation remains permutation ambiguous, making the correspondence between separated streams and physical speakers unclear. This paper presents RadarVox, a radar-audio multimodal benchmark for identity-aware cocktail-party speech separation. RadarVox provides acoustic mixtures and source-level radar displacement signals from loudspeaker-emitted and human speech, enabling source-a",
+    "url": "http://arxiv.org/abs/2609.31708v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
     ]
   },
   {

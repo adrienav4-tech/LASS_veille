@@ -15,6 +15,24 @@
     ]
   },
   {
+    "title": "GAANet: Global-guided Asymmetric Attention Network for Audio-Visual Speech Separation",
+    "authors": [
+      "Zhiyuan Zhang",
+      "Jingyuan Xu",
+      "Yiming Tang",
+      "Liu Liu",
+      "Dan Guo"
+    ],
+    "date": "2026-10-02",
+    "summary": "Multi-scale design is crucial for efficient audio-visual speech separation, yet effectively modeling multi-scale information for audio-visual feature fusion remains challenging. We argue that the limited capacity of existing approaches primarily arises from: 1) treating features from different modalities in the same manner, and 2) overlooking the role of global features. To address these issues, we propose a Global-guided Asymmetric Attention Network (GAANet). Our model introduces two core innovations: first, an asymmetric multi-scale fusion framework that allows audio and visual streams to ex",
+    "url": "http://arxiv.org/abs/2610.02752v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech",
+      "Transformer"
+    ]
+  },
+  {
     "title": "SCISSOR: Score-Conditioned Instrument Source Separation for Orchestral Recordings",
     "authors": [
       "Yiheng Lu",

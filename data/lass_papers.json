@@ -15,6 +15,21 @@
     ]
   },
   {
+    "title": "SepRQ : Self-Supervised Speech Mixture Representation Learning via Mask-Free, Multi-Scale Source Separation",
+    "authors": [
+      "Séverin Baroudi",
+      "Hervé Bredin",
+      "Ricard Marxer"
+    ],
+    "date": "2026-10-03",
+    "summary": "Self-supervised learning (SSL) is standard for speech representation learning, but mainstream models are designed around single-speaker audio, limiting their usefulness in multi-speakers scenarios. We present SepRQ, an open-source SSL framework that replaces masked prediction with a pseudo-source-separation objective over frozen random-projection codebooks. By adopting a novel mask-free, multiresolution approach, SepRQ achieves state-of-the-art performance in Speaker Diarization and Speech Separation on the SUPERB benchmark, surpassing WavLM and other cocktail-party derived SSLs at both Base a",
+    "url": "http://arxiv.org/abs/2610.04690v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
     "title": "GAANet: Global-guided Asymmetric Attention Network for Audio-Visual Speech Separation",
     "authors": [
       "Zhiyuan Zhang",
@@ -1409,6 +1424,23 @@
     "source": "arxiv",
     "tags": [
       "Speech"
+    ]
+  },
+  {
+    "title": "Re-purposing Multimodal Large Language Models for Audio-Text Retrieval",
+    "authors": [
+      "Jilan Xu",
+      "Carl Thomé",
+      "Danijela Horak",
+      "Weidi Xie",
+      "Andrew Zisserman"
+    ],
+    "date": "2026-02-20",
+    "summary": "Audio-text retrieval is crucial for bridging acoustic signals and natural language. While contrastive dual-encoder architectures like CLAP have shown promise, they are fundamentally limited by the capacity of small-scale encoders. Specifically, the text encoders struggle to understand complex queries that require reasoning or world knowledge. In this paper, we propose AuroLA, a novel contrastive language-audio pre-trained model that re-purposes Multimodal Large Language Models (MLLMs) as a unified backbone for audio-text retrieval. Specifically, we make the following contributions: (i) we cons",
+    "url": "http://arxiv.org/abs/2602.18010v2",
+    "source": "arxiv",
+    "tags": [
+      "CLAP"
     ]
   },
   {

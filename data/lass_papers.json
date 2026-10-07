@@ -15,6 +15,21 @@
     ]
   },
   {
+    "title": "Restore, Separate, Restore: A Modular Framework for Music Source Restoration",
+    "authors": [
+      "Tobias Morocutti",
+      "Emmanouil Karystinaios",
+      "Gerhard Widmer"
+    ],
+    "date": "2026-10-06",
+    "summary": "Music Source Restoration (MSR) seeks to recover original, unprocessed instrument stems from mixed, mastered, and possibly degraded recordings. Unlike conventional source separation, which treats the mixture as a linear sum of clean sources, MSR must additionally invert nonlinear production effects, such as equalization and compression, and transmission-related degradations, such as codec artifacts. We propose a three-stage framework built around this distinction: (1) a mixture restoration model that addresses degradation before separation, (2) a single model that separates the restored mixture",
+    "url": "http://arxiv.org/abs/2610.08284v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
     "title": "SepRQ : Self-Supervised Speech Mixture Representation Learning via Mask-Free, Multi-Scale Source Separation",
     "authors": [
       "Séverin Baroudi",

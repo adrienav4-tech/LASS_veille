@@ -22,13 +22,14 @@
       "Pushya Jain",
       "Sky Qiao",
       "Emmanuel Ko",
-      "Yuanhao Yu",
+      "Yuan-Hao Yu",
       "Irina Kezele"
     ],
     "date": "2026-10-07",
-    "summary": "Language-queried audio source separation (LASS) enables extracting any sound source using natural language. However, adapting LASS models to application-specific sound classes is challenging due to noisy training data and limited semantic coverage of the CLAP-based control signals. We propose a framework comprised of an automated data engine for training-data curation and a two-stage optimization process for class-specific CLAP control signals. Our objective evaluations across seven sound classes show that data refinement and control signal optimization consistently improve source separation p",
-    "url": "http://arxiv.org/abs/2610.10025v1",
-    "source": "arxiv",
+    "summary": "Language-queried audio source separation (LASS) enables extracting any sound source using natural language. However, adapting LASS models to application-specific sound classes is challenging due to noisy training data and limited semantic coverage of the CLAP-based control signals. We propose a framework comprised of an automated data engine for training-data curation and a two-stage optimization process for class-specific CLAP control signals. Our objective evaluations across seven sound classe",
+    "url": "https://arxiv.org/abs/2610.10025",
+    "source": "semantic",
+    "venue": "",
     "tags": [
       "LASS",
       "CLAP"
@@ -3548,9 +3549,10 @@
       "Yan Lu"
     ],
     "date": "2025-05-27",
-    "summary": "Target audio source separation with natural language queries presents a promising paradigm for extracting arbitrary audio events through arbitrary text descriptions. Existing methods mainly face two challenges, the difficulty in jointly modeling acoustic-textual alignment and semantic-aware separation within a blindly-learned single-stage architecture, and the reliance on large-scale accurately-labeled training data to compensate for inefficient cross-modal learning and separation. To address these challenges, we propose a hierarchical decomposition framework, HSM-TSS, that decouples the task ",
-    "url": "http://arxiv.org/abs/2505.21025v2",
-    "source": "arxiv",
+    "summary": "Target audio source separation with natural language queries presents a promising paradigm for extracting arbitrary audio events through arbitrary text descriptions. Existing methods mainly face two challenges, the difficulty in jointly modeling acoustic-textual alignment and semantic-aware separation within a blindly-learned single-stage architecture, and the reliance on large-scale accurately-labeled training data to compensate for inefficient cross-modal learning and separation. To address th",
+    "url": "https://arxiv.org/abs/2505.21025",
+    "source": "semantic",
+    "venue": "IEEE Transactions on Audio, Speech, and Language Processing",
     "tags": []
   },
   {
@@ -4168,18 +4170,18 @@
       "Yang Xiao",
       "Hui Wang",
       "Siqi Zheng",
-      "Yafeng Chen",
+      "Ya-Feng Chen",
       "Rohan Kumar Das",
       "Chong Deng",
       "Jianfeng Chen"
     ],
     "date": "2024-09-20",
-    "summary": "In sound event detection (SED), overlapping sound events pose a significant challenge, as certain events can be easily masked by background noise or other events, resulting in poor detection performance. To address this issue, we propose the text-queried SED (TQ-SED) framework. Specifically, we first pre-train a language-queried audio source separation (LASS) model to separate the audio tracks corresponding to different events from the input audio. Then, multiple target SED branches are employed to detect individual events. AudioSep is a state-of-the-art LASS model, but has limitations in extr",
-    "url": "http://arxiv.org/abs/2409.13292v2",
-    "source": "arxiv",
+    "summary": "In sound event detection (SED), overlapping sound events pose a significant challenge, as certain events can be easily masked by background noise or other events, resulting in poor detection performance. To address this issue, we propose the text-queried SED (TQ-SED) framework. Specifically, we first pre-train a language-queried audio source separation (LASS) model to separate the audio tracks corresponding to different events from the input audio. Then, multiple target SED branches are employed",
+    "url": "https://arxiv.org/abs/2409.13292",
+    "source": "semantic",
+    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
     "tags": [
-      "LASS",
-      "AudioSep"
+      "LASS"
     ]
   },
   {

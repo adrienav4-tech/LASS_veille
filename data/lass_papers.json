@@ -15,6 +15,40 @@
     ]
   },
   {
+    "title": "Frontend-Assisted Large Audio-Language Models for SLT2026 SmartGlasses Challenge",
+    "authors": [
+      "Yushi Wang",
+      "Zeyan Song",
+      "Xiaobin Rong",
+      "Chengwei Liu",
+      "Jun Gao",
+      "Jing Lu"
+    ],
+    "date": "2026-10-09",
+    "summary": "This paper describes our systems for the Track 1 time-stamped speaker-attributed ASR task of the SmartGlasses Challenge. To handle overlapping speech, background noise and far-field conditions in two-person conversations, we employ SoulX-Transcriber, a multimodal large language model that takes full-length audio as input and generates structured transcriptions. In addition, we investigate the effect of speech frontend processing, including a rule-based Guided Source Separation method and a data-driven speech separation model, both of which improve performance on the validation set. Considering",
+    "url": "http://arxiv.org/abs/2610.13282v1",
+    "source": "arxiv",
+    "tags": [
+      "LASS",
+      "Speech"
+    ]
+  },
+  {
+    "title": "Lightweight Systems for Spatial Semantic Segmentation of Sound Scenes",
+    "authors": [
+      "Mayank Mishra",
+      "Paul Magron",
+      "Romain Serizel"
+    ],
+    "date": "2026-10-08",
+    "summary": "Spatial semantic segmentation of sound scenes (S5) jointly performs audio source separation and tagging on a multichannel audio mixture. Therefore, an S5 system can be decomposed into an audio tagging model and a separation model. The baseline S5 system in task~4 of the DCASE 2025 challenge uses M2D and ResUNet models for tagging and separation, respectively. These are large in overall size and therefore not appropriate for use in embedded devices. The main aim of this paper is to assess the performance loss in an S5 system when using lightweight tagging and separation models instead. To this ",
+    "url": "http://arxiv.org/abs/2610.12693v1",
+    "source": "arxiv",
+    "tags": [
+      "U-Net"
+    ]
+  },
+  {
     "title": "A Study on Improving Multi-class Audio Source Separation Via Decoupled CLAP Query Optimization and an Automated Data Engine",
     "authors": [
       "Amirhossein Hajavi",

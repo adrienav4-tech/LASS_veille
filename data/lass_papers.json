@@ -15,6 +15,63 @@
     ]
   },
   {
+    "title": "FLOMSS: Generative Source Separation by Flow Matching",
+    "authors": [
+      "Shuyang Cui",
+      "Zhi Zhong",
+      "Keisuke Toyama",
+      "Koichi Saito",
+      "Qiyu Wu",
+      "Yukara Ikemiya",
+      "Junghyun Koo",
+      "Kin Wai Cheuk",
+      "Woosung Choi",
+      "Giorgio Fabbro",
+      "Wei-Hsiang Liao",
+      "Shusuke Takahashi",
+      "Yuki Mitsufuji"
+    ],
+    "date": "2026-10-13",
+    "summary": "Music source separation (MSS) has been conventionally addressed by discriminative methods. Recently, flow matching has emerged as a strong generative paradigm for modeling complex data distributions, with successful applications across diverse domains. These advances motivate us to systematically investigate flow matching for MSS in a four-source (Vocals, Bass, Drums, Other) setting in full-band stereo. Specifically, we investigate prediction targets, flow paths, single-source versus multi-source modeling, and mixture consistency constraints. Beyond the signal-level metrics commonly used for M",
+    "url": "http://arxiv.org/abs/2610.17821v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
+    "title": "FlowGRPO for Vocal Separation: From Reward Analysis to Reward Design",
+    "authors": [
+      "Lishi Zuo",
+      "Chong-Xin Gan",
+      "Zezhong Jin",
+      "Youzhi Tu",
+      "Man-Wai Mak",
+      "KongAik Lee"
+    ],
+    "date": "2026-10-11",
+    "summary": "The Flow Matching objective supervises the velocity field at intermediate states, whereas waveform metrics are evaluated after decoding and may be non-differentiable. To align Flow Matching models with waveform-level and perceptual quality objectives during post-training, FlowGRPO optimizes their trajectories using endpoint rewards. In this work, we focus on music separation and use multi-resolution short-time Fourier transform (MRSTFT), scale-invariant signal-to-distortion ratio (SI-SDR), and Virtual Speech Quality Objective Listener (ViSQOL) as reward components. Before policy optimization, ",
+    "url": "http://arxiv.org/abs/2610.15780v1",
+    "source": "arxiv",
+    "tags": [
+      "Music",
+      "Speech"
+    ]
+  },
+  {
+    "title": "Learning Where to Split: Dynamic Band Splitting for Audio Source Separation",
+    "authors": [
+      "Bingzhe Zhang",
+      "Kai Li",
+      "Xiaolin Hu"
+    ],
+    "date": "2026-10-10",
+    "summary": "Audio source separation models must preserve fine spectral structure while keeping the cost of the separator tractable. Band-split architectures reduce this cost by manually partitioning the spectrum into predefined frequency bands and encoding each band as a token, but the same boundaries are used for every mixture. Because informative spectral structure varies with source content, fixed boundaries can merge discriminative components or spend tokens where little resolution is needed. We introduce Dynamic Band Splitting (DBS), an end-to-end framework that adapts boundary locations and band wid",
+    "url": "http://arxiv.org/abs/2610.14993v1",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
     "title": "Frontend-Assisted Large Audio-Language Models for SLT2026 SmartGlasses Challenge",
     "authors": [
       "Yushi Wang",

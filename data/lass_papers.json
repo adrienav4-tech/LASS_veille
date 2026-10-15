@@ -15,6 +15,45 @@
     ]
   },
   {
+    "title": "Point-and-Play: Instrument Timbre Cloning from Music Mixtures",
+    "authors": [
+      "Baotong Tian",
+      "Zhiyao Duan"
+    ],
+    "date": "2026-10-14",
+    "summary": "Neural instrument synthesizers can clone the timbre of a solo instrument, letting music producers make music with the sound they desire. However, an instrument of interest is often embedded in a fully produced, multi-instrument recording, beyond the reach of existing methods. Source separation before timbre cloning is an approach, but it may suffer from separation artifacts and is also likely a detour for the task. In this work, we propose Point-and-Play, a system that clones the timbre of a cued source directly from a polyphonic mixture and uses it to synthesize new pitches and velocities. To",
+    "url": "http://arxiv.org/abs/2610.19445v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
+    "title": "FLOMSS: Generative Music Source Separation by Flow Matching",
+    "authors": [
+      "Shuyang Cui",
+      "Zhi Zhong",
+      "Keisuke Toyama",
+      "Koichi Saito",
+      "Qiyu Wu",
+      "Yukara Ikemiya",
+      "Junghyun Koo",
+      "Kin Wai Cheuk",
+      "Woosung Choi",
+      "Giorgio Fabbro",
+      "Wei-Hsiang Liao",
+      "Shusuke Takahashi",
+      "Yuki Mitsufuji"
+    ],
+    "date": "2026-10-13",
+    "summary": "Music source separation (MSS) has been conventionally addressed by discriminative methods. Recently, flow matching has emerged as a strong generative paradigm for modeling complex data distributions, with successful applications across diverse domains. These advances motivate us to systematically investigate flow matching for MSS in a four-source (Vocals, Bass, Drums, Other) setting in full-band stereo. Specifically, we investigate prediction targets, flow paths, single-source versus multi-source modeling, and mixture consistency constraints. Beyond the signal-level metrics commonly used for M",
+    "url": "http://arxiv.org/abs/2610.17821v2",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
     "title": "FLOMSS: Generative Source Separation by Flow Matching",
     "authors": [
       "Shuyang Cui",
@@ -1305,7 +1344,7 @@
     ],
     "date": "2026-04-20",
     "summary": "Audio-text retrieval systems based on Contrastive Language-Audio Pretraining (CLAP) achieve strong performance on traditional benchmarks; however, these benchmarks rely on caption-style queries that differ substantially from real-world search behavior, limiting their assessment of practical retrieval robustness. We present Omni-Embed-Audio (OEA), a retrieval-oriented encoder leveraging multimodal LLMs with native audio understanding. To systematically evaluate robustness beyond caption-style queries, we introduce User-Intent Queries (UIQs) - five formulations reflecting natural search behavior",
-    "url": "http://arxiv.org/abs/2604.18360v3",
+    "url": "http://arxiv.org/abs/2604.18360v4",
     "source": "arxiv",
     "tags": [
       "CLAP"

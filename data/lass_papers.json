@@ -15,6 +15,21 @@
     ]
   },
   {
+    "title": "D-Composer: Language Modeling for Simultaneous Drum Transcription and Sound Event Decomposition",
+    "authors": [
+      "Patrick O'Reilly",
+      "Saumya Pailwan",
+      "Annie Chu",
+      "Jason Smith",
+      "Bryan Pardo"
+    ],
+    "date": "2026-10-15",
+    "summary": "Drum beats are often conceptualized and produced as arrangements of repeated single-drum sound events or one-shots. Drum Analysis-by-Synthesis (AbS) models combine this structural assumption with reconstruction-based training to perform MIR tasks such as drum transcription, drum source separation, and one-shot extraction, offering a flexible alternative to more traditional task-specific supervision. However, leading AbS approaches struggle to generalize to a broad range of drum timbres (e.g., electronic drum kits), rely on high-quality paired audio-transcription training data, and do not model",
+    "url": "http://arxiv.org/abs/2610.22535v1",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
     "title": "Point-and-Play: Instrument Timbre Cloning from Music Mixtures",
     "authors": [
       "Baotong Tian",

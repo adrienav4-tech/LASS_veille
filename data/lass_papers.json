@@ -15,6 +15,25 @@
     ]
   },
   {
+    "title": "SLM-SS: Token-Based Speech Separation with Speech Language Models",
+    "authors": [
+      "Chenda Li",
+      "Tianhua Li",
+      "Yiming Chen",
+      "Wei Wang",
+      "Jiahe Wang",
+      "Xin Zhou",
+      "Yanmin Qian"
+    ],
+    "date": "2026-10-20",
+    "summary": "Speech separation (SS) has witnessed substantial progress in recent years with the advent of neural network-based methods, achieving notable improvements on signal-level evaluation metrics. Existing speech separation systems are mostly optimized with signal-level objectives, and often yield outputs that are acceptable in waveform metrics but suboptimal for intelligibility-sensitive downstream tasks. To address this gap, we propose SLM-SS, a token-based generative speech separation framework that models multi-talker mixtures with speech language models. We first discretize clean speech into mul",
+    "url": "http://arxiv.org/abs/2610.27785v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
     "title": "D-Composer: Language Modeling for Simultaneous Drum Transcription and Sound Event Decomposition",
     "authors": [
       "Patrick O'Reilly",

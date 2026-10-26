@@ -15,6 +15,25 @@
     ]
   },
   {
+    "title": "Supervised Source Separation of Electric Vehicle Interior Noise Using a Hybrid Transformer Architecture",
+    "authors": [
+      "Philipp Diel",
+      "Zhuo Cao",
+      "Arne Hildenbrand",
+      "Marco Günther",
+      "Stefan Pischinger",
+      "Hanno Scharr",
+      "Steffen Marburg"
+    ],
+    "date": "2026-10-23",
+    "summary": "The interior sound of an electric vehicle is a superposition of several distinct noise contributions - wind noise, tire noise, powertrain (electric drive unit and inverter) noise, and auxiliary-drive noise - whose relative balance governs both the overall loudness and the perceived sound quality in the vehicle interior. Decomposing a recorded vehicle interior signal into these source contributions is a prerequisite for targeted acoustic engineering, but requires effortful measurement campaigns as well as expertise in the field of transfer path analysis. This work formulates the decomposition a",
+    "url": "http://arxiv.org/abs/2610.32310v1",
+    "source": "arxiv",
+    "tags": [
+      "Transformer"
+    ]
+  },
+  {
     "title": "SLM-SS: Token-Based Speech Separation with Speech Language Models",
     "authors": [
       "Chenda Li",

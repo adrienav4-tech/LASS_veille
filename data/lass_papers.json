@@ -15,6 +15,21 @@
     ]
   },
   {
+    "title": "Self-Supervised Object-Centric Representation for Multi-Task Audio Analysis",
+    "authors": [
+      "Parthasaarathy Sudarsanam",
+      "Tuomas Virtanen"
+    ],
+    "date": "2026-10-30",
+    "summary": "This paper studies the capability of an object-centric audio representation to support multiple downstream tasks within a unified framework. The object-centric model is trained in a self-supervised setup using slot attention by reconstructing Audio Spectrogram Transformer (AST) patch embeddings from a set of latent slots. It is trained on synthetic audio mixtures, which provides controlled multi-source audio scenes. These slot representations are evaluated for the classification, detection, and separation of sound events by training task specific output layers. On the classification task, the ",
+    "url": "http://arxiv.org/abs/2610.41870v1",
+    "source": "arxiv",
+    "tags": [
+      "LASS",
+      "Transformer"
+    ]
+  },
+  {
     "title": "SelectSep: Target-Selective Video Queries for Audio Source Separation",
     "authors": [
       "Suyeon Lee",
@@ -535,23 +550,6 @@
     ]
   },
   {
-    "title": "Neural Multichannel Distant Speaker Diarization with Heavy-tailed Source Separation Model",
-    "authors": [
-      "Sicheng Mao",
-      "Baihan Li",
-      "Mathieu Fontaine",
-      "Anthony Larcher",
-      "Roland Badeau"
-    ],
-    "date": "2026-09-10",
-    "summary": "Distant speaker diarization remains challenging due to difficult acoustic environments, varying numbers of speakers and overlapping speech. Model-driven methods are proposed to exploit the speech source features in multi-channel recordings that help diarization. This paper generalizes a neural model that jointly learns to perform blind source separation and diarization over speech mixtures (neural FCASA) with heavy-tailed models. The popular Gaussian distribution has been applied for variance modeling in the original source separation model, which we replace with two families of heavy-tailed m",
-    "url": "http://arxiv.org/abs/2609.12154v1",
-    "source": "arxiv",
-    "tags": [
-      "Speech"
-    ]
-  },
-  {
     "title": "Downstream-Task-Aware Unified Source Separation",
     "authors": [
       "Yoshiki Mitsui",
@@ -585,6 +583,23 @@
       "Speech",
       "Transformer",
       "U-Net"
+    ]
+  },
+  {
+    "title": "Neural Multichannel Distant Speaker Diarization with Heavy-tailed Source Separation Model",
+    "authors": [
+      "Sicheng Mao",
+      "Baihan Li",
+      "Mathieu Fontaine",
+      "Anthony Larcher",
+      "Roland Badeau"
+    ],
+    "date": "2026-09-10",
+    "summary": "Distant speaker diarization remains challenging due to difficult acoustic environments, varying numbers of speakers and overlapping speech. Model-driven methods are proposed to exploit the speech source features in multi-channel recordings that help diarization. This paper generalizes a neural model that jointly learns to perform blind source separation and diarization over speech mixtures (neural FCASA) with heavy-tailed models. The popular Gaussian distribution has been applied for variance modeling in the original source separation model, which we replace with two families of heavy-tailed m",
+    "url": "http://arxiv.org/abs/2609.12154v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
     ]
   },
   {

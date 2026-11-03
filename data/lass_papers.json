@@ -636,6 +636,21 @@
     ]
   },
   {
+    "title": "Removing Speech, Keeping Activities: Speech Removal for Privacy-Preserving Acoustic Sensing in Assisted Living",
+    "authors": [
+      "Pavlos Nicolaou",
+      "Christos Efstratiou"
+    ],
+    "date": "2026-09-02",
+    "summary": "Acoustic sensing can monitor the daily activities of older adults without cameras or wearables, yet the possibility of capturing private conversations remains a barrier to its deployment. The engineering application addressed in this paper is privacy-preserving acoustic monitoring of daily activities in assisted living. Our contribution in artificial intelligence is a speech-removal front end: a U-Net that masks the short-time Fourier transform of ambient audio and returns a waveform in which speech is suppressed and the sounds needed for activity recognition are kept. The model is trained onl",
+    "url": "http://arxiv.org/abs/2609.02376v2",
+    "source": "arxiv",
+    "tags": [
+      "Speech",
+      "U-Net"
+    ]
+  },
+  {
     "title": "Auditing Generative Audio Calls for Known-Task Audio-LLM Evaluatio",
     "authors": [
       "Mengzhe Geng"
@@ -5247,7 +5262,7 @@
       "Xu-Bo Liu",
       "Haohe Liu",
       "Qiu-Qiang Kong",
-      "Xinhao Mei",
+      "Xin-Hao Mei",
       "Jinzheng Zhao",
       "Qiushi Huang",
       "Mark D. Plumbley",

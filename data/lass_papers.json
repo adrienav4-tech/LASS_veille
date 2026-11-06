@@ -15,6 +15,42 @@
     ]
   },
   {
+    "title": "SubRoformer: Subband Time-Domain Representation for Music Source Separation",
+    "authors": [
+      "Chunyat Wu",
+      "Chuang Ding",
+      "Paris Smaragdis",
+      "Qiuqiang Kong"
+    ],
+    "date": "2026-11-05",
+    "summary": "Music source separation extracts vocals and instruments from a mixed recording, enabling remixing, content production, and music analysis. Existing systems commonly operate on waveforms or full-band spectrograms. Waveform inputs contain many samples even in short segments, whereas a single spectrogram resolution imposes a shared time-frequency resolution trade-off across frequency ranges. We propose SubRoFormer, a Transformer-based system comprising a subband module and a residual RoFormer module. The subband module decomposes the mixture into frequency-localized, lower-rate signals for separa",
+    "url": "http://arxiv.org/abs/2611.08130v1",
+    "source": "arxiv",
+    "tags": [
+      "Music",
+      "Transformer"
+    ]
+  },
+  {
+    "title": "FUSEMOS: Perceptual Evaluation of Text-to-Music Generation with Dual-Encoder Fusion and Ranking-Aware Composite Loss",
+    "authors": [
+      "Jing Yang",
+      "Haoyu Wang",
+      "Ningning Pan",
+      "Zhao Wang",
+      "Jianxuan Yang",
+      "Gongping Huang"
+    ],
+    "date": "2026-11-05",
+    "summary": "Perceptual evaluation of generated music is essential for developing text-to-music (TTM) generation systems. Existing automatic music perceptual evaluation methods rely solely on the contrastive language audio pretraining (CLAP) model to extract both audio and text features for predicting human-annotated mean opinion scores (MOS), particularly for overall musical impression (OMI) and textual alignment (TA). However, CLAP is limited in capturing fine-grained musical attributes such as timbre and expressiveness \\emph{etc}. To address this, we propose FUSEMOS, a dual-encoder fusion framework that",
+    "url": "http://arxiv.org/abs/2611.07562v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP",
+      "Music"
+    ]
+  },
+  {
     "title": "Self-Supervised Object-Centric Representation for Multi-Task Audio Analysis",
     "authors": [
       "Parthasaarathy Sudarsanam",
@@ -534,22 +570,6 @@
     ]
   },
   {
-    "title": "Real-Time Music Source Separation on a Low-Power Audio DSP",
-    "authors": [
-      "Jianan Li",
-      "Li Liu",
-      "Ken Malsky",
-      "Gabby Yi"
-    ],
-    "date": "2026-09-10",
-    "summary": "Real-time music source separation is validated on desktop CPUs and GPUs. Does any published system fit the embedded audio hardware it targets? On a commercial audio DSP (2 MB SRAM, 2.07 GMAC/s measured), none does, and the constraints eliminate different models: memory rules out the 16-51 M parameter TasNet/X-UMX family, per-frame compute rules out RT-STT, needing 5.5x the available MAC rate. Parameter count predicts neither: weight reuse spans 1x to 345x. We then build one that fits. Training on continuous rather than block-padded convolution context proves essential: a model scoring 3.93 dB ",
-    "url": "http://arxiv.org/abs/2609.12201v1",
-    "source": "arxiv",
-    "tags": [
-      "Music"
-    ]
-  },
-  {
     "title": "Downstream-Task-Aware Unified Source Separation",
     "authors": [
       "Yoshiki Mitsui",
@@ -583,6 +603,22 @@
       "Speech",
       "Transformer",
       "U-Net"
+    ]
+  },
+  {
+    "title": "Real-Time Music Source Separation on a Low-Power Audio DSP",
+    "authors": [
+      "Jianan Li",
+      "Li Liu",
+      "Ken Malsky",
+      "Gabby Yi"
+    ],
+    "date": "2026-09-10",
+    "summary": "Real-time music source separation is validated on desktop CPUs and GPUs. Does any published system fit the embedded audio hardware it targets? On a commercial audio DSP (2 MB SRAM, 2.07 GMAC/s measured), none does, and the constraints eliminate different models: memory rules out the 16-51 M parameter TasNet/X-UMX family, per-frame compute rules out RT-STT, needing 5.5x the available MAC rate. Parameter count predicts neither: weight reuse spans 1x to 345x. We then build one that fits. Training on continuous rather than block-padded convolution context proves essential: a model scoring 3.93 dB ",
+    "url": "http://arxiv.org/abs/2609.12201v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
     ]
   },
   {
@@ -4399,7 +4435,7 @@
       "Ya-Feng Chen",
       "Rohan Kumar Das",
       "Chong Deng",
-      "Jianfeng Chen"
+      "Jian-Feng Chen"
     ],
     "date": "2024-09-20",
     "summary": "In sound event detection (SED), overlapping sound events pose a significant challenge, as certain events can be easily masked by background noise or other events, resulting in poor detection performance. To address this issue, we propose the text-queried SED (TQ-SED) framework. Specifically, we first pre-train a language-queried audio source separation (LASS) model to separate the audio tracks corresponding to different events from the input audio. Then, multiple target SED branches are employed",
@@ -5313,7 +5349,7 @@
     "title": "Machine Learning Algorithms for Real Time Blind Audio Source Separation with Natural Language Detection",
     "authors": [
       "A. Alghamdi",
-      "G. Healy",
+      "Graham F. Healy",
       "H. Abdelhafez"
     ],
     "date": "2021-09-01",

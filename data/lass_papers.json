@@ -4628,7 +4628,7 @@
     "authors": [
       "Do Hyun Lee",
       "Yoon-Gue Song",
-      "H. Kim"
+      "Hong Kook Kim"
     ],
     "date": "2024-06-17",
     "summary": "We present a prompt-engineering-based text-augmentation approach applied to a language-queried audio source separation (LASS) task. To enhance the performance of LASS, the proposed approach utilizes large language models (LLMs) to generate multiple captions corresponding to each sentence of the training dataset. To this end, we first perform experiments to identify the most effective prompts for caption augmentation with a smaller number of captions. A LASS model trained with these augmented cap",

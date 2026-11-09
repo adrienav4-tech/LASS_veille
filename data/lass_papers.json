@@ -15,6 +15,37 @@
     ]
   },
   {
+    "title": "GTCRN-SS: Lightweight Causal Speech Separation with Residual Allocation and Reconstruction Refinement",
+    "authors": [
+      "Shao-Chun Hu",
+      "Zi-Xiang Lin",
+      "Hsin-Min Wang",
+      "Jeih-Weih Hung",
+      "Hung-Shin Lee"
+    ],
+    "date": "2026-11-06",
+    "summary": "Low-complexity causal speech separation must preserve speaker information and allocate residual mixture energy without relying on future feature frames. We present GTCRN-SS, a two-stage time-frequency separator that adapts the compact GTCRN enhancement backbone to fixed-output speech separation. The model combines internal residual allocation, reconstruction-conditioned refinement, and frame-aligned recurrent-state transfer. Its complex-mask estimator assigns non-target content to an unreturned residual branch, while the complementary speech estimate conditions a second stage whose final masks",
+    "url": "http://arxiv.org/abs/2611.09358v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
+    "title": "AnomSep: Bridging Optimization-Based Separation and Deep Neural Refinement for Anomaly Detection with Listenable Explanations",
+    "authors": [
+      "Koki Shoda",
+      "Jun Younes Louhi Kasahara",
+      "Qi An",
+      "Atsushi Yamashita"
+    ],
+    "date": "2026-11-06",
+    "summary": "We propose AnomSep, which combines optimiza-tion-based separation with deep neural refinement to achieve accurate anomaly detection with listenable explanations. Anomaly detection requires no predefined anomalous categories, and understanding the basis for each detection helps security personnel assess the validity of each detection. End-to-end anomaly detectors can achieve high detection accuracy but output only scalar scores, and existing anomalous sound separation methods provide listenable explanations with limited detection accuracy. AnomSep first obtains preliminary normal-sound and anom",
+    "url": "http://arxiv.org/abs/2611.09279v1",
+    "source": "arxiv",
+    "tags": []
+  },
+  {
     "title": "SubRoformer: Subband Time-Domain Representation for Music Source Separation",
     "authors": [
       "Chunyat Wu",

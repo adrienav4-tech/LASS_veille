@@ -15,6 +15,39 @@
     ]
   },
   {
+    "title": "Exploring Post-Hoc Disentanglement of Audio Foundation Models for Music Similarity",
+    "authors": [
+      "Lucas de Souza Brandão",
+      "Gabriel da Costa Merlin",
+      "Diego Furtado Silva"
+    ],
+    "date": "2026-11-10",
+    "summary": "Audio foundation models like CLAP, MuQ, and MERT excel at capturing general musical similarity. On the other hand, their entangled latent spaces limit interpretability and fine-grained attribute control. Conditional Similarity Networks (CSN) address this by pairing a backbone representation model with learned masks that gate the embedding space into attribute-specific subspaces. However, existing methods train the backbone from scratch, rather than leveraging pretrained foundation models. We instead present a systematic study of post-hoc disentanglement, adapting CSN to gate frozen pretrained ",
+    "url": "http://arxiv.org/abs/2611.14415v1",
+    "source": "arxiv",
+    "tags": [
+      "CLAP",
+      "Music"
+    ]
+  },
+  {
+    "title": "Walrus Technical Report",
+    "authors": [
+      "Alkis Koudounas",
+      "Osamu Take",
+      "Hayato Futami",
+      "Quentin Jodelet",
+      "Emiru Tsunoo"
+    ],
+    "date": "2026-11-10",
+    "summary": "We present Walrus, a unified 8B speech-and-audio foundation model handling speech recognition (including code-switching and multi-talker speech), speech-to-text and speech-to-speech translation, text-to-speech, emotion recognition, audio captioning, and general audio understanding. Our main contribution is not a new architecture but a data-centric training recipe; we use a standard decoder-only backbone initialized from Gemma 4, so that gains can be traced to the data. For speech generation, Walrus predicts low-bitrate discrete speech tokens, and a lightweight token-to-waveform decoder convert",
+    "url": "http://arxiv.org/abs/2611.13689v1",
+    "source": "arxiv",
+    "tags": [
+      "Speech"
+    ]
+  },
+  {
     "title": "SCLAP: Temporal structural alignment improves localization in long-form audio",
     "authors": [
       "Yacouba Kaloga",

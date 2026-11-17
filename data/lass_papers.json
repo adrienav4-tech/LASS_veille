@@ -15,6 +15,23 @@
     ]
   },
   {
+    "title": "MOUSSE: Multilingual Overlapped Speech Separation with Predictive Uncertainty Estimation",
+    "authors": [
+      "Su Yeon Shim",
+      "Yejin Jeon",
+      "David Ifeoluwa Adelani",
+      "Young-Joo Suh"
+    ],
+    "date": "2026-11-15",
+    "summary": "Recent generative speech separation methods have shown promising performance, yet mixtures of overlapping speech in different languages remain underexplored. To this end, we first curate MuSSeD, an English-Korean benchmark comprising two- to four- speaker mixtures across varying overlap ratios. We further propose MOUSSE, a flow matching framework that incorporates boundary-aware training and frame-wise predictive uncertainty through a permutation-invariant Gaussian negative log-likelihood. The predicted scale is further used to adapt classifier-free guidance during sampling. MOUSSE achieves 13",
+    "url": "http://arxiv.org/abs/2611.19706v1",
+    "source": "arxiv",
+    "tags": [
+      "LASS",
+      "Speech"
+    ]
+  },
+  {
     "title": "Exploring Post-Hoc Disentanglement of Audio Foundation Models for Music Similarity",
     "authors": [
       "Lucas de Souza Brandão",
@@ -1727,6 +1744,23 @@
     ]
   },
   {
+    "title": "CAF-Score: Calibrating CLAP with LALMs for Reference-free Audio-Text Alignment Evaluation",
+    "authors": [
+      "Insung Lee",
+      "Taeyoung Jeong",
+      "HaeJun Yoo",
+      "Du-Seong Chang",
+      "Myoung-Wan Koo"
+    ],
+    "date": "2026-03-20",
+    "summary": "While Large Audio-Language Models (LALMs) have advanced audio understanding and generation, robustly evaluating audio-text alignment remains difficult: reference-based metrics require costly annotations, while Contrastive Language-Audio Pretraining (CLAP)-based reference-free metrics frequently overlook syntactic errors and fine-grained details. We propose CAF-Score, a reference-free metric that calibrates CLAP's coarse-grained semantic alignment with the fine-grained comprehension and syntactic awareness of LALMs. Because CAF-Score scores an audio-text pair symmetrically, one configuration ap",
+    "url": "http://arxiv.org/abs/2603.19615v2",
+    "source": "arxiv",
+    "tags": [
+      "CLAP"
+    ]
+  },
+  {
     "title": "CAF-Score: Calibrating CLAP with LALMs for Reference-free Audio Captioning Evaluation",
     "authors": [
       "Insung Lee",
@@ -2793,14 +2827,14 @@
     "authors": [
       "Yu-Tong Wen",
       "Ke Chen",
-      "Prem Seetharaman",
+      "P. Seetharaman",
       "Oriol Nieto",
       "Jia-Qi Su",
       "Rithesh Kumar",
       "Minje Kim",
-      "P. Smaragdis",
+      "Paris Smaragdis",
       "Ze-Yu Jin",
-      "Justin Salamon"
+      "J. Salamon"
     ],
     "date": "2025-11-06",
     "summary": "Recent breakthroughs in language-queried audio source separation (LASS) have shown that generative models can achieve higher separation audio quality than traditional masking-based approaches. However, two key limitations restrict their practical use: (1) users often require operations beyond separation, such as sound removal; and (2) relying solely on text prompts can be unintuitive for specifying sound sources. In this paper, we propose PromptSep to extend LASS into a broader framework for gen",
@@ -2958,7 +2992,7 @@
     "title": "Can large audio language models understand child stuttering speech? speech summarization, and source separation",
     "authors": [
       "C. Okocha",
-      "M. Bakri",
+      "Maya Bakri",
       "Christan Grant"
     ],
     "date": "2025-10-21",
@@ -4154,7 +4188,7 @@
       "Daiki Takeuchi",
       "Masahiro Yasuda",
       "Daisuke Niizumi",
-      "Noboru Harada"
+      "N. Harada"
     ],
     "date": "2025-04-06",
     "summary": "Language-queried audio source separation (LASS) is an emerging research field that has recently received increasing attention. This task aims to isolate individual sources from a mixture of signals using natural language descriptions, enabling applications in various areas such as automatic audio editing. While conventional methods focus on the system architecture, the important aspect of data processing has been overlooked. The data for training LASS are typically created by mixing various audi",
@@ -5429,7 +5463,7 @@
       "Xingjian Du",
       "Bi-Lei Zhu",
       "Zejun Ma",
-      "Taylor Berg-Kirkpatrick",
+      "T. Berg-Kirkpatrick",
       "S. Dubnov"
     ],
     "date": "2021-12-15",
@@ -5444,7 +5478,7 @@
     "authors": [
       "A. Alghamdi",
       "Graham F. Healy",
-      "H. Abdelhafez"
+      "Hoda A. Abdelhafez"
     ],
     "date": "2021-09-01",
     "summary": "The Conv-TasNet and Demucs algorithms, can differentiate between two mixed signals, such as music and speech, the mixing operation proceed without any support information. The network of convolutional time-domain audio separations is used in Conv-TasNet algorithm, while there is a new waveform-to-waveform model in Demucs algorithm. The Demucs algorithm utilizes a procedure like the audio generation model and sizable decoder capacity. The algorithms are not pretrained; so, the process of separati",

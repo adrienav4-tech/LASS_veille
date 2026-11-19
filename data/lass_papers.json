@@ -15,6 +15,24 @@
     ]
   },
   {
+    "title": "Why Multi-Source Audio Fails to Compose: A Geometric Diagnosis and Its Remedy",
+    "authors": [
+      "Anurag Singh",
+      "Prajwal Singh",
+      "Shanmuganathan Raman"
+    ],
+    "date": "2026-11-18",
+    "summary": "Multi-source audio-to-image generation exhibits consistent compositional failures when audio tokens occupy geometrically displaced, semantically unanchored positions in the CLIP text-token space, where the diffusion U-Net lacks the prior to reliably attend to them or ground them in distinct spatial regions. We formalize this as the geometric displacement phenomenon and expose it through a two-level clustering analysis comparing BEATs and CLAP embeddings at the raw encoder and projected CLIP token levels. Three geometric properties emerge as important: intra-class compactness, angular alignment",
+    "url": "http://arxiv.org/abs/2611.24410v1",
+    "source": "arxiv",
+    "tags": [
+      "LASS",
+      "CLAP",
+      "Diffusion",
+      "U-Net"
+    ]
+  },
+  {
     "title": "MOUSSE: Multilingual Overlapped Speech Separation with Predictive Uncertainty Estimation",
     "authors": [
       "Su Yeon Shim",

@@ -15,6 +15,22 @@
     ]
   },
   {
+    "title": "Who Plays What: Same-Instrument Music Separation from Video",
+    "authors": [
+      "Abhinaba Roy",
+      "Ambuj Mehrish",
+      "Sebastiano Vascon",
+      "Dorien Herremans"
+    ],
+    "date": "2026-11-22",
+    "summary": "When two musicians in an ensemble play the same instrument, they sound alike and their instruments look alike. Audio-only separators, and audio-visual separators that rely on appearance, cannot tell them apart. What still differs is how each player moves, and when. We study same-instrument per-player separation: a user clicks one musician in a video and receives that musician's sound alone, even when other players in the video play the same instrument. Our model follows the clicked player and describes them with high level video features and the velocities of body and hand keypoints. A pretrai",
+    "url": "http://arxiv.org/abs/2611.29411v1",
+    "source": "arxiv",
+    "tags": [
+      "Music"
+    ]
+  },
+  {
     "title": "Why Multi-Source Audio Fails to Compose: A Geometric Diagnosis and Its Remedy",
     "authors": [
       "Anurag Singh",
@@ -2843,24 +2859,24 @@
   {
     "title": "PromptSep: Generative Audio Separation via Multimodal Prompting",
     "authors": [
-      "Yutong Wen",
+      "Yu-Tong Wen",
       "Ke Chen",
-      "Prem Seetharaman",
+      "P. Seetharaman",
       "Oriol Nieto",
-      "Jiaqi Su",
+      "Jia-Qi Su",
       "Rithesh Kumar",
       "Minje Kim",
       "Paris Smaragdis",
-      "Zeyu Jin",
-      "Justin Salamon"
+      "Ze-Yu Jin",
+      "J. Salamon"
     ],
     "date": "2025-11-06",
-    "summary": "Recent breakthroughs in language-queried audio source separation (LASS) have shown that generative models can achieve higher separation audio quality than traditional masking-based approaches. However, two key limitations restrict their practical use: (1) users often require operations beyond separation, such as sound removal; and (2) relying solely on text prompts can be unintuitive for specifying sound sources. In this paper, we propose PromptSep to extend LASS into a broader framework for general-purpose sound separation. PromptSep leverages a conditional diffusion model enhanced with elabo",
-    "url": "http://arxiv.org/abs/2511.04623v1",
-    "source": "arxiv",
+    "summary": "Recent breakthroughs in language-queried audio source separation (LASS) have shown that generative models can achieve higher separation audio quality than traditional masking-based approaches. However, two key limitations restrict their practical use: (1) users often require operations beyond separation, such as sound removal; and (2) relying solely on text prompts can be unintuitive for specifying sound sources. In this paper, we propose PromptSep to extend LASS into a broader framework for gen",
+    "url": "https://arxiv.org/abs/2511.04623",
+    "source": "semantic",
+    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
     "tags": [
-      "LASS",
-      "Diffusion"
+      "LASS"
     ]
   },
   {
@@ -3086,9 +3102,10 @@
       "Yuki Mitsufuji"
     ],
     "date": "2025-10-10",
-    "summary": "We introduce MMAudioSep, a generative model for video/text-queried sound separation that is founded on a pretrained video-to-audio model. By leveraging knowledge about the relationship between video/text and audio learned through a pretrained audio generative model, we can train the model more efficiently, i.e., the model does not need to be trained from scratch. We evaluate the performance of MMAudioSep by comparing it to existing separation models, including models based on both deterministic and generative approaches, and find it is superior to the baseline models. Furthermore, we demonstra",
-    "url": "http://arxiv.org/abs/2510.09065v2",
-    "source": "arxiv",
+    "summary": "We introduce MMAudioSep, a generative model for video/text-queried sound separation that is founded on a pretrained video-to-audio model. By leveraging knowledge about the relationship between video/text and audio learned through a pretrained audio generative model, we can train the model more efficiently, i.e., the model does not need to be trained from scratch. We evaluate the performance of MMAudioSep by comparing it to existing separation models, including models based on both deterministic ",
+    "url": "https://arxiv.org/abs/2510.09065",
+    "source": "semantic",
+    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
     "tags": [
       "AudioSep"
     ]
@@ -3292,9 +3309,10 @@
       "Mounya Elhilali"
     ],
     "date": "2025-09-23",
-    "summary": "Despite recent progress in large-scale sound event detection (SED) systems capable of handling hundreds of sound classes, existing multi-class classification frameworks remain fundamentally limited. They cannot process free-text sound queries, which enable more flexible and user-friendly interaction, and they lack zero-shot capabilities and offer poor few-shot adaptability. Although text-query-based separation methods have been explored, they primarily focus on source separation and are ill-suited for SED tasks that require precise temporal localization and efficient detection across large and",
-    "url": "http://arxiv.org/abs/2509.18606v1",
-    "source": "arxiv",
+    "summary": "Despite recent progress in large-scale sound event detection (SED) systems capable of handling hundreds of sound classes, existing multi-class classification frameworks remain fundamentally limited. They cannot process free-text sound queries, which enable more flexible and user-friendly interaction, and they lack zero-shot capabilities and offer poor few-shot adaptability. Although text-query-based separation methods have been explored, they primarily focus on source separation and are ill-suit",
+    "url": "https://arxiv.org/abs/2509.18606",
+    "source": "semantic",
+    "venue": "IEEE Workshop on Applications of Signal Processing to Audio and Acoustics",
     "tags": [
       "LASS"
     ]
@@ -3763,12 +3781,12 @@
       "Yangfei Xu"
     ],
     "date": "2025-06-20",
-    "summary": "Language-queried Audio Separation (LASS) employs linguistic queries to isolate target sounds based on semantic descriptions. However, existing methods face challenges in aligning complex auditory features with linguistic context while preserving separation precision. Current research efforts focus primarily on text description augmentation and architectural innovations, yet the potential of integrating pre-trained self-supervised learning (SSL) audio models and Contrastive Language-Audio Pretraining (CLAP) frameworks, capable of extracting cross-modal audio-text relationships, remains underexp",
-    "url": "http://arxiv.org/abs/2506.16833v1",
-    "source": "arxiv",
+    "summary": "Language-queried Audio Separation (LASS) employs linguistic queries to isolate target sounds based on semantic descriptions. However, existing methods face challenges in aligning complex auditory features with linguistic context while preserving separation precision. Current research efforts focus primarily on text description augmentation and architectural innovations, yet the potential of integrating pre-trained self-supervised learning (SSL) audio models and Contrastive Language-Audio Pretrai",
+    "url": "https://arxiv.org/abs/2506.16833",
+    "source": "semantic",
+    "venue": "arXiv.org",
     "tags": [
       "LASS",
-      "CLAP",
       "Diffusion"
     ]
   },
@@ -3949,15 +3967,16 @@
     "title": "Text-Queried Audio Source Separation via Hierarchical Modeling",
     "authors": [
       "Xinlei Yin",
-      "Xiulian Peng",
+      "Xiu-Lian Peng",
       "Xue Jiang",
       "Zhiwei Xiong",
       "Yan Lu"
     ],
     "date": "2025-05-27",
-    "summary": "Target audio source separation with natural language queries presents a promising paradigm for extracting arbitrary audio events through arbitrary text descriptions. Existing methods mainly face two challenges, the difficulty in jointly modeling acoustic-textual alignment and semantic-aware separation within a blindly-learned single-stage architecture, and the reliance on large-scale accurately-labeled training data to compensate for inefficient cross-modal learning and separation. To address these challenges, we propose a hierarchical decomposition framework, HSM-TSS, that decouples the task ",
-    "url": "http://arxiv.org/abs/2505.21025v2",
-    "source": "arxiv",
+    "summary": "Target audio source separation with natural language queries presents a promising paradigm for extracting arbitrary audio events through arbitrary text descriptions. Existing methods mainly face two challenges, the difficulty in jointly modeling acoustic-textual alignment and semantic-aware separation within a blindly-learned single-stage architecture, and the reliance on large-scale accurately-labeled training data to compensate for inefficient cross-modal learning and separation. To address th",
+    "url": "https://arxiv.org/abs/2505.21025",
+    "source": "semantic",
+    "venue": "IEEE Transactions on Audio, Speech, and Language Processing",
     "tags": []
   },
   {
@@ -4571,22 +4590,22 @@
     "title": "Exploring Text-Queried Sound Event Detection with Audio Source Separation",
     "authors": [
       "Han Yin",
-      "Jisheng Bai",
+      "Ji-Sheng Bai",
       "Yang Xiao",
       "Hui Wang",
       "Siqi Zheng",
-      "Yafeng Chen",
+      "Ya-Feng Chen",
       "Rohan Kumar Das",
       "Chong Deng",
-      "Jianfeng Chen"
+      "Jian-Feng Chen"
     ],
     "date": "2024-09-20",
-    "summary": "In sound event detection (SED), overlapping sound events pose a significant challenge, as certain events can be easily masked by background noise or other events, resulting in poor detection performance. To address this issue, we propose the text-queried SED (TQ-SED) framework. Specifically, we first pre-train a language-queried audio source separation (LASS) model to separate the audio tracks corresponding to different events from the input audio. Then, multiple target SED branches are employed to detect individual events. AudioSep is a state-of-the-art LASS model, but has limitations in extr",
-    "url": "http://arxiv.org/abs/2409.13292v2",
-    "source": "arxiv",
+    "summary": "In sound event detection (SED), overlapping sound events pose a significant challenge, as certain events can be easily masked by background noise or other events, resulting in poor detection performance. To address this issue, we propose the text-queried SED (TQ-SED) framework. Specifically, we first pre-train a language-queried audio source separation (LASS) model to separate the audio tracks corresponding to different events from the input audio. Then, multiple target SED branches are employed",
+    "url": "https://arxiv.org/abs/2409.13292",
+    "source": "semantic",
+    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
     "tags": [
-      "LASS",
-      "AudioSep"
+      "LASS"
     ]
   },
   {
